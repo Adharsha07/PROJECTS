@@ -8,3 +8,7 @@ Small, runnable experiments with explanations and hands-on exercises. Lessons ar
 | [002: Answer from evidence](experiments/002-evidence-shopping/README.md) | Product identity, source attribution, missing evidence and evaluation |
 
 Start with experiment 001. Each folder contains its own setup instructions, code and learning exercise.
+
+## Weekend project
+
+[Evidence shopping assistant — milestone 1](projects/shopping-assistant/README.md): a browser interface demonstrating product filtering, usage relevance, conflicting reviews, and missing evidence. Includes setup instructions and nine automated checks.

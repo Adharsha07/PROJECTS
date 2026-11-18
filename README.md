@@ -12,3 +12,7 @@ Start with experiment 001. Each folder contains its own setup instructions, code
 ## Weekend project
 
 [Evidence shopping assistant — milestone 1](projects/shopping-assistant/README.md): a browser interface demonstrating product filtering, usage relevance, conflicting reviews, and missing evidence. Includes setup instructions and nine automated checks.
+
+## Flagship AI engineering project
+
+[Customer-support AI assistant](projects/customer-support-ai/README.md) — design milestone: project scope, policy-versioning architecture, fictional policy data and planned evaluation cases. Implementation and deployment are upcoming.

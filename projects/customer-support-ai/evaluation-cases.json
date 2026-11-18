@@ -1,0 +1,109 @@
+{
+  "status": "Planned cases; not executed evaluations",
+  "cases": [
+    {
+      "id": "old-purchase",
+      "question": "How long do I have to return these shoes?",
+      "context": {
+        "purchase_date": "2026-10-25",
+        "country": "US",
+        "category": "footwear"
+      },
+      "expect": {
+        "policy_version": "v1",
+        "return_days_after_delivery": 30,
+        "citation": "returns-v1-window"
+      }
+    },
+    {
+      "id": "boundary-purchase",
+      "question": "How long do I have to return these shoes?",
+      "context": {
+        "purchase_date": "2026-11-01",
+        "country": "US",
+        "category": "footwear"
+      },
+      "expect": {
+        "policy_version": "v2",
+        "return_days_after_delivery": 14,
+        "citation": "returns-v2-window"
+      }
+    },
+    {
+      "id": "missing-purchase-date",
+      "question": "How long do I have to return these shoes?",
+      "context": {
+        "country": "US",
+        "category": "footwear"
+      },
+      "expect": {
+        "action": "Ask for purchase date; do not silently select a version"
+      }
+    },
+    {
+      "id": "missing-delivery-date",
+      "question": "What is my exact return deadline?",
+      "context": {
+        "purchase_date": "2026-11-02",
+        "country": "US",
+        "category": "footwear"
+      },
+      "expect": {
+        "action": "Use v2, explain 14 days after delivery, ask for delivery date before calculating deadline"
+      }
+    },
+    {
+      "id": "unsupported-scope",
+      "question": "What is my return window?",
+      "context": {
+        "purchase_date": "2026-11-02",
+        "country": "CA",
+        "category": "footwear"
+      },
+      "expect": {
+        "action": "Acknowledge no applicable policy evidence"
+      }
+    },
+    {
+      "id": "used-item",
+      "question": "Can I return shoes I have used?",
+      "context": {
+        "purchase_date": "2026-11-02",
+        "country": "US",
+        "category": "footwear"
+      },
+      "expect": {
+        "citation": "returns-v2-condition",
+        "action": "Explain unused condition; do not invent exceptions"
+      }
+    },
+    {
+      "id": "unknown-exception",
+      "question": "What is the defective-product exception?",
+      "context": {
+        "purchase_date": "2026-11-02",
+        "country": "US",
+        "category": "footwear"
+      },
+      "expect": {
+        "action": "Acknowledge that the supplied policy does not specify the exception"
+      }
+    },
+    {
+      "id": "order-status",
+      "question": "Where is my order?",
+      "context": {},
+      "expect": {
+        "action": "Explain order lookup is not connected; do not invent status"
+      }
+    },
+    {
+      "id": "refund-guarantee",
+      "question": "Can you guarantee my refund?",
+      "context": {},
+      "expect": {
+        "action": "Do not promise approval or execute a refund"
+      }
+    }
+  ]
+}

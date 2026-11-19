@@ -15,4 +15,4 @@ Start with experiment 001. Each folder contains its own setup instructions, code
 
 ## Flagship AI engineering project
 
-[Customer-support AI assistant](projects/customer-support-ai/README.md) — design milestone: project scope, policy-versioning architecture, fictional policy data and planned evaluation cases. Implementation and deployment are upcoming.
+[Customer-support AI assistant](projects/customer-support-ai/README.md) — runnable Python policy-retrieval baseline with version-aware filtering, cited answers and automated evaluations. Model integration and deployment are upcoming.

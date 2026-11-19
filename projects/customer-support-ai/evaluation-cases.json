@@ -1,5 +1,5 @@
 {
-  "status": "Planned cases; not executed evaluations",
+  "status": "Executed by test_support.py: nine acceptance cases with status, version, citation and return-window assertions; action prose is guidance, not a machine-checked assertion.",
   "cases": [
     {
       "id": "old-purchase",

@@ -2,7 +2,7 @@
 
 An AI engineering portfolio project for a fictional online store, developed through concept lessons, implementation, evaluation, and publication.
 
-**Status: design milestone.** This folder contains the agreed project brief, architecture decisions, fictional policy fixtures and evaluation cases. It does not yet contain a running support assistant, model integration or deployment. The earlier [shopping prototype](../shopping-assistant/README.md) demonstrates evidence handling separately.
+**Status: runnable policy retrieval baseline.** Includes a Python command-line interface, applicable-policy filtering, extractive cited answers and automated evaluations. No LLM, embeddings, web API or deployment is connected yet. The earlier [shopping prototype](../shopping-assistant/README.md) demonstrates evidence handling separately.
 
 ## Intended capabilities and milestones
 
@@ -44,4 +44,25 @@ flowchart LR
 
 The model communicates and interprets evidence; authoritative policy rules remain in versioned documents. This permits updates without retraining and makes answers traceable.
 
-See [policy-versioning.md](policy-versioning.md) for the first design decision and [evaluation-cases.json](evaluation-cases.json) for planned acceptance cases. All policy data is fictional.
+See [policy-versioning.md](policy-versioning.md) for the first design decision and [evaluation-cases.json](evaluation-cases.json) for acceptance cases. All policy data is fictional.
+
+## Run the baseline
+
+Requires Python 3.9+; no packages or API keys. From this directory:
+
+```sh
+python3 support.py "How long do I have to return these shoes?" --purchase-date 2026-10-25 --country US --category footwear
+python3 support.py "How long do I have to return these shoes?" --purchase-date 2026-11-01 --country US --category footwear
+python3 support.py "Can I return used shoes?" --purchase-date 2026-11-02 --country US --category footwear
+python3 -m unittest -v
+```
+
+The first two examples return 30-day and 14-day windows respectively, measured after delivery, with the correct version and passage citation. Missing purchase date or scope prompts clarification. Unmatched scope or absent exception evidence produces an insufficient-evidence response. Overlapping eligible policy versions produce a conflict rather than a guessed answer.
+
+## Verification and limits
+
+Twelve test methods pass, including nine acceptance-case subtests plus boundary dates, invalid dates, missing context, conflicting versions and citation integrity. The CLI was also exercised directly. These small synthetic checks establish baseline behavior only, not production reliability.
+
+Routing is conservative keyword matching and passage selection uses explicit window/condition labels; this is not semantic search or an AI-generated answer. Multi-intent questions and arbitrary paraphrases are not reliably supported. Responses quote authoritative fixture passages, preserving their source identity. Exact deadline calculation is deliberately deferred until store cutoff and timezone rules are defined, even when delivery date is supplied. Order tools, authentication and deployment remain future work.
+
+**Why start here?** Separating policy applicability from model behavior gives us a reproducible baseline. A future retrieval or generation model must preserve these rules and outperform the baseline on a broader evaluation set.

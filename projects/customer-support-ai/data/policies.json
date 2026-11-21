@@ -12,7 +12,11 @@
     "passages": [
       {
         "id": "returns-v1-window",
-        "text": "For covered purchases, request a return within 30 days after delivery."
+        "text": "For covered purchases, request a return within 30 days after delivery.",
+        "facts": {
+          "return_days": 30,
+          "starts_from": "delivery"
+        }
       },
       {
         "id": "returns-v1-condition",
@@ -33,7 +37,11 @@
     "passages": [
       {
         "id": "returns-v2-window",
-        "text": "For covered purchases, request a return within 14 days after delivery."
+        "text": "For covered purchases, request a return within 14 days after delivery.",
+        "facts": {
+          "return_days": 14,
+          "starts_from": "delivery"
+        }
       },
       {
         "id": "returns-v2-condition",

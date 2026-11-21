@@ -70,7 +70,7 @@ def respond(question, context=None, policies=None):
     if not passage:
         return result("insufficient_evidence", "The applicable policy has no passage supporting this answer.")
     citation = dict(policy_id=p["policy_id"], version=p["version"], passage_id=passage["id"],
-                    source_id=p["source_id"], text=passage["text"])
+                    source_id=p["source_id"], text=passage["text"], facts=passage.get("facts", {}))
     answer = passage["text"] + " [" + passage["id"] + "]"
     if exact_deadline:
         # Date arithmetic is deferred until store cutoff/timezone rules are explicit.

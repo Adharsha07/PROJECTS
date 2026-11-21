@@ -2,7 +2,7 @@
 
 An AI engineering portfolio project for a fictional online store, developed through concept lessons, implementation, evaluation, and publication.
 
-**Status: runnable policy retrieval baseline.** Includes a Python command-line interface, applicable-policy filtering, extractive cited answers and automated evaluations. No LLM, embeddings, web API or deployment is connected yet. The earlier [shopping prototype](../shopping-assistant/README.md) demonstrates evidence handling separately.
+**Status: local web interface and HTTP API with policy retrieval and structured-answer validation.** No LLM, embeddings, authentication or public deployment is connected yet. The earlier [shopping prototype](../shopping-assistant/README.md) demonstrates evidence handling separately.
 
 ## Intended capabilities and milestones
 
@@ -61,8 +61,18 @@ The first two examples return 30-day and 14-day windows respectively, measured a
 
 ## Verification and limits
 
-Twelve test methods pass, including nine acceptance-case subtests plus boundary dates, invalid dates, missing context, conflicting versions and citation integrity. The CLI was also exercised directly. These small synthetic checks establish baseline behavior only, not production reliability.
+The original twelve retrieval test methods pass, including nine acceptance-case subtests plus boundary dates, invalid dates, missing context, conflicting versions and citation integrity. The CLI was also exercised directly. These small synthetic checks establish baseline behavior only, not production reliability.
 
 Routing is conservative keyword matching and passage selection uses explicit window/condition labels; this is not semantic search or an AI-generated answer. Multi-intent questions and arbitrary paraphrases are not reliably supported. Responses quote authoritative fixture passages, preserving their source identity. Exact deadline calculation is deliberately deferred until store cutoff and timezone rules are defined, even when delivery date is supplied. Order tools, authentication and deployment remain future work.
 
 **Why start here?** Separating policy applicability from model behavior gives us a reproducible baseline. A future retrieval or generation model must preserve these rules and outperform the baseline on a broader evaluation set.
+
+## Web interface, API and validation milestone
+
+Run `python3 api.py --port 8766` from this directory, then open the printed local address. If that port is occupied, use `--port 0` to select an available port. Use the form to compare October, November and missing-purchase-date cases. GET requests display the form; submitted questions use POST /api/answer.
+
+Run `python3 -m unittest -v`: all 36 test methods passed, including 11 HTTP methods and the original acceptance-case subtests. The interface was also checked in a browser for the older policy, newer policy and missing-context flows.
+
+The validator checks a proposed return-window claim's policy identity, citation, integer duration and starting event against retrieved structured facts. It emits controlled wording when matched and otherwise preserves the verified passage. It does not certify arbitrary generated prose. The API defaults to retrieved passages; local test callbacks exercise a future generator path, but no model is connected. Clients cannot submit proposed facts to override the backend.
+
+See [API.md](API.md) for the request contract and development-server limitations. The web/API/validation code is a runnable milestone, not a production-ready or fully AI-powered application. The next milestone is a provider and budget decision followed by model integration evaluated against this baseline.

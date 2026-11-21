@@ -15,4 +15,4 @@ Start with experiment 001. Each folder contains its own setup instructions, code
 
 ## Flagship AI engineering project
 
-[Customer-support AI assistant](projects/customer-support-ai/README.md) — local web interface and Python API with version-aware policy retrieval, citations, structured validation and 36 passing tests. Model integration and deployment are upcoming.
+[Customer-support AI assistant](projects/customer-support-ai/README.md) — local web interface and Python API with version-aware policy retrieval, citations, structured validation and 40 passing tests and optional local Qwen extraction. Local model extraction is available; broader evaluation and public deployment are upcoming.

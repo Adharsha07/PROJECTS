@@ -94,4 +94,3 @@ class HTTPTests(unittest.TestCase):
                 self.assertIn(b"Check the policy",response.read())
             finally: conn.close()
 if __name__=="__main__": unittest.main()
-

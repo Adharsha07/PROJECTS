@@ -1,6 +1,7 @@
 """Local development HTTP API. Not a production server."""
 import argparse
 import json
+import time
 from pathlib import Path
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from support import respond
@@ -30,12 +31,17 @@ def answer_request(payload, generator=None):
         return dict(evidence, validation="not_applicable", generation="disabled")
     if generator is None:
         return dict(evidence, validation="verified_passage", generation="disabled")
+    if not any(source.get("facts", {}).get("return_days") for source in evidence["sources"]):
+        return dict(evidence, validation="verified_passage", generation="skipped",
+                    generation_reason="This model adapter handles return-window claims only.")
+    started = time.monotonic()
     try:
         candidate = generator(evidence)
     except Exception:
-        return dict(evidence, validation="fallback", generation="failed",
+        return dict(evidence, validation="fallback", generation="failed", model_seconds=round(time.monotonic()-started, 3),
                     validation_reason="Generation failed; returning retrieved evidence.")
-    return dict(checked_answer(evidence, candidate), generation="structured")
+    return dict(checked_answer(evidence, candidate), generation="structured",
+                model_seconds=round(time.monotonic()-started, 3))
 
 class Handler(BaseHTTPRequestHandler):
     server_version = "PolicyDemo"
@@ -66,7 +72,10 @@ class Handler(BaseHTTPRequestHandler):
             self.wfile.write(data)
             return
         if self.path == "/health":
-            return self.send_json(200, {"status": "ok", "model_connected": False})
+            return self.send_json(200, {"status": "ok",
+                "model_connected": False,
+                "model_enabled": getattr(self.server, "generator", None) is not None,
+                "note": "Health does not probe model availability; see each answer's generation result."})
         self.send_json(404, {"error": "Route not found."})
 
     def do_POST(self):
@@ -90,7 +99,7 @@ class Handler(BaseHTTPRequestHandler):
             if len(raw) != length:
                 return self.send_json(400, {"error": "Incomplete request body."})
             payload = json.loads(raw)
-            result = answer_request(payload)
+            result = answer_request(payload, getattr(self.server, "generator", None))
         except (UnicodeDecodeError, json.JSONDecodeError, RequestError, RecursionError):
             return self.send_json(400, {"error": "Invalid JSON or request fields."})
         except (TimeoutError, OSError):
@@ -106,8 +115,12 @@ class Handler(BaseHTTPRequestHandler):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--port", type=int, default=8766)
+    parser.add_argument("--local-model", action="store_true", help="Enable the installed Ollama model")
     args = parser.parse_args()
     server = ThreadingHTTPServer(("127.0.0.1", args.port), Handler)
+    if args.local_model:
+        from local_model import propose_facts
+        server.generator = propose_facts
     print(f"Local policy API: http://127.0.0.1:{server.server_port}", flush=True)
     try:
         server.serve_forever()

@@ -1,52 +1,38 @@
-# Local policy API milestone
+# Local policy API and form
 
-Status: source published; implemented and tested locally. Not deployed to public hosting. Python 3.9+; standard library only.
+Python 3.9+; standard library only. Source is published, public hosting is not configured.
 
-## Start and test
+## Run
 
-From this directory:
+Start Ollama separately with the installed qwen2.5:1.5b-instruct model. From this directory:
 
 ```sh
-python3 api.py --port 8766
+python3 api.py --port 0 --local-model
+python3 -m unittest -v
 ```
 
-Run `python3 -m unittest -v` separately. The suite has 36 test methods, including 11 real HTTP tests and the existing acceptance-case subtests. HTTP tests open a temporary loopback port and close the server afterward.
+Open the printed address for the browser form. Omit --local-model for the deterministic baseline. A fixed port can be specified instead of 0 if available.
 
-Open the server's printed local address in a browser to use the form. GET / and GET /api/answer serve the form; POST /api/answer processes submitted questions.
+## Routes
 
-## Request contract
+- GET / and GET /api/answer serve the form.
+- GET /health returns service availability and whether model mode is enabled. It does not probe Ollama; per-answer generation results show actual success or failure. The legacy model_connected field remains false because this health check does not verify connectivity.
+- POST /api/answer accepts JSON with question and optional context. Context keys: purchase_date, delivery_date, country, category. Dates use YYYY-MM-DD. Values must be strings. Questions are limited to 2000 characters and bodies to 16 KiB. Extra fields are rejected; clients cannot supply model candidates.
 
-`POST /api/answer`, Content-Type `application/json`:
+## Responses
 
-```json
-{
-  "question": "What is the return window?",
-  "context": {
-    "purchase_date": "2026-10-25",
-    "country": "US",
-    "category": "footwear"
-  }
-}
-```
+200 means the question was handled, not necessarily answered. Inspect body status: answered, clarify, insufficient_evidence, unavailable, unsupported or conflict. Sources include version, passage identity, source text and structured facts where available.
 
-Context is optional: missing information produces clarification, not invented values. Supported context keys: purchase_date, delivery_date, country, category. Dates use YYYY-MM-DD. All values must be strings. Unknown request fields are rejected. Question length is limited to 2000 characters and body size to 16 KiB.
+400: malformed JSON or request fields. 413: body too large. 415: wrong content type. 422: invalid purchase data. 500: service failure without private exception details.
 
-## Response behavior
+Validation can be passed, fallback, verified_passage or not_applicable. Generation can be structured, failed, skipped or disabled. Model time measures the attempted inference call, not total end-to-end latency.
 
-- 200: handled question, including answered, clarify, insufficient_evidence, unavailable or unsupported results. Inspect the body status; HTTP success does not mean the assistant found an answer.
-- 400: invalid JSON, unsupported fields or wrong types.
-- 413: oversized body.
-- 415: unsupported media type.
-- 422: invalid domain input such as a malformed purchase date.
-- 500: policy-service failure; no answer produced and internal details omitted.
-- GET /health: service availability and model_connected=false.
+## Pipeline and boundaries
 
-Responses include answer, sources, status and validation. Cited sources carry policy identity, version, passage identity, text and structured facts when supplied by the fixture.
+Request validation -> deterministic applicability and passage selection -> optional local model extraction -> fact validation -> controlled sentence or original-passage fallback.
 
-## Pipeline and why
+The model sees selected passage text and identifiers, not the expected structured facts. It does not rewrite arbitrary prose, perform semantic search, or interpret every paraphrase. Condition claims bypass this return-window adapter. Model failure does not suppress an otherwise valid retrieved passage.
 
-HTTP handler -> validate request -> retrieve applicable evidence -> return verified passage.
+40 automated test methods passed, including 11 HTTP methods and local adapter mocks. Two policy versions were also exercised with real model inference in the browser. Further model evaluation is required.
 
-The default path has no model. It reports generation=disabled and validation=verified_passage when answering. The internal answer_request function accepts a future trusted server-side generator callback: its proposed structured facts pass through checked_answer; mismatches or generation exceptions fall back to the original retrieved passage. Clients cannot submit candidates through the public endpoint. Tests exercise this optional path using local callbacks; no external API is called.
-
-The endpoint and business logic are separate so a later framework or interface can reuse the same behavior. This is a small local development API, not a production service. No authentication, database, rate limiting, TLS, production deployment, model integration is provided; a local web form is included. It binds to localhost, does not enable CORS and does not log customer question bodies. Do not expose it publicly as a production server.
+This localhost-only development server has no authentication, database, TLS, production hosting or rate limiting. It does not enable CORS or log customer request bodies. Do not expose it as a production service.

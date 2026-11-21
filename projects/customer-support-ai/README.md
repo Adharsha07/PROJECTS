@@ -2,7 +2,7 @@
 
 An AI engineering portfolio project for a fictional online store, developed through concept lessons, implementation, evaluation, and publication.
 
-**Status: local web interface and HTTP API with policy retrieval and structured-answer validation.** No LLM, embeddings, authentication or public deployment is connected yet. The earlier [shopping prototype](../shopping-assistant/README.md) demonstrates evidence handling separately.
+**Status: local web interface and HTTP API with policy retrieval and structured-answer validation.** Optional local Qwen inference is connected; embeddings, authentication and public deployment are not implemented. The earlier [shopping prototype](../shopping-assistant/README.md) demonstrates evidence handling separately.
 
 ## Intended capabilities and milestones
 
@@ -73,6 +73,18 @@ Run `python3 api.py --port 8766` from this directory, then open the printed loca
 
 Run `python3 -m unittest -v`: all 36 test methods passed, including 11 HTTP methods and the original acceptance-case subtests. The interface was also checked in a browser for the older policy, newer policy and missing-context flows.
 
-The validator checks a proposed return-window claim's policy identity, citation, integer duration and starting event against retrieved structured facts. It emits controlled wording when matched and otherwise preserves the verified passage. It does not certify arbitrary generated prose. The API defaults to retrieved passages; local test callbacks exercise a future generator path, but no model is connected. Clients cannot submit proposed facts to override the backend.
+The validator checks a proposed return-window claim's policy identity, citation, integer duration and starting event against retrieved structured facts. It emits controlled wording when matched and otherwise preserves the verified passage. It does not certify arbitrary generated prose. The API defaults to retrieved passages; local test callbacks exercise a future generator path, but the default mode remains deterministic. Clients cannot submit proposed facts to override the backend.
 
-See [API.md](API.md) for the request contract and development-server limitations. The web/API/validation code is a runnable milestone, not a production-ready or fully AI-powered application. The next milestone is a provider and budget decision followed by model integration evaluated against this baseline.
+See [API.md](API.md) for the request contract and development-server limitations. The web/API/validation code is a runnable milestone, not a production-ready or fully AI-powered application. The local Qwen adapter now provides an optional extraction path. A broader evaluation set is the next milestone.
+
+## Local Qwen milestone
+
+The project now supports the installed `qwen2.5:1.5b-instruct` model through Ollama. To enable it:
+
+```sh
+python3 api.py --port 0 --local-model
+```
+
+Open the printed local address. The adapter uses only the fixed Ollama loopback endpoint. It extracts structured return-window facts from selected passage text; the backend validates them before rendering controlled wording. Unsupported claim types bypass model extraction; model failures fall back to the verified passage. Policy selection and question routing remain deterministic. This is not yet semantic RAG or general conversational support.
+
+All **40 automated test methods passed**. Live October and November policy examples passed validation through the browser. These smoke checks are not evidence of broad model accuracy. See [LOCAL_MODEL.md](LOCAL_MODEL.md) for limits and observed timings. Model weights are not included in this repository.

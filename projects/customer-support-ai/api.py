@@ -13,7 +13,7 @@ CONTEXT_KEYS = {"purchase_date", "delivery_date", "country", "category"}
 class RequestError(ValueError):
     pass
 
-def answer_request(payload, generator=None):
+def answer_request(payload, generator=None, classifier=None):
     """A future trusted server-side generator may supply proposed facts."""
     if not isinstance(payload, dict) or set(payload) - {"question", "context"}:
         raise RequestError("Use only question and optional context fields.")
@@ -26,7 +26,27 @@ def answer_request(payload, generator=None):
     if any(not isinstance(v, str) or len(v) > 100 for v in context.values()):
         raise RequestError("Context values must be text of at most 100 characters.")
     context = {k: v.strip() for k, v in context.items() if v.strip()}
-    evidence = respond(question.strip(), context)
+    routing = {"mode":"keywords"}
+    routed_question = question.strip()
+    if classifier is not None:
+        from routing import route_question
+        started = time.monotonic()
+        try:
+            topic, aspect, routed_question = route_question(question.strip(), classifier)
+        except Exception:
+            return {"status":"clarify", "answer":"I could not reliably classify this question. Please rephrase or contact support.",
+                    "sources":[], "validation":"not_applicable", "generation":"disabled",
+                    "routing":{"mode":"local_model", "status":"failed"}}
+        routing = {"mode":"local_model", "topic":topic, "aspect":aspect,
+                   "intent":f"{topic}:{aspect}",
+                   "seconds":round(time.monotonic()-started,3)}
+        if topic == "clarify":
+            return {"status":"clarify", "answer":"I don’t have enough information to answer that as asked. Please ask one specific policy or order question at a time.",
+                    "sources":[], "validation":"not_applicable", "generation":"disabled", "routing":routing}
+        if topic == "unsupported":
+            return {"status":"insufficient_evidence", "answer":"I don’t have enough information to answer that topic.",
+                    "sources":[], "validation":"not_applicable", "generation":"disabled", "routing":routing}
+    evidence = dict(respond(routed_question, context), routing=routing)
     if evidence["status"] != "answered":
         return dict(evidence, validation="not_applicable", generation="disabled")
     if generator is None:
@@ -99,7 +119,8 @@ class Handler(BaseHTTPRequestHandler):
             if len(raw) != length:
                 return self.send_json(400, {"error": "Incomplete request body."})
             payload = json.loads(raw)
-            result = answer_request(payload, getattr(self.server, "generator", None))
+            result = answer_request(payload, getattr(self.server, "generator", None),
+                                    getattr(self.server, "classifier", None))
         except (UnicodeDecodeError, json.JSONDecodeError, RequestError, RecursionError):
             return self.send_json(400, {"error": "Invalid JSON or request fields."})
         except (TimeoutError, OSError):
@@ -116,11 +137,16 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--port", type=int, default=8766)
     parser.add_argument("--local-model", action="store_true", help="Enable the installed Ollama model")
+    parser.add_argument("--model-router", action="store_true", help="Experimental intent classifier; known evaluation failures")
     args = parser.parse_args()
+    if args.model_router and not args.local_model:
+        parser.error("--model-router requires --local-model")
     server = ThreadingHTTPServer(("127.0.0.1", args.port), Handler)
     if args.local_model:
-        from local_model import propose_facts
+        from local_model import propose_facts, classify_intent
         server.generator = propose_facts
+        if args.model_router:
+            server.classifier = classify_intent
     print(f"Local policy API: http://127.0.0.1:{server.server_port}", flush=True)
     try:
         server.serve_forever()

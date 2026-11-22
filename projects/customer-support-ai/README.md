@@ -88,3 +88,9 @@ python3 api.py --port 0 --local-model
 Open the printed local address. The adapter uses only the fixed Ollama loopback endpoint. It extracts structured return-window facts from selected passage text; the backend validates them before rendering controlled wording. Unsupported claim types bypass model extraction; model failures fall back to the verified passage. Policy selection and question routing remain deterministic. This is not yet semantic RAG or general conversational support.
 
 All **40 automated test methods passed**. Live October and November policy examples passed validation through the browser. These smoke checks are not evidence of broad model accuracy. See [LOCAL_MODEL.md](LOCAL_MODEL.md) for limits and observed timings. Model weights are not included in this repository.
+
+## Experimental intent-routing milestone
+
+A local Qwen request classifier is available only by explicitly starting the API with `--local-model --model-router`. The regular app still uses its reviewed keyword route. The model returns a bounded list of requests; deterministic scope checks stop unsupported, ambiguous, and mixed requests before policy retrieval. Arrival-defect policy questions have a separate evidence cue so they can reach the source-backed “not specified” response without admitting repair or discount questions.
+
+The 60 automated tests pass. A 50-case regression run passed 44 exact outcomes, with zero unsupported questions routed into return-policy answering, zero mixed requests answered as one, and all 15 supported routes correct. This same set was used to diagnose and refine the scope rules, so this is **regression evidence, not an independent promotion benchmark**. The classifier remains experimental and must not replace default routing yet. See [REASSESSMENT.md](REASSESSMENT.md), [PROMOTION_CRITERIA.md](PROMOTION_CRITERIA.md), and [blind-final-results.json](blind-final-results.json).

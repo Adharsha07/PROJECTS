@@ -1,0 +1,914 @@
+{
+  "kind": "second frozen 50-case local evaluation",
+  "limitations": "Single developer-authored evaluation run with local small model; not proof of production reliability.",
+  "cases": 50,
+  "all_passed": 44,
+  "unsupported_false_accepts": 0,
+  "mixed_answered": 0,
+  "supported_correct": 15,
+  "supported_total": 15,
+  "unnecessary_clarifications": 0,
+  "supported_without_expected_clarify": 13,
+  "results": [
+    {
+      "id": "u01",
+      "group": "unsupported",
+      "question": "Can a cobbler replace the heel caps?",
+      "expected": {
+        "topic": "unsupported",
+        "aspect": "none",
+        "status": "insufficient_evidence"
+      },
+      "actual": {
+        "topic": "unsupported",
+        "aspect": "none",
+        "status": "insufficient_evidence"
+      },
+      "passed": true,
+      "answer": "I don\u2019t have enough information to answer that topic.",
+      "seconds": 0.497
+    },
+    {
+      "id": "u02",
+      "group": "unsupported",
+      "question": "Do you offer a multi-pair price?",
+      "expected": {
+        "topic": "unsupported",
+        "aspect": "none",
+        "status": "insufficient_evidence"
+      },
+      "actual": {
+        "topic": "unsupported",
+        "aspect": "none",
+        "status": "insufficient_evidence"
+      },
+      "passed": true,
+      "answer": "I don\u2019t have enough information to answer that topic.",
+      "seconds": 0.358
+    },
+    {
+      "id": "u03",
+      "group": "unsupported",
+      "question": "Is the lining made from wool?",
+      "expected": {
+        "topic": "unsupported",
+        "aspect": "none",
+        "status": "insufficient_evidence"
+      },
+      "actual": {
+        "topic": "unsupported",
+        "aspect": "none",
+        "status": "insufficient_evidence"
+      },
+      "passed": true,
+      "answer": "I don\u2019t have enough information to answer that topic.",
+      "seconds": 0.343
+    },
+    {
+      "id": "u04",
+      "group": "unsupported",
+      "question": "Are these okay for pickleball?",
+      "expected": {
+        "topic": "unsupported",
+        "aspect": "none",
+        "status": "insufficient_evidence"
+      },
+      "actual": {
+        "topic": "unsupported",
+        "aspect": "none",
+        "status": "insufficient_evidence"
+      },
+      "passed": true,
+      "answer": "I don\u2019t have enough information to answer that topic.",
+      "seconds": 0.326
+    },
+    {
+      "id": "u05",
+      "group": "unsupported",
+      "question": "Can I order replacement laces?",
+      "expected": {
+        "topic": "unsupported",
+        "aspect": "none",
+        "status": "insufficient_evidence"
+      },
+      "actual": {
+        "topic": "clarify",
+        "aspect": "none",
+        "status": "clarify"
+      },
+      "passed": false,
+      "answer": "I don\u2019t have enough information to answer that as asked. Please ask one specific policy or order question at a time.",
+      "seconds": 0.375
+    },
+    {
+      "id": "u06",
+      "group": "unsupported",
+      "question": "How should I clean the leather?",
+      "expected": {
+        "topic": "unsupported",
+        "aspect": "none",
+        "status": "insufficient_evidence"
+      },
+      "actual": {
+        "topic": "unsupported",
+        "aspect": "none",
+        "status": "insufficient_evidence"
+      },
+      "passed": true,
+      "answer": "I don\u2019t have enough information to answer that topic.",
+      "seconds": 0.381
+    },
+    {
+      "id": "u07",
+      "group": "unsupported",
+      "question": "Are they insulated for snow?",
+      "expected": {
+        "topic": "unsupported",
+        "aspect": "none",
+        "status": "insufficient_evidence"
+      },
+      "actual": {
+        "topic": "unsupported",
+        "aspect": "none",
+        "status": "insufficient_evidence"
+      },
+      "passed": true,
+      "answer": "I don\u2019t have enough information to answer that topic.",
+      "seconds": 0.377
+    },
+    {
+      "id": "u08",
+      "group": "unsupported",
+      "question": "Do these run true to size?",
+      "expected": {
+        "topic": "unsupported",
+        "aspect": "none",
+        "status": "insufficient_evidence"
+      },
+      "actual": {
+        "topic": "unsupported",
+        "aspect": "none",
+        "status": "insufficient_evidence"
+      },
+      "passed": true,
+      "answer": "I don\u2019t have enough information to answer that topic.",
+      "seconds": 0.351
+    },
+    {
+      "id": "u09",
+      "group": "unsupported",
+      "question": "Can I add a custom insole?",
+      "expected": {
+        "topic": "unsupported",
+        "aspect": "none",
+        "status": "insufficient_evidence"
+      },
+      "actual": {
+        "topic": "unsupported",
+        "aspect": "none",
+        "status": "insufficient_evidence"
+      },
+      "passed": true,
+      "answer": "I don\u2019t have enough information to answer that topic.",
+      "seconds": 0.354
+    },
+    {
+      "id": "u10",
+      "group": "unsupported",
+      "question": "What is the shoe weight?",
+      "expected": {
+        "topic": "unsupported",
+        "aspect": "none",
+        "status": "insufficient_evidence"
+      },
+      "actual": {
+        "topic": "unsupported",
+        "aspect": "none",
+        "status": "insufficient_evidence"
+      },
+      "passed": true,
+      "answer": "I don\u2019t have enough information to answer that topic.",
+      "seconds": 0.305
+    },
+    {
+      "id": "u11",
+      "group": "unsupported",
+      "question": "Do they have a composite toe?",
+      "expected": {
+        "topic": "unsupported",
+        "aspect": "none",
+        "status": "insufficient_evidence"
+      },
+      "actual": {
+        "topic": "unsupported",
+        "aspect": "none",
+        "status": "insufficient_evidence"
+      },
+      "passed": true,
+      "answer": "I don\u2019t have enough information to answer that topic.",
+      "seconds": 0.334
+    },
+    {
+      "id": "u12",
+      "group": "unsupported",
+      "question": "Is there a warranty against wear?",
+      "expected": {
+        "topic": "unsupported",
+        "aspect": "none",
+        "status": "insufficient_evidence"
+      },
+      "actual": {
+        "topic": "unsupported",
+        "aspect": "none",
+        "status": "insufficient_evidence"
+      },
+      "passed": true,
+      "answer": "I don\u2019t have enough information to answer that topic.",
+      "seconds": 0.339
+    },
+    {
+      "id": "u13",
+      "group": "unsupported",
+      "question": "Can I buy a matching belt?",
+      "expected": {
+        "topic": "unsupported",
+        "aspect": "none",
+        "status": "insufficient_evidence"
+      },
+      "actual": {
+        "topic": "unsupported",
+        "aspect": "none",
+        "status": "insufficient_evidence"
+      },
+      "passed": true,
+      "answer": "I don\u2019t have enough information to answer that topic.",
+      "seconds": 0.317
+    },
+    {
+      "id": "u14",
+      "group": "unsupported",
+      "question": "Are these approved for airline crew uniforms?",
+      "expected": {
+        "topic": "unsupported",
+        "aspect": "none",
+        "status": "insufficient_evidence"
+      },
+      "actual": {
+        "topic": "unsupported",
+        "aspect": "none",
+        "status": "insufficient_evidence"
+      },
+      "passed": true,
+      "answer": "I don\u2019t have enough information to answer that topic.",
+      "seconds": 0.284
+    },
+    {
+      "id": "u15",
+      "group": "unsupported",
+      "question": "Can the sole be resoled?",
+      "expected": {
+        "topic": "unsupported",
+        "aspect": "none",
+        "status": "insufficient_evidence"
+      },
+      "actual": {
+        "topic": "unsupported",
+        "aspect": "none",
+        "status": "insufficient_evidence"
+      },
+      "passed": true,
+      "answer": "I don\u2019t have enough information to answer that topic.",
+      "seconds": 0.301
+    },
+    {
+      "id": "s01",
+      "group": "supported",
+      "question": "How many days do I have to return the order?",
+      "expected": {
+        "topic": "return_policy",
+        "aspect": "window",
+        "status": "answered"
+      },
+      "actual": {
+        "topic": "return_policy",
+        "aspect": "window",
+        "status": "answered"
+      },
+      "passed": true,
+      "answer": "Request a return within 30 days after delivery. [returns-v1-window]",
+      "seconds": 1.22
+    },
+    {
+      "id": "s02",
+      "group": "supported",
+      "question": "What is the return period for this purchase?",
+      "expected": {
+        "topic": "return_policy",
+        "aspect": "window",
+        "status": "answered"
+      },
+      "actual": {
+        "topic": "return_policy",
+        "aspect": "window",
+        "status": "answered"
+      },
+      "passed": true,
+      "answer": "Request a return within 30 days after delivery. [returns-v1-window]",
+      "seconds": 1.126
+    },
+    {
+      "id": "s03",
+      "group": "supported",
+      "question": "I wore them inside once; may I return them?",
+      "expected": {
+        "topic": "return_policy",
+        "aspect": "condition",
+        "status": "answered"
+      },
+      "actual": {
+        "topic": "return_policy",
+        "aspect": "condition",
+        "status": "answered"
+      },
+      "passed": true,
+      "answer": "Returned footwear must be unused and in its original packaging. This policy does not specify exceptions for defective products. [returns-v1-condition]",
+      "seconds": 0.367
+    },
+    {
+      "id": "s04",
+      "group": "supported",
+      "question": "The box was discarded. Can I still return the shoes?",
+      "expected": {
+        "topic": "return_policy",
+        "aspect": "condition",
+        "status": "answered"
+      },
+      "actual": {
+        "topic": "return_policy",
+        "aspect": "condition",
+        "status": "answered"
+      },
+      "passed": true,
+      "answer": "Returned footwear must be unused and in its original packaging. This policy does not specify exceptions for defective products. [returns-v1-condition]",
+      "seconds": 0.328
+    },
+    {
+      "id": "s05",
+      "group": "supported",
+      "question": "The buckle arrived cracked. Does the return policy cover defects?",
+      "expected": {
+        "topic": "return_policy",
+        "aspect": "exception",
+        "status": "insufficient_evidence"
+      },
+      "actual": {
+        "topic": "return_policy",
+        "aspect": "exception",
+        "status": "insufficient_evidence"
+      },
+      "passed": true,
+      "answer": "The supplied policy does not specify this exception. Please contact support.",
+      "seconds": 0.343
+    },
+    {
+      "id": "s06",
+      "group": "supported",
+      "question": "This pair arrived with a torn seam. What exception does the policy allow?",
+      "expected": {
+        "topic": "return_policy",
+        "aspect": "exception",
+        "status": "insufficient_evidence"
+      },
+      "actual": {
+        "topic": "return_policy",
+        "aspect": "exception",
+        "status": "insufficient_evidence"
+      },
+      "passed": true,
+      "answer": "The supplied policy does not specify this exception. Please contact support.",
+      "seconds": 0.35
+    },
+    {
+      "id": "s07",
+      "group": "supported",
+      "question": "What is the last date I can request a return?",
+      "expected": {
+        "topic": "return_policy",
+        "aspect": "deadline",
+        "status": "clarify"
+      },
+      "actual": {
+        "topic": "return_policy",
+        "aspect": "deadline",
+        "status": "clarify"
+      },
+      "passed": true,
+      "answer": "For covered purchases, request a return within 30 days after delivery. [returns-v1-window] Exact deadline calculation is not implemented; provide delivery details to support.",
+      "seconds": 0.388
+    },
+    {
+      "id": "s08",
+      "group": "supported",
+      "question": "Please calculate my final return date.",
+      "expected": {
+        "topic": "return_policy",
+        "aspect": "deadline",
+        "status": "clarify"
+      },
+      "actual": {
+        "topic": "return_policy",
+        "aspect": "deadline",
+        "status": "clarify"
+      },
+      "passed": true,
+      "answer": "For covered purchases, request a return within 30 days after delivery. [returns-v1-window] Exact deadline calculation is not implemented; provide delivery details to support.",
+      "seconds": 0.37
+    },
+    {
+      "id": "s09",
+      "group": "supported",
+      "question": "Can you promise my refund will be approved?",
+      "expected": {
+        "topic": "return_policy",
+        "aspect": "refund_guarantee",
+        "status": "unsupported"
+      },
+      "actual": {
+        "topic": "return_policy",
+        "aspect": "refund_guarantee",
+        "status": "unsupported"
+      },
+      "passed": true,
+      "answer": "I cannot guarantee refund approval or execute a refund.",
+      "seconds": 0.423
+    },
+    {
+      "id": "s10",
+      "group": "supported",
+      "question": "Where is my shipment right now?",
+      "expected": {
+        "topic": "order_status",
+        "aspect": "none",
+        "status": "unavailable"
+      },
+      "actual": {
+        "topic": "order_status",
+        "aspect": "none",
+        "status": "unavailable"
+      },
+      "passed": true,
+      "answer": "Live order lookup is not connected. I cannot determine your order status.",
+      "seconds": 0.329
+    },
+    {
+      "id": "s11",
+      "group": "supported",
+      "question": "Has my parcel reached the local carrier?",
+      "expected": {
+        "topic": "order_status",
+        "aspect": "none",
+        "status": "unavailable"
+      },
+      "actual": {
+        "topic": "order_status",
+        "aspect": "none",
+        "status": "unavailable"
+      },
+      "passed": true,
+      "answer": "Live order lookup is not connected. I cannot determine your order status.",
+      "seconds": 0.364
+    },
+    {
+      "id": "s12",
+      "group": "supported",
+      "question": "Can I return them after trying them on at home?",
+      "expected": {
+        "topic": "return_policy",
+        "aspect": "condition",
+        "status": "answered"
+      },
+      "actual": {
+        "topic": "return_policy",
+        "aspect": "condition",
+        "status": "answered"
+      },
+      "passed": true,
+      "answer": "Returned footwear must be unused and in its original packaging. This policy does not specify exceptions for defective products. [returns-v1-condition]",
+      "seconds": 0.38
+    },
+    {
+      "id": "s13",
+      "group": "supported",
+      "question": "How long after delivery may I send them back?",
+      "expected": {
+        "topic": "return_policy",
+        "aspect": "window",
+        "status": "answered"
+      },
+      "actual": {
+        "topic": "return_policy",
+        "aspect": "window",
+        "status": "answered"
+      },
+      "passed": true,
+      "answer": "Request a return within 30 days after delivery. [returns-v1-window]",
+      "seconds": 1.048
+    },
+    {
+      "id": "s14",
+      "group": "supported",
+      "question": "The package arrived with a damaged sole. What does the return policy say?",
+      "expected": {
+        "topic": "return_policy",
+        "aspect": "exception",
+        "status": "insufficient_evidence"
+      },
+      "actual": {
+        "topic": "return_policy",
+        "aspect": "exception",
+        "status": "insufficient_evidence"
+      },
+      "passed": true,
+      "answer": "The supplied policy does not specify this exception. Please contact support.",
+      "seconds": 0.371
+    },
+    {
+      "id": "s15",
+      "group": "supported",
+      "question": "Will the store guarantee my refund?",
+      "expected": {
+        "topic": "return_policy",
+        "aspect": "refund_guarantee",
+        "status": "unsupported"
+      },
+      "actual": {
+        "topic": "return_policy",
+        "aspect": "refund_guarantee",
+        "status": "unsupported"
+      },
+      "passed": true,
+      "answer": "I cannot guarantee refund approval or execute a refund.",
+      "seconds": 0.38
+    },
+    {
+      "id": "m01",
+      "group": "mixed",
+      "question": "What color are they, and can I send them back?",
+      "expected": {
+        "topic": "clarify",
+        "aspect": "none",
+        "status": "clarify"
+      },
+      "actual": {
+        "topic": "clarify",
+        "aspect": "none",
+        "status": "clarify"
+      },
+      "passed": true,
+      "answer": "I don\u2019t have enough information to answer that as asked. Please ask one specific policy or order question at a time.",
+      "seconds": 0.568
+    },
+    {
+      "id": "m02",
+      "group": "mixed",
+      "question": "Check my tracking and tell me the return window.",
+      "expected": {
+        "topic": "clarify",
+        "aspect": "none",
+        "status": "clarify"
+      },
+      "actual": {
+        "topic": "clarify",
+        "aspect": "none",
+        "status": "clarify"
+      },
+      "passed": true,
+      "answer": "I don\u2019t have enough information to answer that as asked. Please ask one specific policy or order question at a time.",
+      "seconds": 0.373
+    },
+    {
+      "id": "m03",
+      "group": "mixed",
+      "question": "Are these waterproof, and can they be returned?",
+      "expected": {
+        "topic": "clarify",
+        "aspect": "none",
+        "status": "clarify"
+      },
+      "actual": {
+        "topic": "clarify",
+        "aspect": "none",
+        "status": "clarify"
+      },
+      "passed": true,
+      "answer": "I don\u2019t have enough information to answer that as asked. Please ask one specific policy or order question at a time.",
+      "seconds": 0.576
+    },
+    {
+      "id": "m04",
+      "group": "mixed",
+      "question": "Change my address and explain the refund policy.",
+      "expected": {
+        "topic": "clarify",
+        "aspect": "none",
+        "status": "clarify"
+      },
+      "actual": {
+        "topic": "clarify",
+        "aspect": "none",
+        "status": "clarify"
+      },
+      "passed": true,
+      "answer": "I don\u2019t have enough information to answer that as asked. Please ask one specific policy or order question at a time.",
+      "seconds": 0.498
+    },
+    {
+      "id": "m05",
+      "group": "mixed",
+      "question": "Can I return them, and did the carrier pick them up?",
+      "expected": {
+        "topic": "clarify",
+        "aspect": "none",
+        "status": "clarify"
+      },
+      "actual": {
+        "topic": "clarify",
+        "aspect": "none",
+        "status": "clarify"
+      },
+      "passed": true,
+      "answer": "I don\u2019t have enough information to answer that as asked. Please ask one specific policy or order question at a time.",
+      "seconds": 0.543
+    },
+    {
+      "id": "m06",
+      "group": "mixed",
+      "question": "What size should I get, and how many days for returns?",
+      "expected": {
+        "topic": "clarify",
+        "aspect": "none",
+        "status": "clarify"
+      },
+      "actual": {
+        "topic": "clarify",
+        "aspect": "none",
+        "status": "clarify"
+      },
+      "passed": true,
+      "answer": "I don\u2019t have enough information to answer that as asked. Please ask one specific policy or order question at a time.",
+      "seconds": 0.583
+    },
+    {
+      "id": "m07",
+      "group": "mixed",
+      "question": "Tell me if they're leather and whether I can return them.",
+      "expected": {
+        "topic": "clarify",
+        "aspect": "none",
+        "status": "clarify"
+      },
+      "actual": {
+        "topic": "clarify",
+        "aspect": "none",
+        "status": "clarify"
+      },
+      "passed": true,
+      "answer": "I don\u2019t have enough information to answer that as asked. Please ask one specific policy or order question at a time.",
+      "seconds": 0.326
+    },
+    {
+      "id": "m08",
+      "group": "mixed",
+      "question": "I want a refund and an update on shipping.",
+      "expected": {
+        "topic": "clarify",
+        "aspect": "none",
+        "status": "clarify"
+      },
+      "actual": {
+        "topic": "clarify",
+        "aspect": "none",
+        "status": "clarify"
+      },
+      "passed": true,
+      "answer": "I don\u2019t have enough information to answer that as asked. Please ask one specific policy or order question at a time.",
+      "seconds": 0.565
+    },
+    {
+      "id": "m09",
+      "group": "mixed",
+      "question": "Are they good for walking, and can I exchange them?",
+      "expected": {
+        "topic": "clarify",
+        "aspect": "none",
+        "status": "clarify"
+      },
+      "actual": {
+        "topic": "clarify",
+        "aspect": "none",
+        "status": "clarify"
+      },
+      "passed": true,
+      "answer": "I don\u2019t have enough information to answer that as asked. Please ask one specific policy or order question at a time.",
+      "seconds": 0.58
+    },
+    {
+      "id": "m10",
+      "group": "mixed",
+      "question": "Find my parcel and tell me the defect exception.",
+      "expected": {
+        "topic": "clarify",
+        "aspect": "none",
+        "status": "clarify"
+      },
+      "actual": {
+        "topic": "return_policy",
+        "aspect": "exception",
+        "status": "insufficient_evidence"
+      },
+      "passed": false,
+      "answer": "The supplied policy does not specify this exception. Please contact support.",
+      "seconds": 0.592
+    },
+    {
+      "id": "a01",
+      "group": "ambiguous",
+      "question": "Help me with this.",
+      "expected": {
+        "topic": "clarify",
+        "aspect": "none",
+        "status": "clarify"
+      },
+      "actual": {
+        "topic": "clarify",
+        "aspect": "none",
+        "status": "clarify"
+      },
+      "passed": true,
+      "answer": "I don\u2019t have enough information to answer that as asked. Please ask one specific policy or order question at a time.",
+      "seconds": 0.338
+    },
+    {
+      "id": "a02",
+      "group": "ambiguous",
+      "question": "I have an issue with my order.",
+      "expected": {
+        "topic": "clarify",
+        "aspect": "none",
+        "status": "clarify"
+      },
+      "actual": {
+        "topic": "clarify",
+        "aspect": "none",
+        "status": "clarify"
+      },
+      "passed": true,
+      "answer": "I don\u2019t have enough information to answer that as asked. Please ask one specific policy or order question at a time.",
+      "seconds": 0.329
+    },
+    {
+      "id": "a03",
+      "group": "ambiguous",
+      "question": "What can you tell me?",
+      "expected": {
+        "topic": "clarify",
+        "aspect": "none",
+        "status": "clarify"
+      },
+      "actual": {
+        "topic": "clarify",
+        "aspect": "none",
+        "status": "clarify"
+      },
+      "passed": true,
+      "answer": "I don\u2019t have enough information to answer that as asked. Please ask one specific policy or order question at a time.",
+      "seconds": 0.602
+    },
+    {
+      "id": "a04",
+      "group": "ambiguous",
+      "question": "Is this covered?",
+      "expected": {
+        "topic": "clarify",
+        "aspect": "none",
+        "status": "clarify"
+      },
+      "actual": {
+        "topic": "clarify",
+        "aspect": "none",
+        "status": "clarify"
+      },
+      "passed": true,
+      "answer": "I don\u2019t have enough information to answer that as asked. Please ask one specific policy or order question at a time.",
+      "seconds": 0.302
+    },
+    {
+      "id": "a05",
+      "group": "ambiguous",
+      "question": "Can you help me decide?",
+      "expected": {
+        "topic": "clarify",
+        "aspect": "none",
+        "status": "clarify"
+      },
+      "actual": {
+        "topic": "failed",
+        "aspect": null,
+        "status": "clarify"
+      },
+      "passed": false,
+      "answer": "I could not reliably classify this question. Please rephrase or contact support.",
+      "seconds": 0.327
+    },
+    {
+      "id": "a06",
+      "group": "ambiguous",
+      "question": "I need assistance with a purchase.",
+      "expected": {
+        "topic": "clarify",
+        "aspect": "none",
+        "status": "clarify"
+      },
+      "actual": {
+        "topic": "unsupported",
+        "aspect": "none",
+        "status": "insufficient_evidence"
+      },
+      "passed": false,
+      "answer": "I don\u2019t have enough information to answer that topic.",
+      "seconds": 0.298
+    },
+    {
+      "id": "a07",
+      "group": "ambiguous",
+      "question": "Can you explain the options?",
+      "expected": {
+        "topic": "clarify",
+        "aspect": "none",
+        "status": "clarify"
+      },
+      "actual": {
+        "topic": "failed",
+        "aspect": null,
+        "status": "clarify"
+      },
+      "passed": false,
+      "answer": "I could not reliably classify this question. Please rephrase or contact support.",
+      "seconds": 0.348
+    },
+    {
+      "id": "a08",
+      "group": "ambiguous",
+      "question": "Tell me what to do about it.",
+      "expected": {
+        "topic": "clarify",
+        "aspect": "none",
+        "status": "clarify"
+      },
+      "actual": {
+        "topic": "clarify",
+        "aspect": "none",
+        "status": "clarify"
+      },
+      "passed": true,
+      "answer": "I don\u2019t have enough information to answer that as asked. Please ask one specific policy or order question at a time.",
+      "seconds": 0.362
+    },
+    {
+      "id": "a09",
+      "group": "ambiguous",
+      "question": "I have a question about the product.",
+      "expected": {
+        "topic": "clarify",
+        "aspect": "none",
+        "status": "clarify"
+      },
+      "actual": {
+        "topic": "unsupported",
+        "aspect": "none",
+        "status": "insufficient_evidence"
+      },
+      "passed": false,
+      "answer": "I don\u2019t have enough information to answer that topic.",
+      "seconds": 0.333
+    },
+    {
+      "id": "a10",
+      "group": "ambiguous",
+      "question": "Can you look into this for me?",
+      "expected": {
+        "topic": "clarify",
+        "aspect": "none",
+        "status": "clarify"
+      },
+      "actual": {
+        "topic": "clarify",
+        "aspect": "none",
+        "status": "clarify"
+      },
+      "passed": true,
+      "answer": "I don\u2019t have enough information to answer that as asked. Please ask one specific policy or order question at a time.",
+      "seconds": 0.368
+    }
+  ]
+}

@@ -17,6 +17,7 @@ ORDER_STATUS_CUE = re.compile(r"\b(track\w*|tracking|shipment|shipped|carrier|co
 PRODUCT_FEATURE_CUE = re.compile(r"\b(leather|material|color|colour|size|fit|waterproof|comfortable|comfort|clean\w*|laces|sole|support|durab\w*|warranty|discount|price|replace|replacement|feature)\b", re.I)
 MULTI_CONNECTOR = re.compile(r"\b(and|also|plus|as well as)\b|[;?].+\b(?:and|also)\b", re.I)
 CONDITION_CUE = re.compile(r"\b(worn|wear|tried|try on|box|packaging|package|unused|used|condition)\b", re.I)
+CALENDAR_DEADLINE_CUE = re.compile(r"\b(final|last|exact|calendar)\s+(day|date)\b|\bcutoff\s+date\b|\bwhat date\b", re.I)
 
 
 def _explicit_arrival_exception(question):
@@ -52,6 +53,8 @@ def route_question(question, classifier):
     if topic == "return_policy":
         if aspect == "none":
             raise ValueError("A return-policy aspect is required.")
+        if aspect == "window" and CALENDAR_DEADLINE_CUE.search(question):
+            aspect = "deadline"
         if aspect == "exception" and CONDITION_CUE.search(question) and not ARRIVAL_DEFECT.search(question):
             aspect = "condition"
         # Defense in depth: a model label alone cannot turn an unrelated

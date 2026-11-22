@@ -61,7 +61,7 @@ def respond(question, context=None, policies=None):
     if len(eligible) != 1:
         return result("conflict", "Multiple policies apply. A support reviewer must resolve the conflict.")
     p = eligible[0]
-    exact_deadline = bool(re.search(r"\b(deadline|last day|exact date)\b", q))
+    exact_deadline = bool(re.search(r"\b(deadline|last day|final day|exact date|final date|calendar day|calendar date|cutoff date)\b", q))
     # Select the passage type conservatively. Unknown exceptions never become invented rules.
     if re.search(r"\b(defective|exception|exceptions|damaged)\b", q):
         return result("insufficient_evidence", "The supplied policy does not specify this exception. Please contact support.", policy_version=p["version"])

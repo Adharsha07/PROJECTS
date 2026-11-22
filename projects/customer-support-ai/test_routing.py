@@ -31,6 +31,11 @@ class RoutingTests(unittest.TestCase):
         result=self.ask("What is my last day to return these?","return_policy","deadline")
         self.assertEqual(result['status'],'clarify')
 
+    def test_classifier_window_cannot_hide_explicit_final_date_request(self):
+        result=self.ask("Please work out the final day I can initiate a return.","return_policy","window")
+        self.assertEqual(result['status'],'clarify')
+        self.assertIn('Exact deadline calculation is not implemented',result['answer'])
+
     def test_dates_still_select_version(self):
         result=self.ask("How much time do I have to return these?","return_policy","window",
             dict(CONTEXT,purchase_date='2026-11-01'))

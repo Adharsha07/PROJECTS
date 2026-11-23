@@ -57,8 +57,8 @@ def classify_intent(question):
         "topics": {
             "return_policy": "The customer is asking whether/how/when they can send an already purchased item back, receive a refund, or about a return-policy exception.",
             "order_status": "The customer wants to locate or track a specific existing order or shipment.",
-            "unsupported": "The customer asks about another subject, including product features, durability, care, sizing, recommendations, weather, or general information.",
-            "clarify": "The request is ambiguous, combines separate requests, or does not contain enough meaning to choose safely."
+            "unsupported": "The customer asks about another subject, including product features, durability, care, sizing, accessories included with the product, certifications or suitability for external rules, recommendations, weather, warranty coverage, or general information.",
+            "clarify": "The request is ambiguous, combines separate requests, or does not contain enough meaning to choose safely. General requests for help, broad concerns about a purchase, or choices without saying what action is wanted should be clarified. If one specific product question is clearly outside scope, choose unsupported instead of clarify; do not use clarify only because policy evidence is unavailable."
         },
         "return_aspects": {
             "window": "How many days or how much time the customer has to start a return. Use this for duration/time-limit wording, even if phrased as a deadline.",
@@ -72,11 +72,23 @@ def classify_intent(question):
     examples = [
         {"question":"How long do I have to request a refund?","requests":[{"topic":"return_policy","aspect":"window"}]},
         {"question":"Can I return a jacket if I removed its tag?","requests":[{"topic":"return_policy","aspect":"condition"}]},
+        {"question":"I threw away the shoe box, but the shoes are unworn. Can I send them back?","requests":[{"topic":"return_policy","aspect":"condition"}]},
+        {"question":"The shoes are unused, but I discarded the original box. May I return them?","requests":[{"topic":"return_policy","aspect":"condition"}]},
         {"question":"Does this jacket keep rain out?","requests":[{"topic":"unsupported","aspect":"none"}]},
         {"question":"Will the zipper last for years?","requests":[{"topic":"unsupported","aspect":"none"}]},
+        {"question":"Can I put these shoes in a tumble dryer?","requests":[{"topic":"unsupported","aspect":"none"}]},
         {"question":"Can you approve a refund for a damaged item?","requests":[{"topic":"return_policy","aspect":"exception"}]},
         {"question":"Can I get a refund, and has my replacement shipped?","requests":[{"topic":"return_policy","aspect":"refund_guarantee"},{"topic":"order_status","aspect":"none"}]},
         {"question":"The item arrived with a broken clasp. Does the return policy cover arrival defects?","requests":[{"topic":"return_policy","aspect":"exception"}]},
+        {"question":"Once the parcel arrives, how long do I have to send the shoes back?","requests":[{"topic":"return_policy","aspect":"window"}]},
+        {"question":"Does the courier show my parcel as delivered?","requests":[{"topic":"order_status","aspect":"none"}]},
+        {"question":"Has my shipment reached its destination yet?","requests":[{"topic":"order_status","aspect":"none"}]},
+        {"question":"Are these shoes approved for airport security screening?","requests":[{"topic":"unsupported","aspect":"none"}]},
+        {"question":"Does the box include spare laces?","requests":[{"topic":"unsupported","aspect":"none"}]},
+        {"question":"Are these covered by a product warranty?","requests":[{"topic":"unsupported","aspect":"none"}]},
+        {"question":"What choices do I have?","requests":[{"topic":"clarify","aspect":"none"}]},
+        {"question":"Could you sort this out for me?","requests":[{"topic":"clarify","aspect":"none"}]},
+        {"question":"I have a concern about something I bought, but have not described it yet.","requests":[{"topic":"clarify","aspect":"none"}]},
         {"question":"Can I return this, and can you tell me whether my parcel is delayed?","requests":[{"topic":"return_policy","aspect":"window"},{"topic":"order_status","aspect":"none"}]},
     ]
     payload = {"model":MODEL,"stream":False,"format":schema,

@@ -12,7 +12,7 @@ An AI engineering portfolio project for a fictional online store, developed thro
 4. Backend, database, authentication, logs and a deployed interface.
 5. Measured results, architecture documentation and a reproducible demonstration.
 
-These are planned capabilities, not implementation claims. No quality or latency results have been measured yet.
+These are planned capabilities, not implementation claims. Latest measured milestone: frozen v10 wording evaluation scored 47/50 (94%); all 70 automated regression tests passed. The experimental model router remains opt-in.
 
 ## First milestone scope
 
@@ -94,3 +94,16 @@ All **40 automated test methods passed**. Live October and November policy examp
 A local Qwen request classifier is available only by explicitly starting the API with `--local-model --model-router`. The regular app still uses its reviewed keyword route. Deterministic scope and deadline checks stop unsupported, ambiguous, and mixed requests before policy answering.
 
 The 61-test suite passed during implementation. A 50-question wording holdout initially scored 43/50 and exposed an exact-calendar-deadline miss. After fixing that gap, the same set scored 44/50: unsupported questions routed to return answering **0/15**, mixed requests answered as one **0/10**, supported routes correct **15/15**, and unnecessary clarifications **0/13**. Because the first run informed the fix, the rerun is regression evidence, not an independent promotion benchmark. The router remains experimental and does not replace default routing. See [REASSESSMENT.md](REASSESSMENT.md), [PROMOTION_CRITERIA.md](PROMOTION_CRITERIA.md), and [holdout-v3-final-results.json](holdout-v3-final-results.json).
+
+
+## Latest classifier evaluation v10
+
+The experimental local Qwen router scored **47/50 exact expected outcomes (94%)** on a frozen, developer-authored set. Unsupported questions routed to return answers: **0/15**. Mixed requests answered as only one part: **0/10**. Supported routing: **14/15 (93.3%)**; unnecessary clarifications: **1/12 (8.3%)**; ambiguous questions clarified: **10/10**. The automated Python suite passed **70/70** tests.
+
+The numeric prototype gate passed, but the classifier remains opt-in. One product-use plus return question was safely refused as unsupported instead of prompting the shopper to split it. This was one small local-model run on a developer-authored set, so it is exploratory evidence, not proof of production reliability. The next evaluation should use fresh mixed product-use and return examples reviewed by someone outside the prompt-writing process.
+
+- [Frozen v10 cases](holdout-v10-cases.json)
+- [Recorded v10 results](holdout-v10-results.json)
+- [Promotion criteria and decision history](PROMOTION_CRITERIA.md)
+- [Audience project report](reports/project-brief.md)
+- [Evaluation dashboard](reports/dashboard.html)

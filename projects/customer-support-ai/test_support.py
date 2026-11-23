@@ -65,5 +65,12 @@ class PolicyTests(unittest.TestCase):
         r=respond("exact return deadline",dict(BASE,delivery_date="2026-11-05"))
         self.assertEqual(r["status"],"clarify")
         self.assertIn("not implemented",r["answer"])
+    def test_calendar_cutoff_never_returns_only_general_window(self):
+        r=respond("Work out the calendar cutoff for submitting my return request.",dict(BASE,delivery_date="2026-11-05"))
+        self.assertEqual(r["status"],"clarify")
+        self.assertIn("not implemented",r["answer"])
+    def test_by_what_date_never_returns_only_general_window(self):
+        r=respond("By what date should I submit a return request?",dict(BASE,delivery_date="2026-11-05"))
+        self.assertEqual(r["status"],"clarify")
 if __name__ == "__main__":
     unittest.main()

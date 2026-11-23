@@ -1,0 +1,402 @@
+[
+  {
+    "id": "u01",
+    "group": "unsupported",
+    "question": "Is the footbed memory foam?",
+    "topic": "unsupported",
+    "aspect": "none",
+    "status": "insufficient_evidence"
+  },
+  {
+    "id": "u02",
+    "group": "unsupported",
+    "question": "Does the outside material use suede?",
+    "topic": "unsupported",
+    "aspect": "none",
+    "status": "insufficient_evidence"
+  },
+  {
+    "id": "u03",
+    "group": "unsupported",
+    "question": "Can the heel be replaced without changing the whole sole?",
+    "topic": "unsupported",
+    "aspect": "none",
+    "status": "insufficient_evidence"
+  },
+  {
+    "id": "u04",
+    "group": "unsupported",
+    "question": "Are these approved for construction-site work?",
+    "topic": "unsupported",
+    "aspect": "none",
+    "status": "insufficient_evidence"
+  },
+  {
+    "id": "u05",
+    "group": "unsupported",
+    "question": "Do they have a reinforced toe cap?",
+    "topic": "unsupported",
+    "aspect": "none",
+    "status": "insufficient_evidence"
+  },
+  {
+    "id": "u06",
+    "group": "unsupported",
+    "question": "What type of adhesive holds the sole together?",
+    "topic": "unsupported",
+    "aspect": "none",
+    "status": "insufficient_evidence"
+  },
+  {
+    "id": "u07",
+    "group": "unsupported",
+    "question": "Do these include a removable shank?",
+    "topic": "unsupported",
+    "aspect": "none",
+    "status": "insufficient_evidence"
+  },
+  {
+    "id": "u08",
+    "group": "unsupported",
+    "question": "Can the leather be recolored?",
+    "topic": "unsupported",
+    "aspect": "none",
+    "status": "insufficient_evidence"
+  },
+  {
+    "id": "u09",
+    "group": "unsupported",
+    "question": "Would these be suitable for long-distance cycling?",
+    "topic": "unsupported",
+    "aspect": "none",
+    "status": "insufficient_evidence"
+  },
+  {
+    "id": "u10",
+    "group": "unsupported",
+    "question": "Is the insole made from latex?",
+    "topic": "unsupported",
+    "aspect": "none",
+    "status": "insufficient_evidence"
+  },
+  {
+    "id": "u11",
+    "group": "unsupported",
+    "question": "What is the height of the heel lift?",
+    "topic": "unsupported",
+    "aspect": "none",
+    "status": "insufficient_evidence"
+  },
+  {
+    "id": "u12",
+    "group": "unsupported",
+    "question": "Can I buy a matching wallet?",
+    "topic": "unsupported",
+    "aspect": "none",
+    "status": "insufficient_evidence"
+  },
+  {
+    "id": "u13",
+    "group": "unsupported",
+    "question": "Are these made using recycled rubber?",
+    "topic": "unsupported",
+    "aspect": "none",
+    "status": "insufficient_evidence"
+  },
+  {
+    "id": "u14",
+    "group": "unsupported",
+    "question": "How many eyelets are on the upper?",
+    "topic": "unsupported",
+    "aspect": "none",
+    "status": "insufficient_evidence"
+  },
+  {
+    "id": "u15",
+    "group": "unsupported",
+    "question": "Would they be comfortable for standing all shift?",
+    "topic": "unsupported",
+    "aspect": "none",
+    "status": "insufficient_evidence"
+  },
+  {
+    "id": "s01",
+    "group": "supported",
+    "question": "Following confirmed delivery, how many days can I use to request a return?",
+    "topic": "return_policy",
+    "aspect": "window",
+    "status": "answered"
+  },
+  {
+    "id": "s02",
+    "group": "supported",
+    "question": "What is the store's time allowance for sending an order back?",
+    "topic": "return_policy",
+    "aspect": "window",
+    "status": "answered"
+  },
+  {
+    "id": "s03",
+    "group": "supported",
+    "question": "I wore them briefly at home. Does the return rule still permit them?",
+    "topic": "return_policy",
+    "aspect": "condition",
+    "status": "answered"
+  },
+  {
+    "id": "s04",
+    "group": "supported",
+    "question": "I removed the tissue but never used the shoes. Can this purchase still be returned?",
+    "topic": "return_policy",
+    "aspect": "condition",
+    "status": "answered"
+  },
+  {
+    "id": "s05",
+    "group": "supported",
+    "question": "A split was visible on the upper at unpacking. What does the policy allow for defects?",
+    "topic": "return_policy",
+    "aspect": "exception",
+    "status": "insufficient_evidence"
+  },
+  {
+    "id": "s06",
+    "group": "supported",
+    "question": "The heel component was detached when I opened the carton. What return-policy exception applies?",
+    "topic": "return_policy",
+    "aspect": "exception",
+    "status": "insufficient_evidence"
+  },
+  {
+    "id": "s07",
+    "group": "supported",
+    "question": "Which date should I make the return request on or before?",
+    "topic": "return_policy",
+    "aspect": "deadline",
+    "status": "clarify"
+  },
+  {
+    "id": "s08",
+    "group": "supported",
+    "question": "The last day I can open a return is which date?",
+    "topic": "return_policy",
+    "aspect": "deadline",
+    "status": "clarify"
+  },
+  {
+    "id": "s09",
+    "group": "supported",
+    "question": "Will the store assure me of a refund approval?",
+    "topic": "return_policy",
+    "aspect": "refund_guarantee",
+    "status": "unsupported"
+  },
+  {
+    "id": "s10",
+    "group": "supported",
+    "question": "Could you check the tracking status of my shipment?",
+    "topic": "order_status",
+    "aspect": "none",
+    "status": "unavailable"
+  },
+  {
+    "id": "s11",
+    "group": "supported",
+    "question": "Has tracking confirmed receipt at the destination?",
+    "topic": "order_status",
+    "aspect": "none",
+    "status": "unavailable"
+  },
+  {
+    "id": "s12",
+    "group": "supported",
+    "question": "I tested one shoe outside for a minute. Can I still send the pair back?",
+    "topic": "return_policy",
+    "aspect": "condition",
+    "status": "answered"
+  },
+  {
+    "id": "s13",
+    "group": "supported",
+    "question": "What is the time span after delivery for initiating a return?",
+    "topic": "return_policy",
+    "aspect": "window",
+    "status": "answered"
+  },
+  {
+    "id": "s14",
+    "group": "supported",
+    "question": "A buckle was cracked when the delivery arrived. How does the policy handle this?",
+    "topic": "return_policy",
+    "aspect": "exception",
+    "status": "insufficient_evidence"
+  },
+  {
+    "id": "s15",
+    "group": "supported",
+    "question": "On what date should the return request be filed?",
+    "topic": "return_policy",
+    "aspect": "deadline",
+    "status": "clarify"
+  },
+  {
+    "id": "m01",
+    "group": "mixed",
+    "question": "Would these be stable on slick tiles, and can I send them back after trying them?",
+    "topic": "clarify",
+    "aspect": "none",
+    "status": "clarify"
+  },
+  {
+    "id": "m02",
+    "group": "mixed",
+    "question": "Tell me the return time allowance and whether the upper is leather.",
+    "topic": "clarify",
+    "aspect": "none",
+    "status": "clarify"
+  },
+  {
+    "id": "m03",
+    "group": "mixed",
+    "question": "Track the delivery, and tell me if indoor wear is okay for a return.",
+    "topic": "clarify",
+    "aspect": "none",
+    "status": "clarify"
+  },
+  {
+    "id": "m04",
+    "group": "mixed",
+    "question": "Do these have a reinforced toe, plus can the order be exchanged?",
+    "topic": "clarify",
+    "aspect": "none",
+    "status": "clarify"
+  },
+  {
+    "id": "m05",
+    "group": "mixed",
+    "question": "Can I return these, and where is the shipment now?",
+    "topic": "clarify",
+    "aspect": "none",
+    "status": "clarify"
+  },
+  {
+    "id": "m06",
+    "group": "mixed",
+    "question": "Is the footbed removable and what is the exact return date?",
+    "topic": "clarify",
+    "aspect": "none",
+    "status": "clarify"
+  },
+  {
+    "id": "m07",
+    "group": "mixed",
+    "question": "Has my parcel shipped, and are these comfortable for long shifts?",
+    "topic": "clarify",
+    "aspect": "none",
+    "status": "clarify"
+  },
+  {
+    "id": "m08",
+    "group": "mixed",
+    "question": "Can you guarantee the refund while also checking delivery status?",
+    "topic": "clarify",
+    "aspect": "none",
+    "status": "clarify"
+  },
+  {
+    "id": "m09",
+    "group": "mixed",
+    "question": "Are these appropriate for cycling, and can they be sent back?",
+    "topic": "clarify",
+    "aspect": "none",
+    "status": "clarify"
+  },
+  {
+    "id": "m10",
+    "group": "mixed",
+    "question": "Where is my package and what is the cutoff date to return the purchase?",
+    "topic": "clarify",
+    "aspect": "none",
+    "status": "clarify"
+  },
+  {
+    "id": "a01",
+    "group": "ambiguous",
+    "question": "I need help with a matter.",
+    "topic": "clarify",
+    "aspect": "none",
+    "status": "clarify"
+  },
+  {
+    "id": "a02",
+    "group": "ambiguous",
+    "question": "Could you advise me about something?",
+    "topic": "clarify",
+    "aspect": "none",
+    "status": "clarify"
+  },
+  {
+    "id": "a03",
+    "group": "ambiguous",
+    "question": "I have a question but cannot explain it yet.",
+    "topic": "clarify",
+    "aspect": "none",
+    "status": "clarify"
+  },
+  {
+    "id": "a04",
+    "group": "ambiguous",
+    "question": "There is something I am uncertain about.",
+    "topic": "clarify",
+    "aspect": "none",
+    "status": "clarify"
+  },
+  {
+    "id": "a05",
+    "group": "ambiguous",
+    "question": "Can someone help me with my situation?",
+    "topic": "clarify",
+    "aspect": "none",
+    "status": "clarify"
+  },
+  {
+    "id": "a06",
+    "group": "ambiguous",
+    "question": "I do not know how to describe my request.",
+    "topic": "clarify",
+    "aspect": "none",
+    "status": "clarify"
+  },
+  {
+    "id": "a07",
+    "group": "ambiguous",
+    "question": "I need guidance on a recent purchase.",
+    "topic": "clarify",
+    "aspect": "none",
+    "status": "clarify"
+  },
+  {
+    "id": "a08",
+    "group": "ambiguous",
+    "question": "Can you look into this for me?",
+    "topic": "clarify",
+    "aspect": "none",
+    "status": "clarify"
+  },
+  {
+    "id": "a09",
+    "group": "ambiguous",
+    "question": "I have an issue but do not know what happened.",
+    "topic": "clarify",
+    "aspect": "none",
+    "status": "clarify"
+  },
+  {
+    "id": "a10",
+    "group": "ambiguous",
+    "question": "I would like to speak with support.",
+    "topic": "clarify",
+    "aspect": "none",
+    "status": "clarify"
+  }
+]

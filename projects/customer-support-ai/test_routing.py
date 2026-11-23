@@ -36,6 +36,15 @@ class RoutingTests(unittest.TestCase):
         self.assertEqual(result['status'],'clarify')
         self.assertIn('Exact deadline calculation is not implemented',result['answer'])
 
+    def test_calendar_cutoff_cannot_be_answered_as_general_window(self):
+        result=self.ask("Work out the calendar cutoff for submitting my return request.","return_policy","window")
+        self.assertEqual(result['status'],'clarify')
+        self.assertIn('Exact deadline calculation is not implemented',result['answer'])
+
+    def test_by_what_date_cannot_be_answered_as_general_window(self):
+        result=self.ask("By what date should I submit a return request?","return_policy","window")
+        self.assertEqual(result['status'],'clarify')
+
     def test_dates_still_select_version(self):
         result=self.ask("How much time do I have to return these?","return_policy","window",
             dict(CONTEXT,purchase_date='2026-11-01'))
@@ -78,6 +87,29 @@ class RoutingTests(unittest.TestCase):
         retrieve.assert_not_called()
         self.assertEqual(result['status'],'clarify')
 
+    def test_condition_facts_from_one_return_request_can_be_coalesced(self):
+        result=answer_request({'question':'The shoes are unworn, but I threw away the box. Can I send them back?','context':CONTEXT},
+            classifier=lambda _: {"requests":[{"topic":"return_policy","aspect":"condition"},{"topic":"return_policy","aspect":"window"}]})
+        self.assertEqual(result['status'],'answered')
+        self.assertEqual(result['sources'][0]['passage_id'],'returns-v1-condition')
+
+    def test_order_status_wrong_aspect_is_normalized_for_clear_tracking_question(self):
+        result=answer_request({'question':'Has my shipment reached its destination yet?','context':CONTEXT},
+            classifier=lambda _: classified('order_status','deadline'))
+        self.assertEqual(result['routing']['topic'],'order_status')
+        self.assertEqual(result['status'],'unavailable')
+
+    def test_consignment_dispatch_is_recognized_as_order_status(self):
+        result=self.ask('Has my consignment been dispatched?','order_status')
+        self.assertEqual(result['status'],'unavailable')
+
+    def test_product_surface_question_mixed_with_return_is_clarified(self):
+        with patch('api.respond') as retrieve:
+            result=answer_request({'question':'Are these safe on wet floors, and can I return them?','context':CONTEXT},
+                classifier=lambda _: classified('unsupported'))
+        retrieve.assert_not_called()
+        self.assertEqual(result['status'],'clarify')
+
     def test_repair_question_cannot_enter_return_retrieval(self):
         with patch('api.respond') as retrieve:
             result=answer_request({'question':'Can I replace the heel taps?','context':CONTEXT},
@@ -95,6 +127,12 @@ class RoutingTests(unittest.TestCase):
     def test_arrival_defect_policy_question_can_reach_policy_retrieval(self):
         result=answer_request({'question':'The package arrived damaged. Does the policy cover this?','context':CONTEXT},
             classifier=lambda _: classified('return_policy','exception'))
+        self.assertEqual(result['status'],'insufficient_evidence')
+        self.assertIn('does not specify',result['answer'])
+
+    def test_detached_arrival_part_uses_defect_fallback_not_condition_answer(self):
+        result=answer_request({'question':'The heel became detached while I unpacked the order. What exception does the policy provide?','context':CONTEXT},
+            classifier=lambda _: classified('return_policy','condition'))
         self.assertEqual(result['status'],'insufficient_evidence')
         self.assertIn('does not specify',result['answer'])
 

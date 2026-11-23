@@ -26,11 +26,19 @@ The focused product-scope probe then tested 12 new product-feature questions plu
 
 ## Automated checks
 
-The current suite has 61 passing test methods. They verify routing schema enforcement, one classifier call per request, no retrieval after unsupported/unclear/mixed questions, the scope-gate false-accept cases, exact-calendar-deadline handling, policy-version selection, and HTTP behavior. Most routing cases use mocked classifier outputs; they validate guardrail code rather than real model accuracy.
+The current suite has 70 passing test methods. They verify routing schema enforcement, one classifier call per request, no retrieval after unsupported/unclear/mixed questions, the scope-gate false-accept cases, exact-calendar-deadline handling, policy-version selection, and HTTP behavior. Most routing cases use mocked classifier outputs; they validate guardrail code rather than real model accuracy.
 
 
 The request-list iteration adds independent checks for return intent, explicit arrival-defect policy questions, real tracking intent, and obvious mixed product-plus-return requests. A broad return-keyword rule initially blocked some valid defect questions. The category-specific gate now lets those policy questions reach the existing “not specified” response while repair and discount questions stop before retrieval. A separate 50-question wording set found an exact-date routing error; a deterministic date cue now sends that request to the existing clarify response. The initial run scored 43/50, and the regression rerun 44/50 with zero unsupported-to-return routes, zero mixed requests answered as one, supported routing 15/15, unnecessary clarification 0/13, and 61 tests passing. Since the first run drove a code fix, the rerun is not an independent promotion result. See `holdout-v3-results.json`, `holdout-v3-final-results.json`, and `PROMOTION_CRITERIA.md`.
 
-## Next evaluation
+## Latest fresh wording evaluation
 
-Keep the new classifier behind its opt-in flag. The next promotion decision requires a new untouched evaluation set; do not tune against or rescore the regression set as if it were blind. Continue reporting false acceptance separately from safe rejection, since an unrelated answer is riskier than a clarification.
+The final 50-case set was frozen and run once against the unchanged code. It scored 47/50 exact outcomes. Supported routing was 14/15 (93.3%); unnecessary clarifications were 1/12 (8.3%); unsupported questions routed into return answering were 0/15; mixed requests answered as one were 0/10; ambiguous requests were clarified 10/10. All 70 automated tests passed.
+
+Three exact mismatches were safe but less helpful: one unsupported repair question received a clarification; one return-time paraphrase received a clarification; and one product-use plus return request was refused as unsupported instead of prompting the user to split the request. No unsupported question received a return answer. Average local request time was 0.454 seconds in this one run; this is not a repeatable benchmark.
+
+The numeric prototype gate passes on this small developer-authored holdout. Keep the model router opt-in because the sample is small and one mixed request was not clarified as intended. A prior v7 run is excluded from holdout evidence: one question appeared verbatim in the classifier prompt. The published v10 case set has a recorded SHA-256 and was not used in the prompt.
+
+## Next step
+
+The next evaluation should focus on mixed requests that combine a product-use question with a return question, and should be reviewed by someone other than the prompt author. Do not tune against v10 and then call it an independent result. The normal app still uses the reviewed default route; the experimental model route is enabled explicitly with --local-model --model-router.

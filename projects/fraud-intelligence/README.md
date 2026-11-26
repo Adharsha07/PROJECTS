@@ -1,8 +1,8 @@
 # Sentinel Fraud Intelligence — runnable prototype
 
-A static investigator workbench for transaction triage. It combines explainable risk signals, mock policy evidence retrieval and a cited investigation draft in one browser UI. The demo is designed to publish on GitHub Pages; scoring and retrieval run in the browser.
+A static investigator workbench for transaction triage. It combines explainable risk signals, mock policy evidence retrieval and a cited investigation draft in one browser UI. The demo is published on GitHub Pages; scoring and retrieval run in the browser.
 
-> **Demo only:** every transaction, customer ID, merchant and policy excerpt is fabricated and stored under `data/`. The score is a hand-authored heuristic, not a trained or validated fraud model. The prototype does not authorize, block, reverse or dispute payments. Do not use it with real customer or payment data.
+> **Demo only:** the transactions and merchants come from a public synthetic dataset. Policy excerpts and investigator recommendations are fictional. The score is a hand-authored heuristic, not a trained or validated fraud model. The prototype does not authorize, block, reverse or dispute payments. Do not use it with real customer or payment data.
 
 ## Open the hosted demo
 
@@ -30,13 +30,14 @@ Open [http://127.0.0.1:8000](http://127.0.0.1:8000). Stop with `Ctrl+C`.
 
 ## Demo data
 
-- `data/transactions.json` contains nine invented card transactions and fabricated customer profile aggregates used by the scoring rules.
+- `data/transactions.csv` contains all 2,165 transactions from the [Card Transactions synthetic fraud dataset](https://github.com/goktugozdem2/card-transactions-sql-dataset). The upstream repo publishes 2,165 transaction rows, 200 accounts, 25 merchants and 76 chargeback records; its `LICENSE` dedicates the work to the public domain under CC0 1.0.
 - `data/policies.json` contains three fictional policy excerpts tagged for retrieval. They are examples, not bank policy.
-- No external dataset, account connection, or customer data is used. The file structure lets you replace fixtures with an approved, appropriately licensed dataset without mixing records into the application logic.
+- `data/SOURCE.md` documents the source files, transformations and field limits. Account email and IP fields were excluded. The source does not provide transaction currency or payment channel, so the app displays source amount units and does not score on channel.
+- The upstream data is synthetic. A recorded dispute is not a complete fraud label, so dispute outcomes are shown only as post-transaction context and are excluded from the heuristic score.
 
 ## How scoring works
 
-The browser adds weighted points for transaction amount relative to the customer's fabricated usual amount, one-hour authorization velocity, a new device, cross-border country, card-not-present channel and recent dispute history. The UI shows the resulting 0–99 score and each contributing reason. Risk bands are low (<35), medium (35–59) and high (60+). These thresholds and weights are illustrative. A dispute history is explicitly context only, not proof of fraud.
+The browser adds weighted points for amount relative to the account's prior median, one-hour authorization velocity, a device shared across accounts, cross-border activity and prior dispute history. The UI shows the resulting 0–99 score and each contributing reason. Risk bands are low (<35), medium (35–59) and high (60+). These thresholds and weights are illustrative. Transaction outcomes recorded after the event are not score inputs.
 
 Policy evidence is selected from the local JSON file by overlap between signal tags and policy tags. The investigator draft includes the evidence identifiers and suggested next step. It is an aid for human review and takes no financial action.
 

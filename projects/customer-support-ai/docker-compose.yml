@@ -1,0 +1,17 @@
+services:
+  support:
+    build: .
+    ports:
+      - "8766:8766"
+    environment:
+      HOST: 0.0.0.0
+      PORT: 8766
+      DATABASE_PATH: /data/support.sqlite3
+      SEED_DEMO: "1"
+    volumes:
+      - support-data:/data
+    restart: unless-stopped
+
+volumes:
+  support-data:
+

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Customer Support AI</title>
+<style>
+:root{font:16px/1.5 system-ui,sans-serif;color:#172b3a;background:#f3f6f8}*{box-sizing:border-box}body{margin:0}header{background:#102f46;color:#fff;padding:1.4rem max(1.2rem,calc((100% - 1080px)/2));display:flex;justify-content:space-between;gap:1rem;align-items:center}header strong{font-size:1.25rem}header button{background:transparent;color:#fff;border:1px solid #9ab4c5;border-radius:6px;padding:.45rem .7rem}main{max-width:1080px;margin:auto;padding:2rem 1.2rem}.grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}.card{background:#fff;border:1px solid #d3e0e8;border-radius:12px;padding:1.2rem;margin-bottom:1rem}h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.05;margin:.2rem 0 .6rem}h2{margin:.1rem 0 .8rem;font-size:1.25rem}p.lede{color:#506676;max-width:700px}label{display:grid;gap:.25rem;font-weight:600;margin:.7rem 0}input,textarea,select,button{font:inherit;border:1px solid #a8bbc7;border-radius:7px;padding:.62rem}textarea{resize:vertical;min-height:90px}button{cursor:pointer;background:#e7f0f6;color:#143d58}button.primary{background:#17659a;border-color:#17659a;color:#fff}button.danger{background:#fff0ee;color:#9c2b22;border-color:#d99a92}.row{display:grid;grid-template-columns:1fr 1fr;gap:.7rem}.toolbar{display:flex;justify-content:space-between;align-items:center;gap:.5rem}.hidden{display:none!important}.muted{color:#5d7280;font-size:.9rem}.error{color:#9c2b22;min-height:1.3rem}.success{color:#23703d}.pill{display:inline-block;border-radius:999px;background:#e8f1f7;padding:.2rem .55rem;font-size:.82rem}.item{border-top:1px solid #e0e9ee;padding:.85rem 0}.item:first-child{border-top:0}.item p{margin:.2rem 0;white-space:pre-wrap}.answer{background:#f1f7fb;border-left:4px solid #2680b8;padding:.8rem;border-radius:4px;white-space:pre-wrap}.auth-tabs{display:flex;gap:.5rem;margin-bottom:.4rem}.auth-tabs button.active{background:#17659a;color:#fff}.ticket-actions{display:flex;gap:.5rem;align-items:center;flex-wrap:wrap}@media(max-width:760px){.grid{grid-template-columns:1fr}.row{grid-template-columns:1fr}header{align-items:flex-start;flex-direction:column}}
+</style>
+<header><strong>Customer Support AI</strong><div><span id="identity" class="muted"></span> <button id="logout" class="hidden">Log out</button></div></header>
+<main>
+<section id="auth" class="card">
+  <h1>Support that shows its work.</h1>
+  <p class="lede">Ask about a return policy, inspect your orders, or open a ticket when a human should take over.</p>
+  <div class="auth-tabs"><button id="login-tab" class="active">Log in</button><button id="register-tab">Create account</button></div>
+  <form id="auth-form"><label>Email<input id="email" type="email" autocomplete="email" required></label><label>Password<input id="password" type="password" minlength="10" required></label><button class="primary" type="submit">Continue</button></form>
+  <p id="auth-error" class="error" role="alert"></p><p class="muted">Demo: demo@example.com / demo-password-123</p>
+</section>
+<section id="app" class="hidden">
+  <div class="grid">
+    <div>
+      <section class="card"><div class="toolbar"><h2>Ask about policy</h2><span class="pill">Source-backed</span></div>
+        <form id="policy-form"><label>Question<textarea id="question" required>How long do I have to return these shoes?</textarea></label><div class="row"><label>Purchase date<input id="purchase-date" type="date" value="2026-10-25"></label><label>Country<input id="country" value="US"></label></div><label>Category<input id="category" value="footwear"></label><button class="primary" type="submit">Check policy</button></form><p id="policy-error" class="error"></p><div id="policy-answer" class="answer hidden"></div><p id="policy-source" class="muted"></p>
+      </section>
+      <section class="card"><div class="toolbar"><h2>My orders</h2><button id="refresh-orders">Refresh</button></div><div id="orders"><p class="muted">Loading…</p></div></section>
+    </div>
+    <div>
+      <section class="card"><h2>Open a support ticket</h2><form id="ticket-form"><label>Subject<input id="ticket-subject" maxlength="160" required placeholder="I need help with my order"></label><label>Order (optional)<select id="ticket-order"><option value="">No specific order</option></select></label><label>Message<textarea id="ticket-message" maxlength="5000" required placeholder="Tell the support team what happened"></textarea></label><label>Priority<select id="ticket-priority"><option value="normal">Normal</option><option value="high">High</option></select></label><button class="primary" type="submit">Create ticket</button></form><p id="ticket-error" class="error"></p><p id="ticket-success" class="success"></p></section>
+      <section class="card"><div class="toolbar"><h2>My tickets</h2><button id="refresh-tickets">Refresh</button></div><div id="tickets"><p class="muted">Loading…</p></div></section>
+    </div>
+  </div>
+</section>
+</main>
+<script>
+const $=id=>document.getElementById(id);let token=localStorage.getItem('support_token');let mode='login';let orders=[];
+async function api(path,options={}){options.headers={...(options.headers||{}),'Content-Type':'application/json',...(token?{Authorization:`Bearer ${token}`}:{})};const r=await fetch(path,options);const d=await r.json();if(!r.ok)throw Error(d.error||'Request failed');return d}
+function setMode(next){mode=next;$('login-tab').classList.toggle('active',mode==='login');$('register-tab').classList.toggle('active',mode==='register');$('auth-form button').textContent=mode==='login'?'Log in':'Create account';$('auth-error').textContent=''}
+function showUser(user){$('auth').classList.add('hidden');$('app').classList.remove('hidden');$('identity').textContent=user.email;$('logout').classList.remove('hidden');loadOrders();loadTickets()}
+async function loadSession(){if(!token)return;try{const d=await api('/api/me');showUser(d.user)}catch(e){token=null;localStorage.removeItem('support_token')}}
+$('login-tab').onclick=()=>setMode('login');$('register-tab').onclick=()=>setMode('register');
+$('auth-form').onsubmit=async e=>{e.preventDefault();$('auth-error').textContent='';try{const d=await api(`/api/auth/${mode==='login'?'login':'register'}`,{method:'POST',body:JSON.stringify({email:$('email').value,password:$('password').value})});token=d.token;localStorage.setItem('support_token',token);showUser(d.user)}catch(err){$('auth-error').textContent=err.message}};
+$('logout').onclick=async()=>{try{await api('/api/auth/logout',{method:'POST'})}catch(e){}token=null;localStorage.removeItem('support_token');location.reload()};
+function renderOrders(){const root=$('orders'),select=$('ticket-order');root.replaceChildren();select.replaceChildren(new Option('No specific order',''));if(!orders.length){root.innerHTML='<p class="muted">No orders found.</p>';return}orders.forEach(o=>{const el=document.createElement('div');el.className='item';el.innerHTML=`<strong>${o.id}</strong> <span class="pill">${o.status}</span><p>${o.carrier||'Carrier pending'}${o.tracking_number?' · '+o.tracking_number:''}</p><p class="muted">Purchased ${o.purchased_on}${o.delivery_date?' · Delivered '+o.delivery_date:''}</p>`;root.append(el);select.append(new Option(`${o.id} · ${o.status}`,o.id))})}
+async function loadOrders(){try{const d=await api('/api/orders');orders=d.orders;renderOrders()}catch(e){$('orders').textContent=e.message}}
+async function loadTickets(){try{const d=await api('/api/tickets');const root=$('tickets');root.replaceChildren();if(!d.tickets.length){root.innerHTML='<p class="muted">No tickets yet.</p>';return}d.tickets.forEach(t=>{const el=document.createElement('div');el.className='item';el.innerHTML=`<strong>#${t.id} · ${t.subject}</strong> <span class="pill">${t.status}</span><p>${t.message}</p><p class="muted">${t.order_id||'No order linked'} · ${t.priority} priority · ${t.created_at}</p>${t.resolution_note?`<p class="success">Resolution: ${t.resolution_note}</p>`:''}`;root.append(el)})}catch(e){$('tickets').textContent=e.message}}
+$('refresh-orders').onclick=loadOrders;$('refresh-tickets').onclick=loadTickets;
+$('policy-form').onsubmit=async e=>{e.preventDefault();$('policy-error').textContent='';$('policy-answer').classList.add('hidden');try{const d=await api('/api/policy/answer',{method:'POST',body:JSON.stringify({question:$('question').value,context:{purchase_date:$('purchase-date').value,country:$('country').value,category:$('category').value}})});$('policy-answer').textContent=d.answer;$('policy-answer').classList.remove('hidden');$('policy-source').textContent=d.source?`${d.source} · ${d.version} · ${d.passage_id||''}`:''}catch(err){$('policy-error').textContent=err.message}};
+$('ticket-form').onsubmit=async e=>{e.preventDefault();$('ticket-error').textContent='';$('ticket-success').textContent='';try{await api('/api/tickets',{method:'POST',body:JSON.stringify({subject:$('ticket-subject').value,message:$('ticket-message').value,order_id:$('ticket-order').value||null,priority:$('ticket-priority').value})});$('ticket-form').reset();$('ticket-success').textContent='Ticket created. A support agent can now review it.';loadTickets()}catch(err){$('ticket-error').textContent=err.message}};
+loadSession();
+</script>
+</html>
+

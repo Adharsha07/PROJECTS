@@ -1,6 +1,3 @@
-Warning: truncated output (original token count: 73658)
-Total output lines: 2166
-
 id,time,customer,merchant,category,amount,country,home_country,device,velocity_1h,usual_amount,chargebacks_30d,status,source_dispute_outcome,source_dispute_reasons,source_chargeback_count
 TX-00001,2026-03-04T12:39:39.078Z,ACCT-149,AppPay,Grocery,151.84,GB,US,Known device,1,0,0,Completed,No chargeback recorded,,0
 TX-00002,2026-03-04T13:04:50.641Z,ACCT-021,JetWings Travel,Travel,10.72,US,DE,Known device,1,0,0,Completed,No chargeback recorded,,0
@@ -741,7 +738,701 @@ TX-00736,2026-03-25T22:53:24.717Z,ACCT-160,StreamCloud,Pharmacy,206.11,JP,GB,Kno
 TX-00737,2026-03-25T23:34:02.172Z,ACCT-126,MediCo,Clothing,236.05,JP,GB,Known device,1,167.26,0,Completed,No chargeback recorded,,0
 TX-00738,2026-03-25T23:36:16.674Z,ACCT-154,TrainHub,Pharmacy,32.7,US,JP,Known device,1,74.3,0,Completed,No chargeback recorded,,0
 TX-00739,2026-03-26T00:08:28.646Z,ACCT-068,TripStop,Clothing,193.42,DE,GB,Known device,1,57.66,0,Completed,No chargeback recorded,,0
-TX-00740,2026-03-26T02:27:57.093Z,ACCT-183,Global Eats,Gas,181.59,…23658 tokens truncated…ronics,206.73,JP,JP,Known device,1,194.04,0,Completed,No chargeback recorded,,0
+TX-00740,2026-03-26T02:27:57.093Z,ACCT-183,Global Eats,Gas,181.59,DE,GB,Known device,1,82.04,0,Completed,No chargeback recorded,,0
+TX-00741,2026-03-26T03:21:35.658Z,ACCT-061,Flux Online,Clothing,246.27,US,GB,Known device,1,119.32,0,Completed,No chargeback recorded,,0
+TX-00742,2026-03-26T05:52:19.855Z,ACCT-075,CloudKitchen,Grocery,184.49,GB,TR,Known device,1,58.77,0,Completed,No chargeback recorded,,0
+TX-00743,2026-03-26T05:57:37.638Z,ACCT-004,Flux Online,Clothing,85.22,US,JP,Known device,1,155.45,0,Completed,No chargeback recorded,,0
+TX-00744,2026-03-26T06:09:46.622Z,ACCT-012,BookHouse,Gas,235.73,DE,DE,Known device,1,119.89,0,Completed,No chargeback recorded,,0
+TX-00745,2026-03-26T06:50:42.257Z,ACCT-124,Quick Stop,Electronics,145.26,JP,US,Known device,1,88.05,0,Completed,No chargeback recorded,,0
+TX-00746,2026-03-26T07:51:41.557Z,ACCT-063,TrainHub,Pharmacy,148.28,US,TR,Known device,1,65.85,0,Completed,No chargeback recorded,,0
+TX-00747,2026-03-26T08:01:45.505Z,ACCT-181,Aurora Cafe,Travel,233.15,TR,JP,Known device,1,194,0,Completed,No chargeback recorded,,0
+TX-00748,2026-03-26T10:01:31.384Z,ACCT-113,JetWings Travel,Travel,209.87,US,US,Known device,1,99.77,0,Completed,No chargeback recorded,,0
+TX-00749,2026-03-26T10:02:39.923Z,ACCT-095,StyleHaus,Online Retail,118.34,TR,GB,Known device,1,142.27,0,Completed,No chargeback recorded,,0
+TX-00750,2026-03-26T10:39:10.533Z,ACCT-020,BigBox Mart,Grocery,59.32,TR,JP,Known device,1,62.43,0,Completed,No chargeback recorded,,0
+TX-00751,2026-03-26T11:12:58.778Z,ACCT-132,Quick Stop,Electronics,235.53,JP,TR,Known device,1,173.47,0,Completed,No chargeback recorded,,0
+TX-00752,2026-03-26T12:10:19.086Z,ACCT-013,Flux Online,Clothing,206.05,US,DE,Known device,1,101.66,0,Completed,No chargeback recorded,,0
+TX-00753,2026-03-26T13:50:25.695Z,ACCT-037,TrainHub,Pharmacy,94.38,US,GB,Known device,1,70.24,0,Completed,No chargeback recorded,,0
+TX-00754,2026-03-26T14:37:31.271Z,ACCT-040,Quick Stop,Electronics,55.08,JP,DE,Known device,1,72.65,0,Completed,No chargeback recorded,,0
+TX-00755,2026-03-26T15:12:41.262Z,ACCT-150,StreamCloud,Pharmacy,162.27,JP,TR,Known device,1,157.93,0,Completed,No chargeback recorded,,0
+TX-00756,2026-03-26T15:14:14.306Z,ACCT-071,BookHouse,Gas,50.68,DE,GB,Known device,1,99.66,0,Completed,No chargeback recorded,,0
+TX-00757,2026-03-26T15:51:52.195Z,ACCT-008,StreamCloud,Pharmacy,94.18,JP,GB,Known device,1,188.69,0,Completed,No chargeback recorded,,0
+TX-00758,2026-03-26T16:18:22.174Z,ACCT-126,StreamCloud,Pharmacy,108.68,JP,GB,Known device,1,209.8,0,Completed,No chargeback recorded,,0
+TX-00759,2026-03-26T17:50:55.024Z,ACCT-022,PillPath,Clothing,193.67,GB,US,Known device,1,80.41,0,Completed,No chargeback recorded,,0
+TX-00760,2026-03-26T18:01:31.374Z,ACCT-182,RideHail Inc,Travel,10.18,DE,TR,Known device,1,0,0,Completed,No chargeback recorded,,0
+TX-00761,2026-03-26T18:17:38.118Z,ACCT-086,Flux Online,Clothing,184.53,US,DE,Known device,1,26.68,0,Completed,No chargeback recorded,,0
+TX-00762,2026-03-26T19:08:54.550Z,ACCT-081,PillPath,Clothing,105.8,GB,GB,Known device,1,0,0,Completed,No chargeback recorded,,0
+TX-00763,2026-03-26T19:53:34.083Z,ACCT-174,PowerCharge,Gas,147.67,US,JP,Known device,1,164.08,0,Completed,No chargeback recorded,,0
+TX-00764,2026-03-26T21:10:22.738Z,ACCT-046,Flux Online,Clothing,208.24,US,DE,Known device,1,130.31,1,Completed,No chargeback recorded,,0
+TX-00765,2026-03-26T21:50:02.534Z,ACCT-031,NextDay,Subscription,18.55,GB,US,Known device,1,145.8,0,Completed,No chargeback recorded,,0
+TX-00766,2026-03-26T21:55:36.462Z,ACCT-061,StyleHaus,Online Retail,71.23,TR,GB,Known device,1,182.8,0,Completed,No chargeback recorded,,0
+TX-00767,2026-03-26T21:57:32.156Z,ACCT-086,PillPath,Clothing,234,GB,DE,Known device,1,32.97,0,Completed,No chargeback recorded,,0
+TX-00768,2026-03-26T22:05:36.824Z,ACCT-166,Aurora Cafe,Travel,152.28,TR,US,Known device,1,80.63,0,Completed,No chargeback recorded,,0
+TX-00769,2026-03-26T22:15:57.356Z,ACCT-043,PillPath,Clothing,15.11,GB,DE,Known device,1,160.38,0,Completed,No chargeback recorded,,0
+TX-00770,2026-03-26T23:48:49.551Z,ACCT-193,Aurora Cafe,Travel,119.84,TR,DE,Known device,1,150.9,0,Completed,No chargeback recorded,,0
+TX-00771,2026-03-26T23:54:18.483Z,ACCT-029,TripStop,Clothing,197.68,DE,GB,Known device,1,81.28,0,Completed,No chargeback recorded,,0
+TX-00772,2026-03-27T01:17:14.485Z,ACCT-088,AppPay,Grocery,120.84,GB,JP,Shared device,1,39.27,0,Completed,No chargeback recorded,,0
+TX-00773,2026-03-27T01:33:13.760Z,ACCT-090,BookFlight,Online Retail,62.55,JP,GB,Known device,1,115.03,0,Completed,No chargeback recorded,,0
+TX-00774,2026-03-27T02:11:12.854Z,ACCT-119,PillPath,Clothing,116.43,GB,TR,Known device,1,57.83,0,Completed,No chargeback recorded,,0
+TX-00775,2026-03-27T02:23:51.568Z,ACCT-162,GadgetWorks,Subscription,15.2,GB,US,Known device,1,185.9,0,Completed,No chargeback recorded,,0
+TX-00776,2026-03-27T04:56:22.352Z,ACCT-039,NextDay,Subscription,41.39,GB,TR,Known device,1,119.91,0,Completed,No chargeback recorded,,0
+TX-00777,2026-03-27T05:33:05.154Z,ACCT-180,Flux Online,Clothing,51.18,US,US,Known device,1,50.53,1,Completed,No chargeback recorded,,0
+TX-00778,2026-03-27T06:11:47.036Z,ACCT-135,TripStop,Clothing,48.45,DE,DE,Known device,1,122.06,0,Completed,No chargeback recorded,,0
+TX-00779,2026-03-27T06:46:30.377Z,ACCT-127,TripStop,Clothing,18.8,DE,TR,Known device,1,73.85,0,Completed,No chargeback recorded,,0
+TX-00780,2026-03-27T07:23:52.128Z,ACCT-102,JetWings Travel,Travel,112.94,US,TR,Known device,1,194.91,0,Completed,No chargeback recorded,,0
+TX-00781,2026-03-27T07:40:04.724Z,ACCT-176,Vespa Apparel,Clothing,210.96,GB,GB,Known device,1,50.78,0,Completed,No chargeback recorded,,0
+TX-00782,2026-03-27T08:20:04.388Z,ACCT-088,Quick Stop,Electronics,243.24,JP,JP,Shared device,1,45.69,0,Completed,No chargeback recorded,,0
+TX-00783,2026-03-27T09:27:20.930Z,ACCT-150,Aurora Cafe,Travel,133.11,TR,TR,Known device,1,162.27,0,Completed,No chargeback recorded,,0
+TX-00784,2026-03-27T09:45:08.440Z,ACCT-159,Vespa Apparel,Clothing,124.58,GB,US,Known device,1,175.82,1,Completed,No chargeback recorded,,0
+TX-00785,2026-03-27T10:23:09.733Z,ACCT-034,BookFlight,Online Retail,56.34,JP,US,Known device,1,153.99,0,Completed,No chargeback recorded,,0
+TX-00786,2026-03-27T10:29:50.989Z,ACCT-146,MediCo,Clothing,139.53,JP,JP,Known device,1,188.99,0,Completed,No chargeback recorded,,0
+TX-00787,2026-03-27T11:05:24.129Z,ACCT-148,RideHail Inc,Travel,186.78,DE,US,Known device,1,134.81,0,Completed,No chargeback recorded,,0
+TX-00788,2026-03-27T11:16:05.344Z,ACCT-018,PillPath,Clothing,131.51,GB,GB,Known device,1,133.11,0,Completed,No chargeback recorded,,0
+TX-00789,2026-03-27T11:22:43.851Z,ACCT-090,Quick Stop,Electronics,206.65,JP,GB,Known device,1,93.52,0,Completed,No chargeback recorded,,0
+TX-00790,2026-03-27T11:38:58.330Z,ACCT-058,Global Eats,Gas,56.99,DE,US,Known device,1,184.96,0,Completed,No chargeback recorded,,0
+TX-00791,2026-03-27T11:50:30.028Z,ACCT-157,GadgetWorks,Subscription,16.1,GB,US,Known device,1,161,0,Completed,No chargeback recorded,,0
+TX-00792,2026-03-27T13:29:15.759Z,ACCT-182,NextDay,Subscription,115.55,GB,TR,Known device,1,10.18,0,Completed,Other dispute recorded,duplicate_charge,1
+TX-00793,2026-03-27T14:26:25.451Z,ACCT-118,BookHouse,Gas,72.55,DE,US,Known device,1,144.57,0,Completed,No chargeback recorded,,0
+TX-00794,2026-03-27T15:12:56.765Z,ACCT-085,BookHouse,Gas,229.85,DE,DE,Known device,1,101.4,0,Completed,No chargeback recorded,,0
+TX-00795,2026-03-27T15:20:33.159Z,ACCT-045,CloudKitchen,Grocery,147.27,GB,TR,Known device,1,169.83,0,Completed,No chargeback recorded,,0
+TX-00796,2026-03-27T15:29:58.327Z,ACCT-034,CityMart,Rideshare,51.98,TR,US,Known device,1,61.28,0,Completed,No chargeback recorded,,0
+TX-00797,2026-03-27T16:39:01.036Z,ACCT-028,TrainHub,Pharmacy,174.48,US,GB,Known device,1,78.31,0,Completed,No chargeback recorded,,0
+TX-00798,2026-03-27T16:41:41.264Z,ACCT-058,Vespa Apparel,Clothing,232.92,GB,US,Known device,1,184.31,0,Completed,No chargeback recorded,,0
+TX-00799,2026-03-27T16:54:33.391Z,ACCT-196,JetWings Travel,Travel,249.87,US,US,Known device,1,82.74,0,Completed,No chargeback recorded,,0
+TX-00800,2026-03-27T17:26:26.705Z,ACCT-131,CloudKitchen,Grocery,133.22,GB,DE,Known device,1,110.82,0,Completed,No chargeback recorded,,0
+TX-00801,2026-03-27T18:08:15.715Z,ACCT-169,CityMart,Rideshare,100.7,TR,TR,Known device,1,106.47,0,Completed,No chargeback recorded,,0
+TX-00802,2026-03-27T18:32:41.122Z,ACCT-049,Quick Stop,Electronics,189.77,JP,GB,Known device,1,150.95,0,Completed,No chargeback recorded,,0
+TX-00803,2026-03-27T19:18:37.720Z,ACCT-062,BookFlight,Online Retail,17.17,JP,GB,Known device,1,55.19,0,Completed,No chargeback recorded,,0
+TX-00804,2026-03-27T19:46:31.895Z,ACCT-189,Aurora Cafe,Travel,230.31,TR,DE,Known device,1,219.28,0,Completed,No chargeback recorded,,0
+TX-00805,2026-03-27T20:36:17.224Z,ACCT-022,Subscript Co,Travel,157.3,US,US,Known device,1,107.6,0,Completed,No chargeback recorded,,0
+TX-00806,2026-03-27T22:00:32.970Z,ACCT-064,PillPath,Clothing,201.86,GB,JP,Known device,1,93.67,0,Completed,No chargeback recorded,,0
+TX-00807,2026-03-27T23:02:40.514Z,ACCT-094,StreamCloud,Pharmacy,16.59,JP,JP,Known device,1,154.81,0,Completed,No chargeback recorded,,0
+TX-00808,2026-03-27T23:55:12.575Z,ACCT-195,StyleHaus,Online Retail,5.76,TR,TR,Shared device,1,118.2,2,Completed,No chargeback recorded,,0
+TX-00809,2026-03-28T00:21:34.719Z,ACCT-016,PillPath,Clothing,54.05,GB,TR,Known device,1,169.64,0,Completed,No chargeback recorded,,0
+TX-00810,2026-03-28T02:00:18.162Z,ACCT-188,CloudKitchen,Grocery,174.26,GB,JP,Known device,1,75.71,0,Completed,No chargeback recorded,,0
+TX-00811,2026-03-28T06:14:51.578Z,ACCT-132,RideHail Inc,Travel,41.22,DE,TR,Known device,1,182.87,0,Completed,No chargeback recorded,,0
+TX-00812,2026-03-28T09:25:37.022Z,ACCT-019,TripStop,Clothing,37.64,DE,TR,Known device,1,93.36,0,Completed,No chargeback recorded,,0
+TX-00813,2026-03-28T10:37:04.172Z,ACCT-012,RideHail Inc,Travel,191.21,DE,DE,Known device,1,207.9,0,Completed,No chargeback recorded,,0
+TX-00814,2026-03-28T10:56:00.668Z,ACCT-113,TripStop,Clothing,53.27,DE,US,Known device,1,110.78,0,Completed,No chargeback recorded,,0
+TX-00815,2026-03-28T11:19:17.709Z,ACCT-196,BookHouse,Gas,106.88,DE,US,Known device,1,82.77,0,Completed,No chargeback recorded,,0
+TX-00816,2026-03-28T11:42:37.107Z,ACCT-070,Quick Stop,Electronics,142.37,JP,TR,Known device,1,134.18,0,Completed,No chargeback recorded,,0
+TX-00817,2026-03-28T12:02:44.663Z,ACCT-134,PowerCharge,Gas,204.24,US,US,Shared device,1,112.15,1,Completed,No chargeback recorded,,0
+TX-00818,2026-03-28T14:13:34.023Z,ACCT-087,TripStop,Clothing,109.14,DE,TR,Known device,1,73.58,0,Completed,No chargeback recorded,,0
+TX-00819,2026-03-28T14:17:54.352Z,ACCT-140,AppPay,Grocery,55.3,GB,US,Known device,1,0,0,Completed,No chargeback recorded,,0
+TX-00820,2026-03-28T15:14:49.023Z,ACCT-137,BigBox Mart,Grocery,19.65,TR,TR,Known device,1,64.41,0,Completed,No chargeback recorded,,0
+TX-00821,2026-03-28T15:36:10.525Z,ACCT-046,StreamCloud,Pharmacy,103.85,JP,DE,Known device,1,167.62,1,Completed,No chargeback recorded,,0
+TX-00822,2026-03-28T15:58:38.199Z,ACCT-165,RideHail Inc,Travel,228.67,DE,JP,Known device,1,167.51,0,Completed,No chargeback recorded,,0
+TX-00823,2026-03-28T16:15:26.435Z,ACCT-170,Vespa Apparel,Clothing,229.36,GB,TR,Known device,1,90.68,0,Completed,Fraud-coded dispute recorded,fraud_card_present,1
+TX-00824,2026-03-28T16:37:08.330Z,ACCT-174,RideHail Inc,Travel,5.79,DE,JP,Known device,1,147.67,0,Completed,No chargeback recorded,,0
+TX-00825,2026-03-28T16:44:12.223Z,ACCT-195,Global Eats,Gas,195.14,DE,TR,Shared device,1,42.53,2,Completed,No chargeback recorded,,0
+TX-00826,2026-03-28T17:19:46.811Z,ACCT-078,Aurora Cafe,Travel,199.61,TR,JP,Known device,1,122.11,0,Completed,No chargeback recorded,,0
+TX-00827,2026-03-28T17:31:43.050Z,ACCT-078,BookFlight,Online Retail,247.8,JP,JP,Known device,2,188.46,0,Completed,No chargeback recorded,,0
+TX-00828,2026-03-28T17:41:16.796Z,ACCT-032,Petra Gas,Pharmacy,48.71,TR,TR,Known device,1,143.91,0,Completed,No chargeback recorded,,0
+TX-00829,2026-03-28T18:26:33.087Z,ACCT-029,CloudKitchen,Grocery,99.12,GB,GB,Known device,1,96.78,0,Completed,No chargeback recorded,,0
+TX-00830,2026-03-28T18:34:35.641Z,ACCT-106,NextDay,Subscription,117.37,GB,TR,Known device,1,167.96,0,Completed,No chargeback recorded,,0
+TX-00831,2026-03-28T18:51:36.762Z,ACCT-166,Global Eats,Gas,89.23,DE,US,Known device,1,81.99,1,Completed,No chargeback recorded,,0
+TX-00832,2026-03-28T19:28:14.913Z,ACCT-008,RideHail Inc,Travel,228.36,DE,GB,Known device,1,146.38,0,Completed,No chargeback recorded,,0
+TX-00833,2026-03-28T20:09:28.302Z,ACCT-052,Aurora Cafe,Travel,44.3,TR,US,Known device,1,113.9,0,Completed,No chargeback recorded,,0
+TX-00834,2026-03-28T21:27:53.208Z,ACCT-060,TrainHub,Pharmacy,43.9,US,US,Known device,1,156.62,0,Completed,No chargeback recorded,,0
+TX-00835,2026-03-28T22:13:42.730Z,ACCT-161,Quick Stop,Electronics,61.54,JP,JP,Known device,1,164.96,0,Completed,No chargeback recorded,,0
+TX-00836,2026-03-28T22:22:46.174Z,ACCT-148,BookHouse,Gas,109.26,DE,US,Known device,1,160.8,0,Completed,No chargeback recorded,,0
+TX-00837,2026-03-28T23:00:45.830Z,ACCT-096,Tech Den,Gas,161.96,TR,DE,Known device,1,141.41,0,Completed,No chargeback recorded,,0
+TX-00838,2026-03-28T23:10:34.594Z,ACCT-110,CloudKitchen,Grocery,87.66,GB,TR,Known device,1,89,0,Completed,No chargeback recorded,,0
+TX-00839,2026-03-28T23:23:16.198Z,ACCT-044,TrainHub,Pharmacy,227.43,US,GB,Known device,1,128.13,1,Completed,No chargeback recorded,,0
+TX-00840,2026-03-28T23:23:46.015Z,ACCT-142,RideHail Inc,Travel,85.5,DE,DE,Known device,1,148.56,0,Completed,No chargeback recorded,,0
+TX-00841,2026-03-28T23:44:57.364Z,ACCT-176,Vespa Apparel,Clothing,220.8,GB,GB,Known device,1,55.91,0,Completed,No chargeback recorded,,0
+TX-00842,2026-03-29T00:04:54.991Z,ACCT-144,PowerCharge,Gas,234.75,US,GB,Known device,1,34.42,0,Completed,No chargeback recorded,,0
+TX-00843,2026-03-29T00:18:04.332Z,ACCT-149,BookFlight,Online Retail,117.45,JP,US,Known device,1,164.92,0,Completed,No chargeback recorded,,0
+TX-00844,2026-03-29T00:28:17.579Z,ACCT-145,Global Eats,Gas,101.4,DE,GB,Known device,1,233.42,0,Completed,No chargeback recorded,,0
+TX-00845,2026-03-29T00:46:17.997Z,ACCT-081,TrainHub,Pharmacy,149.64,US,GB,Known device,1,105.8,0,Completed,No chargeback recorded,,0
+TX-00846,2026-03-29T03:36:07.523Z,ACCT-099,BookFlight,Online Retail,127.64,JP,DE,Known device,1,147.92,0,Completed,No chargeback recorded,,0
+TX-00847,2026-03-29T03:53:42.022Z,ACCT-025,AppPay,Grocery,21.36,GB,US,Known device,1,154.25,0,Completed,No chargeback recorded,,0
+TX-00848,2026-03-29T04:10:09.799Z,ACCT-043,GadgetWorks,Subscription,83.85,GB,DE,Known device,1,145.26,0,Completed,No chargeback recorded,,0
+TX-00849,2026-03-29T05:17:19.287Z,ACCT-037,GadgetWorks,Subscription,27.96,GB,GB,Known device,1,87.48,0,Completed,No chargeback recorded,,0
+TX-00850,2026-03-29T06:09:30.988Z,ACCT-185,Tech Den,Gas,78.57,TR,GB,Known device,1,72.78,0,Completed,No chargeback recorded,,0
+TX-00851,2026-03-29T06:35:07.891Z,ACCT-176,TrainHub,Pharmacy,115.59,US,GB,Known device,1,61.04,0,Completed,No chargeback recorded,,0
+TX-00852,2026-03-29T06:58:12.507Z,ACCT-039,JetWings Travel,Travel,135.25,US,TR,Known device,1,41.39,0,Completed,No chargeback recorded,,0
+TX-00853,2026-03-29T07:11:05.755Z,ACCT-174,StreamCloud,Pharmacy,122.26,JP,JP,Known device,1,142.84,0,Completed,No chargeback recorded,,0
+TX-00854,2026-03-29T08:40:12.900Z,ACCT-043,AppPay,Grocery,37.76,GB,DE,Known device,1,114.55,0,Completed,No chargeback recorded,,0
+TX-00855,2026-03-29T09:49:36.933Z,ACCT-062,PowerCharge,Gas,94.5,US,GB,Known device,1,53.65,0,Completed,No chargeback recorded,,0
+TX-00856,2026-03-29T10:02:32.753Z,ACCT-023,StyleHaus,Online Retail,145.73,TR,US,Known device,1,136.21,0,Completed,No chargeback recorded,,0
+TX-00857,2026-03-29T10:43:29.058Z,ACCT-193,Flux Online,Clothing,120.28,US,DE,Known device,1,144.54,0,Completed,No chargeback recorded,,0
+TX-00858,2026-03-29T12:16:41.992Z,ACCT-040,Flux Online,Clothing,192.51,US,DE,Known device,1,57,0,Completed,No chargeback recorded,,0
+TX-00859,2026-03-29T12:41:59.674Z,ACCT-178,BookHouse,Gas,14.97,DE,US,Known device,1,145.16,0,Completed,No chargeback recorded,,0
+TX-00860,2026-03-29T13:00:27.197Z,ACCT-020,BigBox Mart,Grocery,118.64,TR,JP,Known device,1,60.88,0,Completed,No chargeback recorded,,0
+TX-00861,2026-03-29T13:08:05.779Z,ACCT-022,NextDay,Subscription,195.59,GB,US,Known device,1,132.45,0,Completed,No chargeback recorded,,0
+TX-00862,2026-03-29T13:35:05.304Z,ACCT-006,CloudKitchen,Grocery,86.11,GB,TR,Known device,1,109.9,0,Completed,No chargeback recorded,,0
+TX-00863,2026-03-29T14:53:53.827Z,ACCT-022,RideHail Inc,Travel,202.74,DE,US,Known device,1,157.3,0,Completed,No chargeback recorded,,0
+TX-00864,2026-03-29T15:21:52.184Z,ACCT-045,CityMart,Rideshare,133.18,TR,TR,Known device,1,147.27,0,Completed,No chargeback recorded,,0
+TX-00865,2026-03-29T17:18:11.156Z,ACCT-035,CityMart,Rideshare,106.7,TR,DE,Known device,1,149.86,0,Completed,No chargeback recorded,,0
+TX-00866,2026-03-29T17:18:42.643Z,ACCT-132,PowerCharge,Gas,233.11,US,TR,Known device,1,173.47,0,Completed,No chargeback recorded,,0
+TX-00867,2026-03-29T18:19:17.668Z,ACCT-010,BigBox Mart,Grocery,175.4,TR,JP,Known device,1,153.95,0,Completed,No chargeback recorded,,0
+TX-00868,2026-03-29T19:19:42.455Z,ACCT-078,Vespa Apparel,Clothing,203.45,GB,JP,Known device,1,194.04,0,Completed,No chargeback recorded,,0
+TX-00869,2026-03-29T19:27:07.020Z,ACCT-070,JetWings Travel,Travel,84.49,US,TR,Known device,1,142.37,0,Completed,No chargeback recorded,,0
+TX-00870,2026-03-29T20:20:03.423Z,ACCT-047,Aurora Cafe,Travel,145.34,TR,US,Known device,1,156.69,0,Completed,No chargeback recorded,,0
+TX-00871,2026-03-29T21:39:25.385Z,ACCT-193,TripStop,Clothing,126.5,DE,DE,Known device,1,132.41,0,Completed,No chargeback recorded,,0
+TX-00872,2026-03-29T22:33:49.762Z,ACCT-077,TripStop,Clothing,111.28,DE,DE,Known device,1,130.7,0,Completed,No chargeback recorded,,0
+TX-00873,2026-03-30T00:04:46.298Z,ACCT-094,JetWings Travel,Travel,245.2,US,JP,Known device,1,125.09,0,Completed,No chargeback recorded,,0
+TX-00874,2026-03-30T00:12:23.273Z,ACCT-132,Subscript Co,Travel,160.59,US,TR,Known device,1,182.87,0,Completed,No chargeback recorded,,0
+TX-00875,2026-03-30T01:28:41.126Z,ACCT-156,NextDay,Subscription,69.05,GB,TR,Shared device,1,32.95,1,Completed,No chargeback recorded,,0
+TX-00876,2026-03-30T02:52:13.678Z,ACCT-159,Flux Online,Clothing,45.45,US,US,Known device,1,150.2,1,Completed,No chargeback recorded,,0
+TX-00877,2026-03-30T02:52:27.332Z,ACCT-029,BigBox Mart,Grocery,90.09,TR,GB,Known device,1,97.95,0,Completed,No chargeback recorded,,0
+TX-00878,2026-03-30T03:09:36.966Z,ACCT-080,PowerCharge,Gas,126.55,US,DE,Known device,1,143.93,0,Completed,No chargeback recorded,,0
+TX-00879,2026-03-30T03:56:48.717Z,ACCT-043,BookHouse,Gas,246.53,DE,DE,Known device,1,83.85,0,Completed,No chargeback recorded,,0
+TX-00880,2026-03-30T04:12:23.156Z,ACCT-149,Vespa Apparel,Clothing,191.35,GB,US,Known device,1,151.84,0,Completed,No chargeback recorded,,0
+TX-00881,2026-03-30T05:40:36.619Z,ACCT-040,BookHouse,Gas,159.75,DE,DE,Known device,1,72.65,0,Completed,No chargeback recorded,,0
+TX-00882,2026-03-30T05:41:40.262Z,ACCT-037,Aurora Cafe,Travel,148.74,TR,GB,Known device,1,70.24,0,Completed,No chargeback recorded,,0
+TX-00883,2026-03-30T06:08:43.833Z,ACCT-033,BookFlight,Online Retail,65.84,JP,TR,Known device,1,233.45,0,Completed,No chargeback recorded,,0
+TX-00884,2026-03-30T06:11:47.120Z,ACCT-024,BigBox Mart,Grocery,34.3,TR,TR,Known device,1,233.74,0,Completed,No chargeback recorded,,0
+TX-00885,2026-03-30T07:10:14.293Z,ACCT-133,Global Eats,Gas,179.67,DE,DE,Known device,1,43.06,0,Completed,No chargeback recorded,,0
+TX-00886,2026-03-30T07:11:31.836Z,ACCT-188,BookHouse,Gas,42.29,DE,JP,Known device,1,81.55,0,Completed,No chargeback recorded,,0
+TX-00887,2026-03-30T07:40:42.014Z,ACCT-089,CityMart,Rideshare,99.77,TR,US,Known device,1,66.51,1,Completed,No chargeback recorded,,0
+TX-00888,2026-03-30T07:42:00.286Z,ACCT-078,PillPath,Clothing,144.13,GB,JP,Known device,1,199.61,0,Completed,No chargeback recorded,,0
+TX-00889,2026-03-30T07:58:03.480Z,ACCT-198,StreamCloud,Pharmacy,148.98,JP,GB,Known device,1,199.82,0,Completed,No chargeback recorded,,0
+TX-00890,2026-03-30T08:51:10.876Z,ACCT-041,NextDay,Subscription,114.81,GB,US,Known device,1,151.32,0,Completed,Other dispute recorded,duplicate_charge,1
+TX-00891,2026-03-30T09:44:44.913Z,ACCT-030,RideHail Inc,Travel,133.92,DE,JP,Known device,1,134.16,1,Completed,No chargeback recorded,,0
+TX-00892,2026-03-30T10:00:39.501Z,ACCT-032,Vespa Apparel,Clothing,200.76,GB,TR,Known device,1,139.12,0,Completed,No chargeback recorded,,0
+TX-00893,2026-03-30T11:11:56.566Z,ACCT-138,MediCo,Clothing,113.79,JP,GB,Known device,1,62.22,0,Completed,No chargeback recorded,,0
+TX-00894,2026-03-30T11:14:45.151Z,ACCT-193,TrainHub,Pharmacy,163.36,US,DE,Known device,1,126.5,0,Completed,No chargeback recorded,,0
+TX-00895,2026-03-30T11:21:24.910Z,ACCT-024,PillPath,Clothing,32.41,GB,TR,Known device,1,231.92,0,Completed,No chargeback recorded,,0
+TX-00896,2026-03-30T11:23:08.041Z,ACCT-126,Flux Online,Clothing,228.15,US,GB,Known device,1,167.26,0,Completed,Fraud-coded dispute recorded,fraud_card_not_present,1
+TX-00897,2026-03-30T14:02:25.213Z,ACCT-123,StyleHaus,Online Retail,151.71,TR,US,Known device,1,98.17,0,Completed,No chargeback recorded,,0
+TX-00898,2026-03-30T14:12:57.045Z,ACCT-128,BigBox Mart,Grocery,13.04,TR,DE,Known device,1,142.49,0,Completed,No chargeback recorded,,0
+TX-00899,2026-03-30T14:47:26.151Z,ACCT-088,BookFlight,Online Retail,86.94,JP,JP,Shared device,1,83.27,0,Completed,No chargeback recorded,,0
+TX-00900,2026-03-30T15:09:53.519Z,ACCT-008,StreamCloud,Pharmacy,239.4,JP,GB,Known device,1,187.37,0,Completed,No chargeback recorded,,0
+TX-00901,2026-03-30T15:22:31.329Z,ACCT-117,AppPay,Grocery,148.98,GB,US,Known device,1,96,1,Completed,No chargeback recorded,,0
+TX-00902,2026-03-30T16:42:50.226Z,ACCT-151,MediCo,Clothing,188.04,JP,US,Known device,1,159.89,0,Completed,No chargeback recorded,,0
+TX-00903,2026-03-30T16:49:10.666Z,ACCT-004,BookFlight,Online Retail,134.79,JP,JP,Known device,1,144.32,1,Completed,Fraud-coded dispute recorded,fraud_card_present,1
+TX-00904,2026-03-30T17:36:30.762Z,ACCT-048,StreamCloud,Pharmacy,161.54,JP,JP,Known device,1,57.29,1,Completed,No chargeback recorded,,0
+TX-00905,2026-03-30T18:26:47.921Z,ACCT-150,JetWings Travel,Travel,28.58,US,TR,Known device,1,154.74,0,Completed,No chargeback recorded,,0
+TX-00906,2026-03-30T18:38:16.172Z,ACCT-014,Quick Stop,Electronics,207.49,JP,GB,Known device,1,239.43,0,Completed,No chargeback recorded,,0
+TX-00907,2026-03-30T18:49:59.685Z,ACCT-134,RideHail Inc,Travel,203.11,DE,US,Shared device,1,134.59,1,Completed,No chargeback recorded,,0
+TX-00908,2026-03-30T20:03:28.146Z,ACCT-093,PillPath,Clothing,176.63,GB,US,Known device,1,238.33,0,Completed,No chargeback recorded,,0
+TX-00909,2026-03-30T20:34:14.453Z,ACCT-084,BookHouse,Gas,104.54,DE,JP,Known device,1,107.69,0,Completed,No chargeback recorded,,0
+TX-00910,2026-03-30T21:22:37.465Z,ACCT-139,Aurora Cafe,Travel,197.04,TR,JP,Known device,1,215.8,0,Completed,No chargeback recorded,,0
+TX-00911,2026-03-30T21:41:13.009Z,ACCT-149,MediCo,Clothing,69.72,JP,US,Known device,1,164.92,0,Completed,No chargeback recorded,,0
+TX-00912,2026-03-30T21:43:11.339Z,ACCT-147,StreamCloud,Pharmacy,6.84,JP,US,Known device,1,62.47,0,Completed,No chargeback recorded,,0
+TX-00913,2026-03-30T21:49:26.834Z,ACCT-144,Subscript Co,Travel,186.6,US,GB,Known device,1,100.56,0,Completed,No chargeback recorded,,0
+TX-00914,2026-03-30T21:50:47.317Z,ACCT-129,Aurora Cafe,Travel,235.88,TR,GB,Known device,1,124.4,1,Completed,No chargeback recorded,,0
+TX-00915,2026-03-30T23:10:30.404Z,ACCT-183,CloudKitchen,Grocery,103.3,GB,GB,Known device,1,95.28,0,Completed,No chargeback recorded,,0
+TX-00916,2026-03-30T23:33:17.572Z,ACCT-140,TrainHub,Pharmacy,64.58,US,US,Known device,1,55.3,0,Completed,No chargeback recorded,,0
+TX-00917,2026-03-30T23:36:11.010Z,ACCT-008,StreamCloud,Pharmacy,237.82,JP,GB,Known device,1,228.36,0,Completed,No chargeback recorded,,0
+TX-00918,2026-03-30T23:44:34.353Z,ACCT-003,PillPath,Clothing,215.49,GB,JP,Known device,1,112.52,0,Completed,Fraud-coded dispute recorded,fraud_card_not_present,1
+TX-00919,2026-03-31T00:24:20.354Z,ACCT-038,Aurora Cafe,Travel,207.9,TR,DE,Known device,1,164.11,0,Completed,No chargeback recorded,,0
+TX-00920,2026-03-31T01:35:50.030Z,ACCT-161,PillPath,Clothing,179.56,GB,JP,Known device,1,118.38,0,Completed,No chargeback recorded,,0
+TX-00921,2026-03-31T03:12:34.292Z,ACCT-028,Subscript Co,Travel,18.59,US,GB,Known device,1,133.41,0,Completed,No chargeback recorded,,0
+TX-00922,2026-03-31T03:26:54.110Z,ACCT-006,CloudKitchen,Grocery,206.02,GB,TR,Known device,1,99.64,0,Completed,No chargeback recorded,,0
+TX-00923,2026-03-31T05:14:06.495Z,ACCT-179,TrainHub,Pharmacy,46,US,US,Known device,1,74.62,0,Completed,No chargeback recorded,,0
+TX-00924,2026-03-31T05:56:37.379Z,ACCT-012,BookFlight,Online Retail,197.47,JP,DE,Known device,1,199.56,0,Completed,No chargeback recorded,,0
+TX-00925,2026-03-31T06:58:04.133Z,ACCT-187,NextDay,Subscription,99.55,GB,DE,Known device,1,107.73,0,Completed,No chargeback recorded,,0
+TX-00926,2026-03-31T07:19:07.015Z,ACCT-073,Vespa Apparel,Clothing,182.86,GB,GB,Known device,1,141.39,0,Completed,No chargeback recorded,,0
+TX-00927,2026-03-31T07:23:10.928Z,ACCT-069,StreamCloud,Pharmacy,220.36,JP,JP,Known device,1,110.72,0,Completed,No chargeback recorded,,0
+TX-00928,2026-03-31T07:55:25.312Z,ACCT-024,Aurora Cafe,Travel,231.78,TR,TR,Known device,1,136.7,0,Completed,No chargeback recorded,,0
+TX-00929,2026-03-31T08:35:21.559Z,ACCT-108,CityMart,Rideshare,7.46,TR,DE,Known device,1,170.06,0,Completed,No chargeback recorded,,0
+TX-00930,2026-03-31T08:44:09.006Z,ACCT-067,StyleHaus,Online Retail,192.68,TR,JP,Known device,1,129.73,0,Completed,No chargeback recorded,,0
+TX-00931,2026-03-31T09:13:08.326Z,ACCT-094,TripStop,Clothing,41.94,DE,JP,Known device,1,154.81,0,Completed,No chargeback recorded,,0
+TX-00932,2026-03-31T09:19:45.641Z,ACCT-015,JetWings Travel,Travel,149.48,US,US,Known device,1,92.87,0,Completed,No chargeback recorded,,0
+TX-00933,2026-03-31T09:25:00.151Z,ACCT-104,BigBox Mart,Grocery,229.26,TR,JP,Known device,1,149.42,0,Completed,No chargeback recorded,,0
+TX-00934,2026-03-31T09:30:54.435Z,ACCT-007,Global Eats,Gas,230.97,DE,JP,Known device,1,155.5,0,Completed,No chargeback recorded,,0
+TX-00935,2026-03-31T10:01:18.962Z,ACCT-169,Petra Gas,Pharmacy,178.98,TR,TR,Known device,1,100.7,0,Completed,No chargeback recorded,,0
+TX-00936,2026-03-31T10:05:17.895Z,ACCT-170,TrainHub,Pharmacy,114.57,US,TR,Known device,1,98.85,0,Completed,No chargeback recorded,,0
+TX-00937,2026-03-31T11:21:02.944Z,ACCT-052,Subscript Co,Travel,135.81,US,US,Known device,1,79.1,0,Completed,No chargeback recorded,,0
+TX-00938,2026-03-31T11:30:24.005Z,ACCT-124,MediCo,Clothing,78.34,JP,US,Known device,1,116.66,0,Completed,No chargeback recorded,,0
+TX-00939,2026-03-31T11:48:55.658Z,ACCT-061,BookFlight,Online Retail,144.63,JP,GB,Known device,1,119.32,0,Completed,No chargeback recorded,,0
+TX-00940,2026-03-31T11:52:28.354Z,ACCT-022,Quick Stop,Electronics,27.64,JP,US,Known device,1,175.49,0,Completed,No chargeback recorded,,0
+TX-00941,2026-03-31T13:25:51.509Z,ACCT-151,Vespa Apparel,Clothing,203.45,GB,US,Known device,1,175.67,0,Completed,No chargeback recorded,,0
+TX-00942,2026-03-31T13:59:49.296Z,ACCT-158,TripStop,Clothing,134.14,DE,JP,Known device,1,55.28,0,Completed,No chargeback recorded,,0
+TX-00943,2026-03-31T14:08:00.424Z,ACCT-106,BookHouse,Gas,146.99,DE,TR,Known device,1,121.71,0,Completed,No chargeback recorded,,0
+TX-00944,2026-03-31T14:37:27.440Z,ACCT-142,TripStop,Clothing,80.52,DE,DE,Known device,1,138.06,0,Completed,Other dispute recorded,service_not_received,1
+TX-00945,2026-03-31T14:41:15.055Z,ACCT-194,Vespa Apparel,Clothing,41.29,GB,TR,Known device,1,64.64,0,Completed,No chargeback recorded,,0
+TX-00946,2026-03-31T14:48:20.871Z,ACCT-095,TripStop,Clothing,235.04,DE,GB,Known device,1,135.31,0,Completed,No chargeback recorded,,0
+TX-00947,2026-03-31T15:14:10.507Z,ACCT-006,Subscript Co,Travel,65.32,US,TR,Known device,1,109.9,0,Completed,No chargeback recorded,,0
+TX-00948,2026-03-31T15:44:15.750Z,ACCT-059,JetWings Travel,Travel,83.14,US,JP,Known device,1,186.21,0,Completed,No chargeback recorded,,0
+TX-00949,2026-03-31T16:10:09.337Z,ACCT-163,CloudKitchen,Grocery,60.13,GB,TR,Known device,1,213.41,0,Completed,No chargeback recorded,,0
+TX-00950,2026-03-31T17:57:16.507Z,ACCT-157,PowerCharge,Gas,129.11,US,US,Known device,1,154.82,0,Completed,No chargeback recorded,,0
+TX-00951,2026-03-31T18:55:30.081Z,ACCT-121,MediCo,Clothing,138.55,JP,TR,Known device,1,180.8,0,Completed,No chargeback recorded,,0
+TX-00952,2026-03-31T19:30:02.485Z,ACCT-185,Petra Gas,Pharmacy,28.69,TR,GB,Known device,1,76.63,0,Completed,No chargeback recorded,,0
+TX-00953,2026-03-31T19:33:12.110Z,ACCT-017,StyleHaus,Online Retail,10.75,TR,US,Known device,1,196.67,0,Completed,Fraud-coded dispute recorded,fraud_card_not_present,1
+TX-00954,2026-03-31T19:50:58.739Z,ACCT-166,BookHouse,Gas,180.34,DE,US,Known device,1,85.61,1,Completed,Fraud-coded dispute recorded,fraud_card_present,1
+TX-00955,2026-03-31T20:55:33.141Z,ACCT-140,AppPay,Grocery,224.69,GB,US,Known device,1,59.94,0,Completed,No chargeback recorded,,0
+TX-00956,2026-03-31T21:02:29.191Z,ACCT-197,MediCo,Clothing,185.52,JP,DE,Known device,1,51.54,0,Completed,No chargeback recorded,,0
+TX-00957,2026-03-31T21:40:07.423Z,ACCT-011,BigBox Mart,Grocery,48.83,TR,GB,Known device,1,142.43,0,Completed,No chargeback recorded,,0
+TX-00958,2026-03-31T22:09:46.921Z,ACCT-135,BookHouse,Gas,146.04,DE,DE,Known device,1,77.77,0,Completed,No chargeback recorded,,0
+TX-00959,2026-03-31T23:02:30.187Z,ACCT-111,MediCo,Clothing,213.61,JP,TR,Known device,1,121.19,0,Completed,No chargeback recorded,,0
+TX-00960,2026-03-31T23:06:59.458Z,ACCT-161,AppPay,Grocery,223.97,GB,JP,Known device,1,164.96,0,Completed,No chargeback recorded,,0
+TX-00961,2026-04-01T00:39:19.034Z,ACCT-181,Tech Den,Gas,191.8,TR,JP,Known device,1,213.57,0,Completed,No chargeback recorded,,0
+TX-00962,2026-04-01T01:55:39.199Z,ACCT-161,AppPay,Grocery,96.89,GB,JP,Known device,1,172.26,0,Completed,No chargeback recorded,,0
+TX-00963,2026-04-01T02:04:44.506Z,ACCT-117,StreamCloud,Pharmacy,127.67,JP,US,Known device,1,109.4,1,Completed,No chargeback recorded,,0
+TX-00964,2026-04-01T02:15:35.642Z,ACCT-158,GadgetWorks,Subscription,194.56,GB,JP,Known device,1,94.71,0,Completed,No chargeback recorded,,0
+TX-00965,2026-04-01T02:28:44.701Z,ACCT-052,BookHouse,Gas,72.01,DE,US,Known device,1,113.9,0,Completed,No chargeback recorded,,0
+TX-00966,2026-04-01T02:35:43.474Z,ACCT-003,AppPay,Grocery,18.98,GB,JP,Known device,1,159.53,0,Completed,No chargeback recorded,,0
+TX-00967,2026-04-01T03:21:43.422Z,ACCT-036,StyleHaus,Online Retail,151.73,TR,DE,Known device,1,104.9,0,Completed,No chargeback recorded,,0
+TX-00968,2026-04-01T04:01:11.814Z,ACCT-035,PowerCharge,Gas,35.83,US,DE,Known device,1,128.28,0,Completed,No chargeback recorded,,0
+TX-00969,2026-04-01T04:11:11.735Z,ACCT-053,AppPay,Grocery,154.33,GB,US,Known device,1,183.47,1,Completed,No chargeback recorded,,0
+TX-00970,2026-04-01T04:26:16.410Z,ACCT-082,Tech Den,Gas,153.44,TR,TR,Known device,1,132.98,0,Completed,No chargeback recorded,,0
+TX-00971,2026-04-01T05:46:03.675Z,ACCT-018,PowerCharge,Gas,13.04,US,GB,Known device,1,131.51,0,Completed,No chargeback recorded,,0
+TX-00972,2026-04-01T06:09:43.273Z,ACCT-147,BigBox Mart,Grocery,228.35,TR,US,Known device,1,34.66,0,Completed,No chargeback recorded,,0
+TX-00973,2026-04-01T06:21:36.092Z,ACCT-076,Global Eats,Gas,104.93,DE,DE,Known device,1,167.82,0,Completed,No chargeback recorded,,0
+TX-00974,2026-04-01T06:28:55.017Z,ACCT-102,Aurora Cafe,Travel,168.83,TR,TR,Known device,1,153.93,0,Completed,No chargeback recorded,,0
+TX-00975,2026-04-01T08:14:39.825Z,ACCT-010,Global Eats,Gas,234.68,DE,JP,Known device,1,166.8,0,Completed,No chargeback recorded,,0
+TX-00976,2026-04-01T11:06:20.487Z,ACCT-200,CloudKitchen,Grocery,26.36,GB,JP,Known device,1,73.61,0,Completed,No chargeback recorded,,0
+TX-00977,2026-04-01T11:10:22.779Z,ACCT-137,PowerCharge,Gas,157.24,US,TR,Known device,1,19.65,0,Completed,No chargeback recorded,,0
+TX-00978,2026-04-01T11:22:46.870Z,ACCT-025,TrainHub,Pharmacy,53.6,US,US,Known device,1,112.54,0,Completed,No chargeback recorded,,0
+TX-00979,2026-04-01T11:27:42.916Z,ACCT-048,TrainHub,Pharmacy,230.56,US,JP,Known device,1,104.55,1,Completed,No chargeback recorded,,0
+TX-00980,2026-04-01T12:18:48.964Z,ACCT-058,TripStop,Clothing,8.91,DE,US,Known device,1,184.96,0,Completed,No chargeback recorded,,0
+TX-00981,2026-04-01T13:33:33.913Z,ACCT-056,Aurora Cafe,Travel,19.5,TR,GB,Known device,1,139.78,0,Completed,No chargeback recorded,,0
+TX-00982,2026-04-01T13:54:42.119Z,ACCT-122,StreamCloud,Pharmacy,246.29,JP,TR,Known device,1,82.99,0,Completed,No chargeback recorded,,0
+TX-00983,2026-04-01T14:08:00.732Z,ACCT-140,PowerCharge,Gas,75.7,US,US,Known device,1,64.58,0,Completed,No chargeback recorded,,0
+TX-00984,2026-04-01T14:21:53.602Z,ACCT-148,Flux Online,Clothing,164.4,US,US,Known device,1,134.81,0,Completed,No chargeback recorded,,0
+TX-00985,2026-04-01T14:29:54.202Z,ACCT-142,AppPay,Grocery,201.11,GB,DE,Known device,1,127.55,0,Completed,No chargeback recorded,,0
+TX-00986,2026-04-01T15:06:49.763Z,ACCT-161,JetWings Travel,Travel,155.97,US,JP,Known device,1,164.96,0,Completed,No chargeback recorded,,0
+TX-00987,2026-04-01T15:19:42.455Z,ACCT-052,Tech Den,Gas,77.14,TR,US,Known device,1,92.96,0,Completed,No chargeback recorded,,0
+TX-00988,2026-04-01T15:22:48.632Z,ACCT-199,Tech Den,Gas,113.15,TR,US,Known device,1,0,0,Completed,No chargeback recorded,,0
+TX-00989,2026-04-01T15:23:13.064Z,ACCT-108,Global Eats,Gas,59.41,DE,DE,Known device,1,164.56,0,Completed,No chargeback recorded,,0
+TX-00990,2026-04-01T18:12:15.895Z,ACCT-194,PowerCharge,Gas,46.34,US,TR,Known device,1,54.21,0,Completed,No chargeback recorded,,0
+TX-00991,2026-04-01T21:15:17.877Z,ACCT-155,TripStop,Clothing,31.63,DE,US,Known device,1,181.4,0,Completed,No chargeback recorded,,0
+TX-00992,2026-04-01T23:07:02.823Z,ACCT-116,Subscript Co,Travel,107.75,US,JP,Known device,1,163.14,0,Completed,No chargeback recorded,,0
+TX-00993,2026-04-01T23:12:08.393Z,ACCT-188,RideHail Inc,Travel,133.18,DE,JP,Known device,1,75.71,2,Completed,Fraud-coded dispute recorded,fraud_card_not_present,1
+TX-00994,2026-04-02T02:23:12.419Z,ACCT-143,Subscript Co,Travel,237.33,US,TR,Known device,1,211.56,0,Completed,No chargeback recorded,,0
+TX-00995,2026-04-02T05:07:25.394Z,ACCT-169,Tech Den,Gas,205.55,TR,TR,Known device,1,113.05,0,Completed,No chargeback recorded,,0
+TX-00996,2026-04-02T05:36:38.721Z,ACCT-112,PillPath,Clothing,123.03,GB,JP,Known device,1,175.22,0,Completed,No chargeback recorded,,0
+TX-00997,2026-04-02T05:39:51.802Z,ACCT-044,Tech Den,Gas,154.6,TR,GB,Known device,1,227.43,1,Completed,No chargeback recorded,,0
+TX-00998,2026-04-02T07:03:27.329Z,ACCT-092,AppPay,Grocery,224.7,GB,TR,Known device,1,127.98,0,Completed,No chargeback recorded,,0
+TX-00999,2026-04-02T07:49:56.105Z,ACCT-081,Aurora Cafe,Travel,155.66,TR,GB,Known device,1,127.72,0,Completed,No chargeback recorded,,0
+TX-01000,2026-04-02T09:41:31.666Z,ACCT-032,Petra Gas,Pharmacy,105.73,TR,TR,Known device,1,143.91,0,Completed,No chargeback recorded,,0
+TX-01001,2026-04-02T10:04:50.886Z,ACCT-082,Aurora Cafe,Travel,56.63,TR,TR,Known device,1,143.21,0,Completed,No chargeback recorded,,0
+TX-01002,2026-04-02T10:57:25.712Z,ACCT-168,Quick Stop,Electronics,240.31,JP,TR,Known device,1,201.56,0,Completed,No chargeback recorded,,0
+TX-01003,2026-04-02T12:41:08.000Z,ACCT-109,BookHouse,Gas,44.46,DE,JP,Known device,1,87.94,0,Completed,Fraud-coded dispute recorded,fraud_card_not_present,1
+TX-01004,2026-04-02T12:41:52.000Z,ACCT-109,RideHail Inc,Travel,21.81,DE,JP,Known device,2,76.98,0,Completed,Fraud-coded dispute recorded,fraud_card_present,1
+TX-01005,2026-04-02T12:41:58.000Z,ACCT-109,GadgetWorks,Subscription,61.9,GB,JP,Known device,3,60.72,0,Completed,No chargeback recorded,,0
+TX-01006,2026-04-02T12:42:56.000Z,ACCT-109,Quick Stop,Electronics,82.7,JP,JP,Known device,4,61.9,0,Completed,No chargeback recorded,,0
+TX-01007,2026-04-02T12:43:00.000Z,ACCT-109,JetWings Travel,Travel,60.81,US,JP,Known device,5,69.44,0,Completed,No chargeback recorded,,0
+TX-01008,2026-04-02T12:45:53.000Z,ACCT-109,Vespa Apparel,Clothing,110.98,GB,JP,Known device,6,61.9,0,Completed,No chargeback recorded,,0
+TX-01009,2026-04-02T12:46:30.000Z,ACCT-109,AppPay,Grocery,99.74,GB,JP,Known device,7,69.44,0,Completed,No chargeback recorded,,0
+TX-01010,2026-04-02T12:47:08.000Z,ACCT-109,BookHouse,Gas,131.19,DE,JP,Known device,8,76.98,0,Completed,No chargeback recorded,,0
+TX-01011,2026-04-02T13:55:50.206Z,ACCT-097,Subscript Co,Travel,7.22,US,US,Known device,1,153.96,0,Completed,No chargeback recorded,,0
+TX-01012,2026-04-02T14:20:30.460Z,ACCT-027,JetWings Travel,Travel,6.16,US,TR,Known device,1,173.22,0,Completed,No chargeback recorded,,0
+TX-01013,2026-04-02T15:18:59.985Z,ACCT-089,CloudKitchen,Grocery,244.5,GB,US,Known device,1,83.14,1,Completed,No chargeback recorded,,0
+TX-01014,2026-04-02T16:04:35.609Z,ACCT-056,TrainHub,Pharmacy,191.33,US,GB,Known device,1,121.92,0,Completed,No chargeback recorded,,0
+TX-01015,2026-04-02T16:39:44.814Z,ACCT-148,NextDay,Subscription,223.96,GB,US,Known device,1,149.61,0,Completed,No chargeback recorded,,0
+TX-01016,2026-04-02T18:23:33.060Z,ACCT-182,Aurora Cafe,Travel,183.31,TR,TR,Known device,1,62.86,1,Completed,No chargeback recorded,,0
+TX-01017,2026-04-02T20:06:58.597Z,ACCT-095,CloudKitchen,Grocery,95.12,GB,GB,Known device,1,142.27,0,Completed,No chargeback recorded,,0
+TX-01018,2026-04-02T20:26:42.519Z,ACCT-097,Vespa Apparel,Clothing,131.95,GB,US,Known device,1,134.69,0,Completed,No chargeback recorded,,0
+TX-01019,2026-04-02T20:54:20.367Z,ACCT-100,AppPay,Grocery,84.82,GB,US,Known device,1,72.17,0,Completed,No chargeback recorded,,0
+TX-01020,2026-04-02T21:08:11.318Z,ACCT-080,TripStop,Clothing,197.93,DE,DE,Known device,1,126.55,0,Completed,No chargeback recorded,,0
+TX-01021,2026-04-02T21:44:52.132Z,ACCT-074,Quick Stop,Electronics,41.76,JP,JP,Known device,1,115.79,0,Completed,No chargeback recorded,,0
+TX-01022,2026-04-02T23:17:09.007Z,ACCT-079,PowerCharge,Gas,148.41,US,JP,Known device,1,132.31,0,Completed,No chargeback recorded,,0
+TX-01023,2026-04-02T23:42:31.529Z,ACCT-081,CityMart,Rideshare,161.4,TR,GB,Known device,1,149.64,0,Completed,No chargeback recorded,,0
+TX-01024,2026-04-03T00:21:26.226Z,ACCT-121,StyleHaus,Online Retail,144.26,TR,TR,Known device,1,159.68,0,Completed,No chargeback recorded,,0
+TX-01025,2026-04-03T00:51:30.986Z,ACCT-088,RideHail Inc,Travel,103.1,DE,JP,Shared device,1,86.94,0,Completed,No chargeback recorded,,0
+TX-01026,2026-04-03T01:24:41.541Z,ACCT-005,BigBox Mart,Grocery,158.84,TR,US,Known device,1,130.94,0,Completed,Fraud-coded dispute recorded,fraud_card_not_present,1
+TX-01027,2026-04-03T01:31:21.010Z,ACCT-014,Quick Stop,Electronics,169.14,JP,GB,Known device,1,223.46,0,Completed,No chargeback recorded,,0
+TX-01028,2026-04-03T02:31:00.051Z,ACCT-181,BigBox Mart,Grocery,60.23,TR,JP,Known device,1,194,0,Completed,No chargeback recorded,,0
+TX-01029,2026-04-03T03:39:55.962Z,ACCT-196,Flux Online,Clothing,224.72,US,US,Known device,1,82.79,0,Completed,No chargeback recorded,,0
+TX-01030,2026-04-03T04:10:03.738Z,ACCT-199,PillPath,Clothing,228.84,GB,US,Known device,1,113.15,0,Completed,No chargeback recorded,,0
+TX-01031,2026-04-03T05:01:12.833Z,ACCT-025,Vespa Apparel,Clothing,189.57,GB,US,Known device,1,90.4,0,Completed,No chargeback recorded,,0
+TX-01032,2026-04-03T05:17:07.176Z,ACCT-189,CityMart,Rideshare,45.65,TR,DE,Known device,1,224.8,0,Completed,No chargeback recorded,,0
+TX-01033,2026-04-03T05:18:44.852Z,ACCT-027,Global Eats,Gas,158.15,DE,TR,Known device,1,133.62,0,Completed,No chargeback recorded,,0
+TX-01034,2026-04-03T05:34:49.805Z,ACCT-041,NextDay,Subscription,140.95,GB,US,Known device,1,142.53,0,Completed,No chargeback recorded,,0
+TX-01035,2026-04-03T05:56:04.204Z,ACCT-001,Global Eats,Gas,103.1,DE,TR,Known device,1,137.44,0,Completed,No chargeback recorded,,0
+TX-01036,2026-04-03T06:22:18.847Z,ACCT-012,BookHouse,Gas,92.1,DE,DE,Known device,1,197.47,0,Completed,No chargeback recorded,,0
+TX-01037,2026-04-03T06:54:59.347Z,ACCT-051,StreamCloud,Pharmacy,146.4,JP,US,Known device,1,101.35,0,Completed,No chargeback recorded,,0
+TX-01038,2026-04-03T08:17:07.669Z,ACCT-009,AppPay,Grocery,44.73,GB,GB,Known device,1,246.72,0,Completed,No chargeback recorded,,0
+TX-01039,2026-04-03T08:39:59.657Z,ACCT-177,BookHouse,Gas,59.92,DE,DE,Known device,1,130.8,0,Completed,No chargeback recorded,,0
+TX-01040,2026-04-03T09:34:26.781Z,ACCT-125,MediCo,Clothing,235.65,JP,GB,Known device,1,173.32,0,Completed,No chargeback recorded,,0
+TX-01041,2026-04-03T10:33:04.407Z,ACCT-196,BookHouse,Gas,105.8,DE,US,Known device,1,94.84,0,Completed,No chargeback recorded,,0
+TX-01042,2026-04-03T11:09:24.154Z,ACCT-170,Subscript Co,Travel,95.01,US,TR,Known device,1,107.02,0,Completed,No chargeback recorded,,0
+TX-01043,2026-04-03T11:44:51.694Z,ACCT-050,PowerCharge,Gas,96.86,US,TR,Known device,1,132.61,0,Completed,No chargeback recorded,,0
+TX-01044,2026-04-03T11:57:08.581Z,ACCT-049,Petra Gas,Pharmacy,158.77,TR,GB,Known device,1,163.99,0,Completed,No chargeback recorded,,0
+TX-01045,2026-04-03T12:03:07.753Z,ACCT-070,JetWings Travel,Travel,205.14,US,TR,Known device,1,113.43,0,Completed,No chargeback recorded,,0
+TX-01046,2026-04-03T12:47:47.292Z,ACCT-017,RideHail Inc,Travel,133.65,DE,US,Known device,1,196.42,0,Completed,No chargeback recorded,,0
+TX-01047,2026-04-03T13:09:57.617Z,ACCT-196,BigBox Mart,Grocery,240.92,TR,US,Known device,1,105.8,0,Completed,No chargeback recorded,,0
+TX-01048,2026-04-03T13:43:32.462Z,ACCT-049,PillPath,Clothing,241.02,GB,GB,Known device,1,161.38,0,Completed,Other dispute recorded,duplicate_charge,1
+TX-01049,2026-04-03T13:46:30.611Z,ACCT-067,PillPath,Clothing,170.27,GB,JP,Known device,1,161.2,0,Completed,No chargeback recorded,,0
+TX-01050,2026-04-03T15:26:32.910Z,ACCT-135,StyleHaus,Online Retail,237.58,TR,DE,Known device,1,111.91,0,Completed,No chargeback recorded,,0
+TX-01051,2026-04-03T15:36:46.998Z,ACCT-083,BookFlight,Online Retail,98.83,JP,GB,Known device,1,123.77,0,Completed,No chargeback recorded,,0
+TX-01052,2026-04-03T15:53:23.309Z,ACCT-129,Quick Stop,Electronics,178.18,JP,GB,Known device,1,142.55,1,Completed,No chargeback recorded,,0
+TX-01053,2026-04-03T16:18:18.245Z,ACCT-082,BookFlight,Online Retail,122.42,JP,TR,Known device,1,132.98,0,Completed,No chargeback recorded,,0
+TX-01054,2026-04-03T16:37:20.790Z,ACCT-109,Aurora Cafe,Travel,59.41,TR,JP,Known device,1,79.84,0,Completed,No chargeback recorded,,0
+TX-01055,2026-04-03T18:06:09.075Z,ACCT-132,Tech Den,Gas,29.08,TR,TR,Known device,1,173.47,0,Completed,No chargeback recorded,,0
+TX-01056,2026-04-03T18:15:45.128Z,ACCT-190,BigBox Mart,Grocery,50.9,TR,US,Known device,1,231.78,0,Completed,No chargeback recorded,,0
+TX-01057,2026-04-03T19:34:10.351Z,ACCT-091,PillPath,Clothing,226.25,GB,TR,Known device,1,101.4,0,Completed,No chargeback recorded,,0
+TX-01058,2026-04-03T20:19:06.229Z,ACCT-109,PillPath,Clothing,143.11,GB,JP,Known device,1,76.98,0,Completed,No chargeback recorded,,0
+TX-01059,2026-04-03T21:17:50.516Z,ACCT-138,StyleHaus,Online Retail,121.72,TR,GB,Known device,1,89.59,0,Completed,No chargeback recorded,,0
+TX-01060,2026-04-03T21:34:08.098Z,ACCT-099,StreamCloud,Pharmacy,181.73,JP,DE,Known device,1,137.78,0,Completed,No chargeback recorded,,0
+TX-01061,2026-04-03T21:47:24.313Z,ACCT-044,Tech Den,Gas,134.83,TR,GB,Known device,1,191.01,1,Completed,No chargeback recorded,,0
+TX-01062,2026-04-03T22:00:54.467Z,ACCT-177,CityMart,Rideshare,152.26,TR,DE,Known device,1,95.36,0,Completed,No chargeback recorded,,0
+TX-01063,2026-04-03T22:48:51.715Z,ACCT-080,RideHail Inc,Travel,66,DE,DE,Known device,1,144.13,0,Completed,No chargeback recorded,,0
+TX-01064,2026-04-03T23:01:44.518Z,ACCT-114,TrainHub,Pharmacy,191.97,US,TR,Known device,1,158,0,Completed,No chargeback recorded,,0
+TX-01065,2026-04-03T23:45:37.238Z,ACCT-161,MediCo,Clothing,133.06,JP,JP,Known device,1,160.47,0,Completed,No chargeback recorded,,0
+TX-01066,2026-04-04T01:44:23.775Z,ACCT-101,Quick Stop,Electronics,176.16,JP,DE,Known device,1,147.88,0,Completed,No chargeback recorded,,0
+TX-01067,2026-04-04T03:46:29.106Z,ACCT-124,TrainHub,Pharmacy,50.87,US,US,Known device,1,88.05,0,Completed,No chargeback recorded,,0
+TX-01068,2026-04-04T03:51:31.448Z,ACCT-040,Tech Den,Gas,217.15,TR,DE,Known device,1,88.29,0,Completed,No chargeback recorded,,0
+TX-01069,2026-04-04T04:08:11.531Z,ACCT-064,Aurora Cafe,Travel,227.67,TR,JP,Known device,1,107.9,0,Completed,No chargeback recorded,,0
+TX-01070,2026-04-04T04:35:08.964Z,ACCT-074,Vespa Apparel,Clothing,99.32,GB,JP,Known device,1,78.78,0,Completed,No chargeback recorded,,0
+TX-01071,2026-04-04T04:48:34.340Z,ACCT-195,MediCo,Clothing,76.8,JP,TR,Shared device,1,118.2,2,Completed,No chargeback recorded,,0
+TX-01072,2026-04-04T06:12:18.996Z,ACCT-121,GadgetWorks,Subscription,54.03,GB,TR,Known device,1,144.26,0,Completed,No chargeback recorded,,0
+TX-01073,2026-04-04T07:00:52.097Z,ACCT-055,StreamCloud,Pharmacy,143.58,JP,DE,Known device,1,126.61,0,Completed,No chargeback recorded,,0
+TX-01074,2026-04-04T07:14:55.963Z,ACCT-133,Flux Online,Clothing,217.09,US,DE,Known device,1,106.41,0,Completed,No chargeback recorded,,0
+TX-01075,2026-04-04T07:31:38.686Z,ACCT-001,TripStop,Clothing,233.87,DE,TR,Known device,1,109.98,0,Completed,No chargeback recorded,,0
+TX-01076,2026-04-04T08:27:34.277Z,ACCT-138,TrainHub,Pharmacy,80.79,US,GB,Known device,1,100.06,0,Completed,No chargeback recorded,,0
+TX-01077,2026-04-04T08:32:58.960Z,ACCT-200,Vespa Apparel,Clothing,132.04,GB,JP,Known device,1,47.93,0,Completed,No chargeback recorded,,0
+TX-01078,2026-04-04T08:41:23.483Z,ACCT-180,TrainHub,Pharmacy,216.1,US,US,Known device,1,51.18,1,Completed,No chargeback recorded,,0
+TX-01079,2026-04-04T08:58:54.740Z,ACCT-095,PowerCharge,Gas,196.28,US,GB,Known device,1,135.31,0,Completed,No chargeback recorded,,0
+TX-01080,2026-04-04T10:52:17.608Z,ACCT-003,BigBox Mart,Grocery,246.93,TR,JP,Known device,1,112.52,0,Completed,No chargeback recorded,,0
+TX-01081,2026-04-04T11:20:10.985Z,ACCT-016,BookHouse,Gas,110.04,DE,TR,Known device,1,132.94,0,Completed,No chargeback recorded,,0
+TX-01082,2026-04-04T11:40:40.267Z,ACCT-031,BookHouse,Gas,183.9,DE,US,Known device,1,139.22,0,Completed,No chargeback recorded,,0
+TX-01083,2026-04-04T12:22:26.237Z,ACCT-126,AppPay,Grocery,87.44,GB,GB,Known device,1,209.8,1,Completed,No chargeback recorded,,0
+TX-01084,2026-04-04T14:23:23.347Z,ACCT-155,PowerCharge,Gas,98.16,US,US,Known device,1,118.42,0,Completed,No chargeback recorded,,0
+TX-01085,2026-04-04T14:31:50.602Z,ACCT-171,StyleHaus,Online Retail,75.14,TR,DE,Known device,1,162.02,0,Completed,No chargeback recorded,,0
+TX-01086,2026-04-04T15:55:56.377Z,ACCT-008,Tech Den,Gas,64.44,TR,GB,Known device,1,229.68,0,Completed,No chargeback recorded,,0
+TX-01087,2026-04-04T17:21:31.073Z,ACCT-028,Subscript Co,Travel,119.44,US,GB,Known device,1,78.31,0,Completed,No chargeback recorded,,0
+TX-01088,2026-04-04T18:30:29.842Z,ACCT-057,AppPay,Grocery,143.89,GB,DE,Known device,1,82.25,0,Completed,No chargeback recorded,,0
+TX-01089,2026-04-04T19:41:12.751Z,ACCT-016,StreamCloud,Pharmacy,231.23,JP,TR,Known device,1,121.49,0,Completed,No chargeback recorded,,0
+TX-01090,2026-04-04T20:04:56.153Z,ACCT-077,Subscript Co,Travel,49.36,US,DE,Known device,1,123.56,0,Completed,No chargeback recorded,,0
+TX-01091,2026-04-04T21:07:38.753Z,ACCT-053,RideHail Inc,Travel,96.52,DE,US,Known device,1,168.9,1,Completed,No chargeback recorded,,0
+TX-01092,2026-04-04T21:09:35.663Z,ACCT-101,MediCo,Clothing,213.57,JP,DE,Known device,1,176.16,0,Completed,No chargeback recorded,,0
+TX-01093,2026-04-04T21:56:59.438Z,ACCT-172,Aurora Cafe,Travel,101.22,TR,DE,Known device,1,0,0,Completed,No chargeback recorded,,0
+TX-01094,2026-04-04T23:16:37.020Z,ACCT-084,Vespa Apparel,Clothing,187.74,GB,JP,Known device,1,106.28,0,Completed,No chargeback recorded,,0
+TX-01095,2026-04-04T23:45:42.878Z,ACCT-122,TrainHub,Pharmacy,239.69,US,TR,Known device,1,130.01,0,Completed,No chargeback recorded,,0
+TX-01096,2026-04-05T00:40:49.055Z,ACCT-089,PowerCharge,Gas,94.73,US,US,Known device,1,99.77,1,Completed,No chargeback recorded,,0
+TX-01097,2026-04-05T00:48:30.949Z,ACCT-186,CloudKitchen,Grocery,180.48,GB,GB,Known device,1,108.82,0,Completed,No chargeback recorded,,0
+TX-01098,2026-04-05T00:58:15.180Z,ACCT-048,AppPay,Grocery,137.08,GB,JP,Known device,1,151.82,1,Completed,No chargeback recorded,,0
+TX-01099,2026-04-05T01:35:16.596Z,ACCT-038,Subscript Co,Travel,212.17,US,DE,Known device,1,207.9,0,Completed,No chargeback recorded,,0
+TX-01100,2026-04-05T01:50:27.250Z,ACCT-120,Vespa Apparel,Clothing,189.81,GB,DE,Known device,1,133.23,0,Completed,No chargeback recorded,,0
+TX-01101,2026-04-05T03:53:16.198Z,ACCT-175,Petra Gas,Pharmacy,36.19,TR,TR,Known device,1,129.81,0,Completed,Other dispute recorded,duplicate_charge,1
+TX-01102,2026-04-05T04:37:07.748Z,ACCT-123,CloudKitchen,Grocery,97.83,GB,US,Known device,1,118.06,0,Completed,No chargeback recorded,,0
+TX-01103,2026-04-05T04:47:35.426Z,ACCT-184,Vespa Apparel,Clothing,103.16,GB,US,Known device,1,222.87,0,Completed,No chargeback recorded,,0
+TX-01104,2026-04-05T05:13:53.029Z,ACCT-115,RideHail Inc,Travel,213.12,DE,GB,Known device,1,84.34,0,Completed,No chargeback recorded,,0
+TX-01105,2026-04-05T05:30:29.226Z,ACCT-193,Flux Online,Clothing,73.84,US,DE,Known device,1,135.52,0,Completed,No chargeback recorded,,0
+TX-01106,2026-04-05T05:31:09.503Z,ACCT-081,Vespa Apparel,Clothing,244.79,GB,GB,Known device,1,152.65,0,Completed,No chargeback recorded,,0
+TX-01107,2026-04-05T05:31:57.580Z,ACCT-098,CloudKitchen,Grocery,12.79,GB,TR,Known device,1,108.36,0,Completed,No chargeback recorded,,0
+TX-01108,2026-04-05T06:45:18.795Z,ACCT-033,Petra Gas,Pharmacy,158.91,TR,TR,Known device,1,174.81,0,Completed,No chargeback recorded,,0
+TX-01109,2026-04-05T07:27:27.547Z,ACCT-186,Aurora Cafe,Travel,125.67,TR,GB,Known device,1,144.65,0,Completed,No chargeback recorded,,0
+TX-01110,2026-04-05T08:06:14.321Z,ACCT-183,NextDay,Subscription,174.94,GB,GB,Known device,1,103.3,0,Completed,No chargeback recorded,,0
+TX-01111,2026-04-05T12:06:40.000Z,ACCT-181,CloudKitchen,Grocery,170.4,GB,JP,Known device,1,192.9,0,Completed,No chargeback recorded,,0
+TX-01112,2026-04-05T12:32:52.259Z,ACCT-033,PowerCharge,Gas,77.74,US,TR,Known device,1,158.91,0,Completed,No chargeback recorded,,0
+TX-01113,2026-04-05T12:42:44.972Z,ACCT-150,MediCo,Clothing,122.88,JP,TR,Known device,1,147.21,0,Completed,No chargeback recorded,,0
+TX-01114,2026-04-05T12:47:26.770Z,ACCT-109,Aurora Cafe,Travel,105,TR,JP,Known device,1,79.84,0,Completed,No chargeback recorded,,0
+TX-01115,2026-04-05T15:03:58.033Z,ACCT-179,Global Eats,Gas,177.61,DE,US,Known device,1,66.51,0,Completed,No chargeback recorded,,0
+TX-01116,2026-04-05T15:05:37.821Z,ACCT-043,NextDay,Subscription,228.3,GB,DE,Known device,1,114.55,0,Completed,No chargeback recorded,,0
+TX-01117,2026-04-05T15:51:21.767Z,ACCT-191,Flux Online,Clothing,99.08,US,JP,Known device,1,0,0,Completed,No chargeback recorded,,0
+TX-01118,2026-04-05T16:15:15.008Z,ACCT-071,BookFlight,Online Retail,64.07,JP,GB,Known device,1,74.58,0,Completed,No chargeback recorded,,0
+TX-01119,2026-04-05T16:37:42.261Z,ACCT-043,TripStop,Clothing,105.68,DE,DE,Known device,1,145.26,0,Completed,No chargeback recorded,,0
+TX-01120,2026-04-05T16:50:21.623Z,ACCT-074,RideHail Inc,Travel,151.78,DE,JP,Known device,1,99.32,0,Completed,No chargeback recorded,,0
+TX-01121,2026-04-05T18:05:59.054Z,ACCT-040,TripStop,Clothing,95.49,DE,DE,Known device,1,124.02,0,Completed,No chargeback recorded,,0
+TX-01122,2026-04-05T18:10:35.796Z,ACCT-023,Global Eats,Gas,107.79,DE,US,Known device,1,140.97,0,Completed,No chargeback recorded,,0
+TX-01123,2026-04-05T18:16:22.854Z,ACCT-022,AppPay,Grocery,108.14,GB,US,Known device,1,157.3,0,Completed,No chargeback recorded,,0
+TX-01124,2026-04-05T18:19:27.518Z,ACCT-033,TrainHub,Pharmacy,94.03,US,TR,Known device,1,137.54,0,Completed,No chargeback recorded,,0
+TX-01125,2026-04-05T18:30:26.112Z,ACCT-150,CityMart,Rideshare,152.71,TR,TR,Known device,1,140.16,0,Completed,No chargeback recorded,,0
+TX-01126,2026-04-05T18:43:33.683Z,ACCT-096,CloudKitchen,Grocery,70.02,GB,DE,Known device,1,147.43,0,Completed,No chargeback recorded,,0
+TX-01127,2026-04-05T19:26:43.961Z,ACCT-087,PillPath,Clothing,10.49,GB,TR,Known device,1,109.14,0,Completed,No chargeback recorded,,0
+TX-01128,2026-04-05T21:35:45.982Z,ACCT-140,PillPath,Clothing,125.07,GB,US,Known device,1,70.14,0,Completed,No chargeback recorded,,0
+TX-01129,2026-04-05T21:55:50.663Z,ACCT-163,JetWings Travel,Travel,147.34,US,TR,Known device,1,136.77,0,Completed,No chargeback recorded,,0
+TX-01130,2026-04-05T22:16:15.688Z,ACCT-119,BookFlight,Online Retail,123.19,JP,TR,Known device,1,71.66,0,Completed,No chargeback recorded,,0
+TX-01131,2026-04-05T23:21:27.122Z,ACCT-004,PowerCharge,Gas,32.23,US,JP,Known device,1,139.56,2,Completed,No chargeback recorded,,0
+TX-01132,2026-04-06T00:43:14.435Z,ACCT-130,GadgetWorks,Subscription,71.11,GB,JP,Known device,1,87.99,0,Completed,No chargeback recorded,,0
+TX-01133,2026-04-06T03:08:22.695Z,ACCT-173,MediCo,Clothing,115.83,JP,GB,Known device,1,94.27,0,Completed,No chargeback recorded,,0
+TX-01134,2026-04-06T04:14:54.084Z,ACCT-162,CityMart,Rideshare,178.37,TR,US,Known device,1,117.63,0,Completed,No chargeback recorded,,0
+TX-01135,2026-04-06T04:16:02.844Z,ACCT-199,Vespa Apparel,Clothing,105.95,GB,US,Known device,1,171,0,Completed,Other dispute recorded,duplicate_charge,1
+TX-01136,2026-04-06T05:55:03.721Z,ACCT-054,RideHail Inc,Travel,43.73,DE,US,Known device,1,203.56,0,Completed,No chargeback recorded,,0
+TX-01137,2026-04-06T08:00:11.830Z,ACCT-055,BigBox Mart,Grocery,170.67,TR,DE,Known device,1,135.09,0,Completed,No chargeback recorded,,0
+TX-01138,2026-04-06T08:39:47.508Z,ACCT-117,RideHail Inc,Travel,215.45,DE,US,Known device,1,122.8,1,Completed,No chargeback recorded,,0
+TX-01139,2026-04-06T09:00:15.264Z,ACCT-098,Aurora Cafe,Travel,90.27,TR,TR,Known device,1,87.66,0,Completed,No chargeback recorded,,0
+TX-01140,2026-04-06T10:23:34.982Z,ACCT-142,PillPath,Clothing,70.81,GB,DE,Known device,1,138.06,0,Completed,No chargeback recorded,,0
+TX-01141,2026-04-06T10:30:48.714Z,ACCT-080,Aurora Cafe,Travel,123.28,TR,DE,Known device,1,126.55,0,Completed,No chargeback recorded,,0
+TX-01142,2026-04-06T10:32:42.898Z,ACCT-057,PowerCharge,Gas,113.28,US,DE,Known device,1,113.07,0,Completed,No chargeback recorded,,0
+TX-01143,2026-04-06T10:34:53.222Z,ACCT-066,StreamCloud,Pharmacy,207.09,JP,TR,Known device,1,153.99,0,Completed,No chargeback recorded,,0
+TX-01144,2026-04-06T10:40:28.623Z,ACCT-051,TrainHub,Pharmacy,69.73,US,US,Known device,1,123.88,0,Completed,No chargeback recorded,,0
+TX-01145,2026-04-06T10:53:36.924Z,ACCT-140,TrainHub,Pharmacy,97.18,US,US,Known device,1,75.7,0,Completed,No chargeback recorded,,0
+TX-01146,2026-04-06T11:12:56.339Z,ACCT-010,Aurora Cafe,Travel,94.84,TR,JP,Known device,1,171.1,0,Completed,No chargeback recorded,,0
+TX-01147,2026-04-06T11:12:56.900Z,ACCT-160,TrainHub,Pharmacy,69.4,US,GB,Known device,1,205.11,1,Completed,No chargeback recorded,,0
+TX-01148,2026-04-06T12:05:12.888Z,ACCT-154,BookFlight,Online Retail,72.98,JP,JP,Known device,1,53.5,0,Completed,No chargeback recorded,,0
+TX-01149,2026-04-06T12:33:53.092Z,ACCT-114,BookFlight,Online Retail,18.77,JP,TR,Known device,1,191.97,0,Completed,No chargeback recorded,,0
+TX-01150,2026-04-06T12:34:05.394Z,ACCT-174,CityMart,Rideshare,214.48,TR,JP,Known device,1,138.02,0,Completed,No chargeback recorded,,0
+TX-01151,2026-04-06T12:45:14.738Z,ACCT-024,Global Eats,Gas,97.43,DE,TR,Known device,1,231.78,0,Completed,No chargeback recorded,,0
+TX-01152,2026-04-06T12:59:12.141Z,ACCT-021,TripStop,Clothing,212.01,DE,DE,Known device,1,94.69,0,Completed,No chargeback recorded,,0
+TX-01153,2026-04-06T13:04:46.556Z,ACCT-033,PillPath,Clothing,246.7,GB,TR,Known device,1,116.17,0,Completed,No chargeback recorded,,0
+TX-01154,2026-04-06T13:16:41.777Z,ACCT-179,Aurora Cafe,Travel,180.72,TR,US,Known device,1,74.62,0,Completed,No chargeback recorded,,0
+TX-01155,2026-04-06T13:56:49.664Z,ACCT-036,Quick Stop,Electronics,77.63,JP,DE,Known device,1,128.31,0,Completed,No chargeback recorded,,0
+TX-01156,2026-04-06T14:17:13.766Z,ACCT-161,TripStop,Clothing,171.31,DE,JP,Known device,1,155.97,0,Completed,No chargeback recorded,,0
+TX-01157,2026-04-06T15:38:14.826Z,ACCT-057,Tech Den,Gas,235.97,TR,DE,Known device,1,113.28,0,Completed,No chargeback recorded,,0
+TX-01158,2026-04-06T16:23:48.761Z,ACCT-151,Global Eats,Gas,105.81,DE,US,Known device,1,181.85,0,Completed,No chargeback recorded,,0
+TX-01159,2026-04-06T17:50:36.657Z,ACCT-107,Tech Den,Gas,95.86,TR,TR,Known device,1,108.3,0,Completed,No chargeback recorded,,0
+TX-01160,2026-04-06T18:04:31.258Z,ACCT-046,JetWings Travel,Travel,138.56,US,DE,Known device,1,135.74,1,Completed,No chargeback recorded,,0
+TX-01161,2026-04-06T18:05:15.568Z,ACCT-190,Tech Den,Gas,58.63,TR,US,Known device,1,141.34,0,Completed,No chargeback recorded,,0
+TX-01162,2026-04-06T18:22:16.921Z,ACCT-080,Vespa Apparel,Clothing,202.36,GB,DE,Known device,1,126.35,0,Completed,No chargeback recorded,,0
+TX-01163,2026-04-06T19:02:59.085Z,ACCT-159,CityMart,Rideshare,95.61,TR,US,Known device,1,124.58,1,Completed,No chargeback recorded,,0
+TX-01164,2026-04-06T19:17:22.000Z,ACCT-131,Tech Den,Gas,12.57,TR,DE,Known device,1,133.22,0,Completed,No chargeback recorded,,0
+TX-01165,2026-04-06T19:22:39.378Z,ACCT-137,MediCo,Clothing,167.28,JP,TR,Known device,1,68.85,0,Completed,No chargeback recorded,,0
+TX-01166,2026-04-06T21:32:12.994Z,ACCT-019,PowerCharge,Gas,33.38,US,TR,Known device,1,86.78,0,Completed,No chargeback recorded,,0
+TX-01167,2026-04-06T23:40:16.659Z,ACCT-034,BigBox Mart,Grocery,143.13,TR,US,Known device,1,58.81,0,Completed,No chargeback recorded,,0
+TX-01168,2026-04-07T00:10:25.151Z,ACCT-160,BookHouse,Gas,156.84,DE,GB,Known device,1,171.5,1,Completed,No chargeback recorded,,0
+TX-01169,2026-04-07T01:14:16.589Z,ACCT-189,PowerCharge,Gas,242.39,US,DE,Known device,1,219.28,0,Completed,No chargeback recorded,,0
+TX-01170,2026-04-07T01:27:57.645Z,ACCT-048,Petra Gas,Pharmacy,118.1,TR,JP,Known device,1,144.45,1,Completed,No chargeback recorded,,0
+TX-01171,2026-04-07T02:13:01.075Z,ACCT-057,Aurora Cafe,Travel,200.55,TR,DE,Known device,1,128.58,0,Completed,No chargeback recorded,,0
+TX-01172,2026-04-07T02:49:14.375Z,ACCT-178,Global Eats,Gas,26.81,DE,US,Known device,1,113.51,0,Completed,No chargeback recorded,,0
+TX-01173,2026-04-07T03:32:53.326Z,ACCT-164,PowerCharge,Gas,98.61,US,DE,Known device,1,0,0,Completed,No chargeback recorded,,0
+TX-01174,2026-04-07T04:18:54.250Z,ACCT-163,StreamCloud,Pharmacy,119.7,JP,TR,Known device,1,147.34,0,Completed,No chargeback recorded,,0
+TX-01175,2026-04-07T06:15:42.305Z,ACCT-123,BookFlight,Online Retail,248.87,JP,US,Known device,1,107.94,0,Completed,No chargeback recorded,,0
+TX-01176,2026-04-07T06:17:05.812Z,ACCT-024,PowerCharge,Gas,98.24,US,TR,Known device,1,164.61,0,Completed,No chargeback recorded,,0
+TX-01177,2026-04-07T06:56:22.772Z,ACCT-014,Tech Den,Gas,22.25,TR,GB,Known device,1,207.49,0,Completed,No chargeback recorded,,0
+TX-01178,2026-04-07T08:14:49.423Z,ACCT-076,TripStop,Clothing,245.67,DE,DE,Known device,1,161.76,0,Completed,No chargeback recorded,,0
+TX-01179,2026-04-07T08:45:18.983Z,ACCT-026,TripStop,Clothing,93.43,DE,JP,Known device,1,104.9,0,Completed,No chargeback recorded,,0
+TX-01180,2026-04-07T09:40:00.551Z,ACCT-152,StyleHaus,Online Retail,14.91,TR,DE,Known device,1,149.93,0,Completed,No chargeback recorded,,0
+TX-01181,2026-04-07T09:47:11.047Z,ACCT-177,BookFlight,Online Retail,92.5,JP,DE,Known device,1,130.8,0,Completed,No chargeback recorded,,0
+TX-01182,2026-04-07T10:23:21.662Z,ACCT-180,NextDay,Subscription,93.77,GB,US,Known device,1,63.91,1,Completed,No chargeback recorded,,0
+TX-01183,2026-04-07T10:46:43.690Z,ACCT-017,MediCo,Clothing,135.31,JP,US,Known device,1,165.03,1,Completed,Fraud-coded dispute recorded,fraud_card_not_present,1
+TX-01184,2026-04-07T11:04:36.416Z,ACCT-175,JetWings Travel,Travel,172.63,US,TR,Known device,1,119.44,0,Completed,No chargeback recorded,,0
+TX-01185,2026-04-07T11:16:31.138Z,ACCT-074,StyleHaus,Online Retail,27.37,TR,JP,Known device,1,107.56,0,Completed,No chargeback recorded,,0
+TX-01186,2026-04-07T11:18:52.432Z,ACCT-005,Vespa Apparel,Clothing,98.93,GB,US,Known device,1,136.28,0,Completed,No chargeback recorded,,0
+TX-01187,2026-04-07T11:39:46.072Z,ACCT-118,Subscript Co,Travel,18.56,US,US,Known device,1,87.38,0,Completed,No chargeback recorded,,0
+TX-01188,2026-04-07T12:11:28.244Z,ACCT-050,Tech Den,Gas,177.07,TR,TR,Known device,1,96.86,0,Completed,No chargeback recorded,,0
+TX-01189,2026-04-07T12:57:14.162Z,ACCT-048,JetWings Travel,Travel,141.34,US,JP,Known device,1,137.08,1,Completed,No chargeback recorded,,0
+TX-01190,2026-04-07T13:02:06.265Z,ACCT-050,Subscript Co,Travel,103.01,US,TR,Known device,2,136.97,0,Completed,No chargeback recorded,,0
+TX-01191,2026-04-07T13:31:50.647Z,ACCT-019,CloudKitchen,Grocery,71.46,GB,TR,Known device,1,62.21,0,Completed,No chargeback recorded,,0
+TX-01192,2026-04-07T13:38:17.341Z,ACCT-184,BookHouse,Gas,224.78,DE,US,Known device,1,163.01,0,Completed,No chargeback recorded,,0
+TX-01193,2026-04-07T14:10:24.173Z,ACCT-113,BookFlight,Online Retail,186.07,JP,US,Known device,1,99.77,0,Completed,No chargeback recorded,,0
+TX-01194,2026-04-07T14:26:32.912Z,ACCT-076,CityMart,Rideshare,47.25,TR,DE,Known device,1,167.82,0,Completed,No chargeback recorded,,0
+TX-01195,2026-04-07T14:53:57.650Z,ACCT-039,PillPath,Clothing,196.37,GB,TR,Known device,1,88.32,0,Completed,No chargeback recorded,,0
+TX-01196,2026-04-07T14:56:34.325Z,ACCT-170,Petra Gas,Pharmacy,147.43,TR,TR,Known device,1,101.02,1,Completed,No chargeback recorded,,0
+TX-01197,2026-04-07T16:22:13.909Z,ACCT-113,Vespa Apparel,Clothing,42,GB,US,Known device,1,110.78,0,Completed,No chargeback recorded,,0
+TX-01198,2026-04-07T16:22:43.275Z,ACCT-117,AppPay,Grocery,209.6,GB,US,Known device,1,125.23,1,Completed,No chargeback recorded,,0
+TX-01199,2026-04-07T16:51:50.729Z,ACCT-127,StyleHaus,Online Retail,71.33,TR,TR,Known device,1,64.02,0,Completed,No chargeback recorded,,0
+TX-01200,2026-04-07T17:53:02.634Z,ACCT-055,BookFlight,Online Retail,166.46,JP,DE,Known device,1,143.58,0,Completed,No chargeback recorded,,0
+TX-01201,2026-04-07T19:01:37.798Z,ACCT-074,BookFlight,Online Retail,85.98,JP,JP,Known device,1,99.32,0,Completed,No chargeback recorded,,0
+TX-01202,2026-04-07T19:43:48.215Z,ACCT-132,AppPay,Grocery,107.39,GB,TR,Known device,1,164.07,0,Completed,No chargeback recorded,,0
+TX-01203,2026-04-07T20:02:54.971Z,ACCT-030,JetWings Travel,Travel,21.95,US,JP,Known device,1,133.92,1,Completed,No chargeback recorded,,0
+TX-01204,2026-04-07T20:58:39.024Z,ACCT-085,Vespa Apparel,Clothing,209.89,GB,DE,Known device,1,112.78,0,Completed,No chargeback recorded,,0
+TX-01205,2026-04-07T21:05:51.297Z,ACCT-096,CloudKitchen,Grocery,81.66,GB,DE,Known device,1,141.41,0,Completed,No chargeback recorded,,0
+TX-01206,2026-04-07T21:35:35.903Z,ACCT-002,CityMart,Rideshare,212.94,TR,JP,Known device,1,197.15,0,Completed,No chargeback recorded,,0
+TX-01207,2026-04-07T23:05:50.377Z,ACCT-186,PillPath,Clothing,164.93,GB,GB,Known device,1,125.67,0,Completed,No chargeback recorded,,0
+TX-01208,2026-04-07T23:31:52.159Z,ACCT-041,Tech Den,Gas,198.5,TR,US,Known device,1,140.95,0,Completed,No chargeback recorded,,0
+TX-01209,2026-04-08T00:13:22.254Z,ACCT-160,NextDay,Subscription,165.28,GB,GB,Known device,1,156.84,1,Completed,No chargeback recorded,,0
+TX-01210,2026-04-08T00:34:52.509Z,ACCT-029,BookFlight,Online Retail,84.11,JP,GB,Known device,1,96.78,0,Completed,No chargeback recorded,,0
+TX-01211,2026-04-08T02:14:26.359Z,ACCT-040,StyleHaus,Online Retail,229.41,TR,DE,Known device,1,95.49,0,Completed,No chargeback recorded,,0
+TX-01212,2026-04-08T02:26:10.040Z,ACCT-058,PillPath,Clothing,63.64,GB,US,Known device,1,184.31,0,Completed,No chargeback recorded,,0
+TX-01213,2026-04-08T02:31:51.719Z,ACCT-076,Vespa Apparel,Clothing,47.87,GB,DE,Known device,1,161.76,0,Completed,No chargeback recorded,,0
+TX-01214,2026-04-08T02:53:09.758Z,ACCT-010,PowerCharge,Gas,12.2,US,JP,Known device,1,166.8,0,Completed,No chargeback recorded,,0
+TX-01215,2026-04-08T03:17:37.214Z,ACCT-090,TrainHub,Pharmacy,96.5,US,GB,Known device,1,115.03,0,Completed,No chargeback recorded,,0
+TX-01216,2026-04-08T04:54:27.575Z,ACCT-129,MediCo,Clothing,132.12,JP,GB,Known device,1,160.69,1,Completed,No chargeback recorded,,0
+TX-01217,2026-04-08T05:43:51.473Z,ACCT-047,StyleHaus,Online Retail,119.73,TR,US,Known device,1,145.34,0,Completed,No chargeback recorded,,0
+TX-01218,2026-04-08T05:59:04.783Z,ACCT-181,NextDay,Subscription,15.85,GB,JP,Known device,1,191.8,0,Completed,No chargeback recorded,,0
+TX-01219,2026-04-08T06:14:05.669Z,ACCT-101,JetWings Travel,Travel,213.31,US,DE,Known device,1,177.5,0,Completed,No chargeback recorded,,0
+TX-01220,2026-04-08T07:28:02.589Z,ACCT-066,GadgetWorks,Subscription,189.24,GB,TR,Known device,1,164.06,0,Completed,No chargeback recorded,,0
+TX-01221,2026-04-08T09:20:53.103Z,ACCT-183,PowerCharge,Gas,224.51,US,GB,Known device,1,105.91,0,Completed,No chargeback recorded,,0
+TX-01222,2026-04-08T09:28:08.052Z,ACCT-109,PowerCharge,Gas,198.69,US,JP,Known device,1,82.7,0,Completed,Fraud-coded dispute recorded,fraud_card_not_present,1
+TX-01223,2026-04-08T10:11:11.528Z,ACCT-100,Flux Online,Clothing,36.43,US,US,Known device,1,78.5,0,Completed,No chargeback recorded,,0
+TX-01224,2026-04-08T10:17:35.282Z,ACCT-155,Tech Den,Gas,164.64,TR,US,Known device,1,98.16,0,Completed,No chargeback recorded,,0
+TX-01225,2026-04-08T10:55:19.912Z,ACCT-079,Global Eats,Gas,211.53,DE,JP,Known device,1,148.41,0,Completed,Other dispute recorded,service_not_received,1
+TX-01226,2026-04-08T13:32:23.656Z,ACCT-174,BigBox Mart,Grocery,199.03,TR,JP,Known device,1,142.84,0,Completed,No chargeback recorded,,0
+TX-01227,2026-04-08T13:34:34.602Z,ACCT-033,Vespa Apparel,Clothing,21.4,GB,TR,Known device,1,137.54,0,Completed,No chargeback recorded,,0
+TX-01228,2026-04-08T13:54:55.738Z,ACCT-139,CloudKitchen,Grocery,195,GB,JP,Known device,1,210.59,0,Completed,No chargeback recorded,,0
+TX-01229,2026-04-08T16:15:51.876Z,ACCT-044,Tech Den,Gas,139.89,TR,GB,Known device,1,154.6,1,Completed,No chargeback recorded,,0
+TX-01230,2026-04-08T17:00:00.109Z,ACCT-185,PowerCharge,Gas,222.01,US,GB,Known device,1,72.78,0,Completed,No chargeback recorded,,0
+TX-01231,2026-04-08T17:26:53.556Z,ACCT-037,MediCo,Clothing,180.17,JP,GB,Known device,1,87.48,0,Completed,No chargeback recorded,,0
+TX-01232,2026-04-08T17:43:00.309Z,ACCT-116,StreamCloud,Pharmacy,74.04,JP,JP,Known device,1,135.44,0,Completed,No chargeback recorded,,0
+TX-01233,2026-04-08T17:43:56.092Z,ACCT-103,PillPath,Clothing,190.09,GB,JP,Known device,1,149.59,0,Completed,No chargeback recorded,,0
+TX-01234,2026-04-08T18:39:53.972Z,ACCT-075,Subscript Co,Travel,225.12,US,TR,Known device,1,75.81,0,Completed,No chargeback recorded,,0
+TX-01235,2026-04-08T18:58:50.612Z,ACCT-016,GadgetWorks,Subscription,71.83,GB,TR,Known device,1,132.94,0,Completed,No chargeback recorded,,0
+TX-01236,2026-04-08T22:06:07.321Z,ACCT-126,Global Eats,Gas,103.36,DE,GB,Known device,1,167.26,1,Completed,No chargeback recorded,,0
+TX-01237,2026-04-08T23:38:45.813Z,ACCT-175,BookHouse,Gas,62.73,DE,TR,Known device,1,129.81,0,Completed,No chargeback recorded,,0
+TX-01238,2026-04-09T00:19:41.197Z,ACCT-080,MediCo,Clothing,225.13,JP,DE,Known device,1,126.55,0,Completed,No chargeback recorded,,0
+TX-01239,2026-04-09T00:59:24.211Z,ACCT-157,Tech Den,Gas,182.53,TR,US,Known device,1,148.65,0,Completed,No chargeback recorded,,0
+TX-01240,2026-04-09T01:40:12.860Z,ACCT-197,Aurora Cafe,Travel,180.06,TR,DE,Known device,1,118.53,0,Completed,No chargeback recorded,,0
+TX-01241,2026-04-09T02:15:26.923Z,ACCT-142,TripStop,Clothing,230.92,DE,DE,Known device,1,127.55,0,Completed,No chargeback recorded,,0
+TX-01242,2026-04-09T02:53:12.892Z,ACCT-107,BookHouse,Gas,25.12,DE,TR,Known device,1,102.08,0,Completed,No chargeback recorded,,0
+TX-01243,2026-04-09T03:42:30.088Z,ACCT-060,JetWings Travel,Travel,191.59,US,US,Known device,1,82.29,0,Completed,No chargeback recorded,,0
+TX-01244,2026-04-09T03:57:25.336Z,ACCT-155,Petra Gas,Pharmacy,72.43,TR,US,Known device,1,131.4,0,Completed,No chargeback recorded,,0
+TX-01245,2026-04-09T04:00:37.544Z,ACCT-026,Global Eats,Gas,66.51,DE,JP,Known device,1,93.43,0,Completed,No chargeback recorded,,0
+TX-01246,2026-04-09T04:10:59.741Z,ACCT-191,MediCo,Clothing,17.2,JP,JP,Known device,1,99.08,0,Completed,No chargeback recorded,,0
+TX-01247,2026-04-09T04:40:18.983Z,ACCT-174,CloudKitchen,Grocery,30.54,GB,JP,Known device,1,147.67,0,Completed,No chargeback recorded,,0
+TX-01248,2026-04-09T05:11:26.417Z,ACCT-007,AppPay,Grocery,49.32,GB,JP,Known device,1,163.99,0,Completed,No chargeback recorded,,0
+TX-01249,2026-04-09T05:20:01.967Z,ACCT-165,PillPath,Clothing,77.95,GB,JP,Known device,1,169.42,0,Completed,No chargeback recorded,,0
+TX-01250,2026-04-09T05:50:24.036Z,ACCT-200,StreamCloud,Pharmacy,215.2,JP,JP,Known device,1,73.61,0,Completed,No chargeback recorded,,0
+TX-01251,2026-04-09T06:30:04.769Z,ACCT-192,PillPath,Clothing,19.16,GB,TR,Known device,1,153.81,0,Completed,No chargeback recorded,,0
+TX-01252,2026-04-09T06:34:27.529Z,ACCT-084,BookFlight,Online Retail,241.67,JP,JP,Known device,1,107.69,0,Completed,No chargeback recorded,,0
+TX-01253,2026-04-09T07:00:25.337Z,ACCT-008,JetWings Travel,Travel,36.05,US,GB,Known device,1,228.36,0,Completed,No chargeback recorded,,0
+TX-01254,2026-04-09T07:18:08.939Z,ACCT-119,RideHail Inc,Travel,132.49,DE,TR,Known device,1,85.5,0,Completed,No chargeback recorded,,0
+TX-01255,2026-04-09T07:46:16.882Z,ACCT-038,Flux Online,Clothing,214.4,US,DE,Known device,1,210.03,0,Completed,No chargeback recorded,,0
+TX-01256,2026-04-09T08:40:30.644Z,ACCT-053,GadgetWorks,Subscription,120.55,GB,US,Known device,1,154.33,1,Completed,No chargeback recorded,,0
+TX-01257,2026-04-09T08:44:35.919Z,ACCT-007,Subscript Co,Travel,92.58,US,JP,Known device,1,155.5,0,Completed,No chargeback recorded,,0
+TX-01258,2026-04-09T08:59:48.399Z,ACCT-155,CityMart,Rideshare,145.04,TR,US,Known device,1,98.16,0,Completed,No chargeback recorded,,0
+TX-01259,2026-04-09T10:06:01.632Z,ACCT-033,CityMart,Rideshare,231.43,TR,TR,Known device,1,116.17,0,Completed,No chargeback recorded,,0
+TX-01260,2026-04-09T11:12:45.193Z,ACCT-016,JetWings Travel,Travel,247.6,US,TR,Known device,1,121.49,0,Completed,No chargeback recorded,,0
+TX-01261,2026-04-09T11:25:58.739Z,ACCT-091,CityMart,Rideshare,227.79,TR,TR,Known device,1,115.64,0,Completed,No chargeback recorded,,0
+TX-01262,2026-04-09T11:53:50.609Z,ACCT-120,StreamCloud,Pharmacy,239.12,JP,DE,Known device,1,189.81,0,Completed,No chargeback recorded,,0
+TX-01263,2026-04-09T13:05:13.790Z,ACCT-157,TrainHub,Pharmacy,25.12,US,US,Known device,1,154.82,0,Completed,No chargeback recorded,,0
+TX-01264,2026-04-09T14:12:04.217Z,ACCT-144,BookFlight,Online Retail,136.98,JP,GB,Known device,1,166.71,0,Completed,No chargeback recorded,,0
+TX-01265,2026-04-09T14:31:52.528Z,ACCT-069,AppPay,Grocery,5.99,GB,JP,Known device,1,129.88,0,Completed,No chargeback recorded,,0
+TX-01266,2026-04-09T15:40:20.648Z,ACCT-031,NextDay,Subscription,157.92,GB,US,Known device,1,145.8,0,Completed,No chargeback recorded,,0
+TX-01267,2026-04-09T18:06:03.227Z,ACCT-170,StreamCloud,Pharmacy,152.66,JP,TR,Known device,1,107.02,1,Completed,No chargeback recorded,,0
+TX-01268,2026-04-09T18:09:34.974Z,ACCT-010,GadgetWorks,Subscription,100.19,GB,JP,Known device,1,153.95,0,Completed,Fraud-coded dispute recorded,fraud_card_present,1
+TX-01269,2026-04-09T18:32:48.134Z,ACCT-079,Global Eats,Gas,66.48,DE,JP,Known device,1,152.91,0,Completed,No chargeback recorded,,0
+TX-01270,2026-04-09T18:58:39.442Z,ACCT-050,StyleHaus,Online Retail,148.82,TR,TR,Known device,1,103.01,0,Completed,No chargeback recorded,,0
+TX-01271,2026-04-09T19:34:35.908Z,ACCT-083,Flux Online,Clothing,64.04,US,GB,Known device,1,98.83,0,Completed,No chargeback recorded,,0
+TX-01272,2026-04-09T19:54:18.025Z,ACCT-036,TrainHub,Pharmacy,234.64,US,DE,Known device,1,104.9,0,Completed,No chargeback recorded,,0
+TX-01273,2026-04-09T20:40:07.782Z,ACCT-011,RideHail Inc,Travel,153.84,DE,GB,Known device,1,138.39,0,Completed,No chargeback recorded,,0
+TX-01274,2026-04-09T21:11:04.984Z,ACCT-059,Subscript Co,Travel,190.42,US,JP,Known device,1,140.54,0,Completed,No chargeback recorded,,0
+TX-01275,2026-04-09T21:38:26.068Z,ACCT-165,Petra Gas,Pharmacy,104.31,TR,JP,Known device,1,167.51,0,Completed,No chargeback recorded,,0
+TX-01276,2026-04-09T22:23:33.213Z,ACCT-121,NextDay,Subscription,181.74,GB,TR,Known device,1,141.41,0,Completed,No chargeback recorded,,0
+TX-01277,2026-04-09T23:15:03.754Z,ACCT-070,NextDay,Subscription,123.71,GB,TR,Known device,1,142.37,0,Completed,No chargeback recorded,,0
+TX-01278,2026-04-09T23:26:18.415Z,ACCT-126,NextDay,Subscription,36.72,GB,GB,Known device,1,124.72,1,Completed,No chargeback recorded,,0
+TX-01279,2026-04-10T00:53:15.397Z,ACCT-184,CloudKitchen,Grocery,199.52,GB,US,Known device,1,222.87,0,Completed,Other dispute recorded,service_not_received,1
+TX-01280,2026-04-10T01:29:28.894Z,ACCT-144,Tech Den,Gas,121.72,TR,GB,Known device,1,151.84,0,Completed,No chargeback recorded,,0
+TX-01281,2026-04-10T02:46:41.644Z,ACCT-042,Petra Gas,Pharmacy,237.63,TR,DE,Shared device,1,117.73,1,Completed,No chargeback recorded,,0
+TX-01282,2026-04-10T03:03:27.041Z,ACCT-072,GadgetWorks,Subscription,130.16,GB,TR,Known device,1,197.1,0,Completed,No chargeback recorded,,0
+TX-01283,2026-04-10T03:13:57.216Z,ACCT-133,StreamCloud,Pharmacy,93.24,JP,DE,Known device,1,169.75,0,Completed,No chargeback recorded,,0
+TX-01284,2026-04-10T03:33:10.296Z,ACCT-009,TrainHub,Pharmacy,148.97,US,GB,Known device,1,145.72,0,Completed,No chargeback recorded,,0
+TX-01285,2026-04-10T05:01:21.244Z,ACCT-060,RideHail Inc,Travel,203.26,DE,US,Known device,1,136.94,0,Completed,No chargeback recorded,,0
+TX-01286,2026-04-10T05:03:39.206Z,ACCT-041,Aurora Cafe,Travel,141.92,TR,US,Known device,1,146.13,0,Completed,No chargeback recorded,,0
+TX-01287,2026-04-10T05:17:21.028Z,ACCT-060,Subscript Co,Travel,115.89,US,US,Known device,2,191.59,0,Completed,No chargeback recorded,,0
+TX-01288,2026-04-10T05:58:35.243Z,ACCT-094,Vespa Apparel,Clothing,132.82,GB,JP,Known device,1,125.09,0,Completed,No chargeback recorded,,0
+TX-01289,2026-04-10T06:07:50.312Z,ACCT-069,BookFlight,Online Retail,99.66,JP,JP,Known device,1,110.72,0,Completed,No chargeback recorded,,0
+TX-01290,2026-04-10T06:54:06.175Z,ACCT-182,StyleHaus,Online Retail,222.98,TR,TR,Known device,1,115.55,1,Completed,No chargeback recorded,,0
+TX-01291,2026-04-10T08:07:42.722Z,ACCT-199,Global Eats,Gas,226.85,DE,US,Known device,1,113.15,1,Completed,No chargeback recorded,,0
+TX-01292,2026-04-10T08:15:33.549Z,ACCT-141,BigBox Mart,Grocery,158.87,TR,US,Known device,1,216.33,0,Completed,No chargeback recorded,,0
+TX-01293,2026-04-10T08:30:14.213Z,ACCT-019,BigBox Mart,Grocery,23.27,TR,TR,Known device,1,71.46,0,Completed,No chargeback recorded,,0
+TX-01294,2026-04-10T08:33:47.981Z,ACCT-129,TripStop,Clothing,230.23,DE,GB,Known device,1,146.41,1,Completed,No chargeback recorded,,0
+TX-01295,2026-04-10T08:34:00.629Z,ACCT-076,CloudKitchen,Grocery,17.05,GB,DE,Known device,1,133.34,0,Completed,No chargeback recorded,,0
+TX-01296,2026-04-10T08:44:49.036Z,ACCT-003,Petra Gas,Pharmacy,147.56,TR,JP,Known device,1,159.53,0,Completed,No chargeback recorded,,0
+TX-01297,2026-04-10T08:46:43.108Z,ACCT-159,CloudKitchen,Grocery,181.09,GB,US,Known device,1,110.09,1,Completed,No chargeback recorded,,0
+TX-01298,2026-04-10T09:18:13.393Z,ACCT-023,RideHail Inc,Travel,224.61,DE,US,Known device,1,136.21,0,Completed,No chargeback recorded,,0
+TX-01299,2026-04-10T09:28:49.468Z,ACCT-036,Quick Stop,Electronics,177.29,JP,DE,Known device,1,128.31,0,Completed,No chargeback recorded,,0
+TX-01300,2026-04-10T09:40:12.411Z,ACCT-045,NextDay,Subscription,171.75,GB,TR,Known device,1,142.95,0,Completed,No chargeback recorded,,0
+TX-01301,2026-04-10T10:53:56.381Z,ACCT-121,PillPath,Clothing,116.68,GB,TR,Known device,1,144.26,0,Completed,No chargeback recorded,,0
+TX-01302,2026-04-10T11:15:00.853Z,ACCT-061,StyleHaus,Online Retail,75.18,TR,GB,Known device,1,131.97,0,Completed,No chargeback recorded,,0
+TX-01303,2026-04-10T11:26:32.188Z,ACCT-004,Global Eats,Gas,92.49,DE,JP,Known device,1,134.79,2,Completed,Other dispute recorded,service_not_received,1
+TX-01304,2026-04-10T11:57:16.000Z,ACCT-188,JetWings Travel,Travel,81.47,US,JP,Known device,1,81.55,2,Completed,No chargeback recorded,,0
+TX-01305,2026-04-10T11:58:02.000Z,ACCT-188,AppPay,Grocery,143.66,GB,JP,Known device,2,81.47,2,Completed,No chargeback recorded,,0
+TX-01306,2026-04-10T11:58:20.000Z,ACCT-188,Global Eats,Gas,134.35,DE,JP,Known device,3,84.43,2,Completed,No chargeback recorded,,0
+TX-01307,2026-04-10T11:59:31.000Z,ACCT-188,GadgetWorks,Subscription,25.99,GB,JP,Known device,4,87.39,2,Completed,No chargeback recorded,,0
+TX-01308,2026-04-10T11:59:52.000Z,ACCT-188,AppPay,Grocery,72.9,GB,JP,Known device,5,84.43,2,Completed,No chargeback recorded,,0
+TX-01309,2026-04-10T12:00:41.000Z,ACCT-188,BookHouse,Gas,30.9,DE,JP,Known device,6,81.47,2,Completed,Fraud-coded dispute recorded,fraud_card_present,1
+TX-01310,2026-04-10T12:15:00.462Z,ACCT-197,TrainHub,Pharmacy,38.7,US,DE,Known device,1,180.06,0,Completed,No chargeback recorded,,0
+TX-01311,2026-04-10T12:46:00.142Z,ACCT-097,GadgetWorks,Subscription,74.27,GB,US,Known device,1,133.32,0,Completed,No chargeback recorded,,0
+TX-01312,2026-04-10T13:07:40.524Z,ACCT-124,Petra Gas,Pharmacy,224.5,TR,US,Known device,1,83.19,0,Completed,No chargeback recorded,,0
+TX-01313,2026-04-10T13:12:37.569Z,ACCT-005,CityMart,Rideshare,175.13,TR,US,Known device,1,130.94,1,Completed,No chargeback recorded,,0
+TX-01314,2026-04-10T14:13:09.408Z,ACCT-174,CloudKitchen,Grocery,114.53,GB,JP,Known device,1,142.84,0,Completed,No chargeback recorded,,0
+TX-01315,2026-04-10T14:17:32.360Z,ACCT-047,AppPay,Grocery,9.84,GB,US,Known device,1,132.53,0,Completed,No chargeback recorded,,0
+TX-01316,2026-04-10T14:46:26.078Z,ACCT-089,AppPay,Grocery,66.02,GB,US,Known device,1,97.25,1,Completed,No chargeback recorded,,0
+TX-01317,2026-04-10T17:01:31.865Z,ACCT-167,StyleHaus,Online Retail,111.11,TR,US,Known device,1,132.36,0,Completed,No chargeback recorded,,0
+TX-01318,2026-04-10T17:13:20.327Z,ACCT-014,PillPath,Clothing,34.19,GB,GB,Known device,1,188.31,0,Completed,No chargeback recorded,,0
+TX-01319,2026-04-10T17:56:22.181Z,ACCT-119,BookFlight,Online Retail,142.77,JP,TR,Known device,1,100.97,0,Completed,No chargeback recorded,,0
+TX-01320,2026-04-10T18:01:17.654Z,ACCT-038,Flux Online,Clothing,71.85,US,DE,Known device,1,212.17,0,Completed,No chargeback recorded,,0
+TX-01321,2026-04-10T18:05:55.899Z,ACCT-187,Petra Gas,Pharmacy,78.66,TR,DE,Known device,1,103.64,0,Completed,No chargeback recorded,,0
+TX-01322,2026-04-10T18:35:43.625Z,ACCT-182,BookFlight,Online Retail,41.64,JP,TR,Known device,1,149.43,1,Completed,No chargeback recorded,,0
+TX-01323,2026-04-10T19:50:07.186Z,ACCT-163,CloudKitchen,Grocery,146.75,GB,TR,Known device,1,133.52,0,Completed,No chargeback recorded,,0
+TX-01324,2026-04-10T19:57:42.672Z,ACCT-132,CloudKitchen,Grocery,164.71,GB,TR,Known device,1,162.33,0,Completed,No chargeback recorded,,0
+TX-01325,2026-04-10T20:41:17.533Z,ACCT-109,BookHouse,Gas,24,DE,JP,Known device,1,90.8,1,Completed,No chargeback recorded,,0
+TX-01326,2026-04-10T21:09:16.373Z,ACCT-192,Petra Gas,Pharmacy,8.78,TR,TR,Known device,1,138.98,0,Completed,No chargeback recorded,,0
+TX-01327,2026-04-10T21:36:23.748Z,ACCT-116,StyleHaus,Online Retail,145.03,TR,JP,Known device,1,107.75,0,Completed,No chargeback recorded,,0
+TX-01328,2026-04-10T22:25:27.605Z,ACCT-043,NextDay,Subscription,110.63,GB,DE,Known device,1,125.47,0,Completed,No chargeback recorded,,0
+TX-01329,2026-04-10T23:10:44.629Z,ACCT-018,CityMart,Rideshare,40.25,TR,GB,Known device,1,123.8,0,Completed,No chargeback recorded,,0
+TX-01330,2026-04-10T23:50:10.687Z,ACCT-178,Vespa Apparel,Clothing,195.31,GB,US,Known device,1,98,0,Completed,No chargeback recorded,,0
+TX-01331,2026-04-11T00:27:28.040Z,ACCT-093,PowerCharge,Gas,92.51,US,US,Known device,1,211.48,0,Completed,No chargeback recorded,,0
+TX-01332,2026-04-11T00:29:22.762Z,ACCT-163,PillPath,Clothing,30.45,GB,TR,Known device,1,146.75,0,Completed,No chargeback recorded,,0
+TX-01333,2026-04-11T01:57:37.981Z,ACCT-028,CloudKitchen,Grocery,72.89,GB,GB,Known device,1,119.44,0,Completed,No chargeback recorded,,0
+TX-01334,2026-04-11T02:46:27.411Z,ACCT-072,StyleHaus,Online Retail,247.23,TR,TR,Known device,1,163.63,0,Completed,No chargeback recorded,,0
+TX-01335,2026-04-11T03:57:23.398Z,ACCT-014,BookFlight,Online Retail,167.93,JP,GB,Known device,1,169.14,0,Completed,No chargeback recorded,,0
+TX-01336,2026-04-11T06:22:51.678Z,ACCT-064,StreamCloud,Pharmacy,50.17,JP,JP,Known device,1,154.88,0,Completed,No chargeback recorded,,0
+TX-01337,2026-04-11T06:49:17.432Z,ACCT-147,NextDay,Subscription,44.12,GB,US,Known device,1,62.47,0,Completed,No chargeback recorded,,0
+TX-01338,2026-04-11T07:18:45.201Z,ACCT-006,Subscript Co,Travel,131.05,US,TR,Known device,1,99.64,0,Completed,No chargeback recorded,,0
+TX-01339,2026-04-11T07:20:45.082Z,ACCT-133,BookHouse,Gas,116.1,DE,DE,Known device,1,131.5,0,Completed,No chargeback recorded,,0
+TX-01340,2026-04-11T07:45:51.033Z,ACCT-187,BookFlight,Online Retail,148.39,JP,DE,Known device,1,99.55,0,Completed,No chargeback recorded,,0
+TX-01341,2026-04-11T07:54:08.969Z,ACCT-151,BookHouse,Gas,113.97,DE,US,Known device,1,175.67,0,Completed,No chargeback recorded,,0
+TX-01342,2026-04-11T08:31:30.834Z,ACCT-007,BigBox Mart,Grocery,193.73,TR,JP,Known device,1,147.01,0,Completed,No chargeback recorded,,0
+TX-01343,2026-04-11T08:36:59.412Z,ACCT-112,Vespa Apparel,Clothing,197.36,GB,JP,Known device,1,136.12,0,Completed,No chargeback recorded,,0
+TX-01344,2026-04-11T08:42:56.573Z,ACCT-195,RideHail Inc,Travel,161.02,DE,TR,Shared device,1,76.8,2,Completed,No chargeback recorded,,0
+TX-01345,2026-04-11T09:14:02.901Z,ACCT-181,NextDay,Subscription,52.95,GB,JP,Known device,1,181.1,0,Completed,No chargeback recorded,,0
+TX-01346,2026-04-11T10:14:00.993Z,ACCT-004,PillPath,Clothing,26.62,GB,JP,Known device,1,113.64,2,Completed,No chargeback recorded,,0
+TX-01347,2026-04-11T10:36:52.197Z,ACCT-069,Subscript Co,Travel,143.33,US,JP,Known device,1,99.66,0,Completed,No chargeback recorded,,0
+TX-01348,2026-04-11T13:14:28.812Z,ACCT-193,PillPath,Clothing,228.36,GB,DE,Known device,1,126.5,0,Completed,No chargeback recorded,,0
+TX-01349,2026-04-11T13:22:45.794Z,ACCT-129,StreamCloud,Pharmacy,243.78,JP,GB,Known device,1,160.69,1,Completed,No chargeback recorded,,0
+TX-01350,2026-04-11T13:57:18.289Z,ACCT-022,BookFlight,Online Retail,137.76,JP,US,Known device,1,132.72,0,Completed,No chargeback recorded,,0
+TX-01351,2026-04-11T14:22:25.994Z,ACCT-065,StyleHaus,Online Retail,142.52,TR,GB,Known device,1,159.57,0,Completed,No chargeback recorded,,0
+TX-01352,2026-04-11T15:14:29.440Z,ACCT-197,Aurora Cafe,Travel,39.04,TR,DE,Known device,1,115.8,0,Completed,No chargeback recorded,,0
+TX-01353,2026-04-11T15:27:35.315Z,ACCT-172,Aurora Cafe,Travel,236.98,TR,DE,Known device,1,101.22,0,Completed,No chargeback recorded,,0
+TX-01354,2026-04-11T15:49:12.481Z,ACCT-173,Aurora Cafe,Travel,95.19,TR,GB,Known device,1,115.83,0,Completed,No chargeback recorded,,0
+TX-01355,2026-04-11T15:52:11.146Z,ACCT-053,Tech Den,Gas,32.83,TR,US,Known device,1,137.44,1,Completed,No chargeback recorded,,0
+TX-01356,2026-04-11T17:25:57.672Z,ACCT-011,Tech Den,Gas,90.71,TR,GB,Known device,1,142.43,0,Completed,No chargeback recorded,,0
+TX-01357,2026-04-11T17:33:53.566Z,ACCT-155,GadgetWorks,Subscription,10.79,GB,US,Known device,1,121.6,0,Completed,No chargeback recorded,,0
+TX-01358,2026-04-11T17:57:00.804Z,ACCT-116,Global Eats,Gas,27.11,DE,JP,Known device,1,126.39,0,Completed,No chargeback recorded,,0
+TX-01359,2026-04-11T18:16:18.853Z,ACCT-011,PowerCharge,Gas,41.38,US,GB,Known device,2,138.39,0,Completed,No chargeback recorded,,0
+TX-01360,2026-04-11T20:01:59.153Z,ACCT-094,Flux Online,Clothing,71.04,US,JP,Known device,1,128.95,0,Completed,No chargeback recorded,,0
+TX-01361,2026-04-11T20:43:35.948Z,ACCT-012,BookFlight,Online Retail,81.16,JP,DE,Known device,1,194.34,0,Completed,No chargeback recorded,,0
+TX-01362,2026-04-11T21:48:58.697Z,ACCT-166,Vespa Apparel,Clothing,245.65,GB,US,Known device,1,89.23,1,Completed,No chargeback recorded,,0
+TX-01363,2026-04-11T22:04:08.234Z,ACCT-152,Vespa Apparel,Clothing,203.69,GB,DE,Known device,1,138.91,0,Completed,No chargeback recorded,,0
+TX-01364,2026-04-11T23:57:03.490Z,ACCT-187,NextDay,Subscription,216.67,GB,DE,Known device,1,103.64,0,Completed,No chargeback recorded,,0
+TX-01365,2026-04-12T01:54:10.777Z,ACCT-033,TrainHub,Pharmacy,129.66,US,TR,Known device,1,137.54,0,Completed,No chargeback recorded,,0
+TX-01366,2026-04-12T02:44:06.018Z,ACCT-115,TrainHub,Pharmacy,25.13,US,GB,Known device,1,105.81,0,Completed,No chargeback recorded,,0
+TX-01367,2026-04-12T03:00:19.332Z,ACCT-142,BookHouse,Gas,39.51,DE,DE,Known device,1,138.06,0,Completed,No chargeback recorded,,0
+TX-01368,2026-04-12T03:01:05.879Z,ACCT-060,StyleHaus,Online Retail,121.34,TR,US,Known device,1,153.74,0,Completed,No chargeback recorded,,0
+TX-01369,2026-04-12T04:06:28.182Z,ACCT-123,Vespa Apparel,Clothing,214.14,GB,US,Known device,1,118.06,0,Completed,No chargeback recorded,,0
+TX-01370,2026-04-12T04:31:05.951Z,ACCT-168,RideHail Inc,Travel,96.08,DE,TR,Known device,1,220.94,0,Completed,No chargeback recorded,,0
+TX-01371,2026-04-12T05:36:38.076Z,ACCT-131,BigBox Mart,Grocery,223.76,TR,DE,Known device,1,80.22,0,Completed,No chargeback recorded,,0
+TX-01372,2026-04-12T05:50:59.111Z,ACCT-067,PowerCharge,Gas,183.82,US,JP,Known device,1,170.27,0,Completed,No chargeback recorded,,0
+TX-01373,2026-04-12T08:07:16.636Z,ACCT-174,JetWings Travel,Travel,34.41,US,JP,Known device,1,138.02,0,Completed,No chargeback recorded,,0
+TX-01374,2026-04-12T08:37:03.393Z,ACCT-117,Vespa Apparel,Clothing,28.22,GB,US,Known device,1,127.67,1,Completed,No chargeback recorded,,0
+TX-01375,2026-04-12T08:56:31.406Z,ACCT-068,Aurora Cafe,Travel,179.9,TR,GB,Known device,1,89.16,0,Completed,No chargeback recorded,,0
+TX-01376,2026-04-12T10:30:44.959Z,ACCT-188,TripStop,Clothing,180.38,DE,JP,Known device,1,78.59,2,Completed,No chargeback recorded,,0
+TX-01377,2026-04-12T10:45:31.483Z,ACCT-095,NextDay,Subscription,228.34,GB,GB,Known device,1,142.27,0,Completed,No chargeback recorded,,0
+TX-01378,2026-04-12T11:05:51.521Z,ACCT-199,BookFlight,Online Retail,111.92,JP,US,Known device,1,170,1,Completed,No chargeback recorded,,0
+TX-01379,2026-04-12T12:15:12.934Z,ACCT-124,AppPay,Grocery,169.88,GB,US,Known device,1,88.05,0,Completed,No chargeback recorded,,0
+TX-01380,2026-04-12T13:08:26.356Z,ACCT-062,JetWings Travel,Travel,83.58,US,GB,Known device,1,55.19,0,Completed,No chargeback recorded,,0
+TX-01381,2026-04-12T13:46:10.749Z,ACCT-067,MediCo,Clothing,97.55,JP,JP,Known device,1,177.05,0,Completed,No chargeback recorded,,0
+TX-01382,2026-04-12T14:23:26.031Z,ACCT-056,TrainHub,Pharmacy,105.84,US,GB,Known device,1,139.78,0,Completed,No chargeback recorded,,0
+TX-01383,2026-04-12T14:30:54.529Z,ACCT-199,Flux Online,Clothing,195.14,US,US,Known device,1,113.15,1,Completed,No chargeback recorded,,0
+TX-01384,2026-04-12T14:31:17.000Z,ACCT-017,Quick Stop,Electronics,68.43,JP,US,Known device,1,135.31,2,Completed,No chargeback recorded,,0
+TX-01385,2026-04-12T14:31:56.000Z,ACCT-017,JetWings Travel,Travel,32.04,US,US,Known device,2,134.48,2,Completed,No chargeback recorded,,0
+TX-01386,2026-04-12T14:32:17.000Z,ACCT-017,MediCo,Clothing,137.92,JP,US,Known device,3,133.65,2,Completed,No chargeback recorded,,0
+TX-01387,2026-04-12T14:32:29.000Z,ACCT-017,GadgetWorks,Subscription,67.77,GB,US,Known device,4,134.48,2,Completed,No chargeback recorded,,0
+TX-01388,2026-04-12T14:34:37.000Z,ACCT-017,TrainHub,Pharmacy,71.4,US,US,Known device,5,133.65,2,Completed,No chargeback recorded,,0
+TX-01389,2026-04-12T14:35:27.000Z,ACCT-017,StyleHaus,Online Retail,84.04,TR,US,Known device,6,130.43,2,Completed,Fraud-coded dispute recorded,fraud_card_not_present,1
+TX-01390,2026-04-12T14:36:41.000Z,ACCT-017,Quick Stop,Electronics,121.71,JP,US,Known device,7,127.21,2,Completed,Fraud-coded dispute recorded,fraud_card_not_present,1
+TX-01391,2026-04-12T14:37:35.000Z,ACCT-017,TripStop,Clothing,45.02,DE,US,Known device,8,124.46,2,Completed,No chargeback recorded,,0
+TX-01392,2026-04-12T14:38:29.000Z,ACCT-017,BookHouse,Gas,144.52,DE,US,Known device,9,121.71,2,Completed,No chargeback recorded,,0
+TX-01393,2026-04-12T15:59:18.848Z,ACCT-187,RideHail Inc,Travel,35.84,DE,DE,Known device,1,107.73,0,Completed,No chargeback recorded,,0
+TX-01394,2026-04-12T16:10:40.933Z,ACCT-184,CloudKitchen,Grocery,224.74,GB,US,Known device,1,211.19,0,Completed,No chargeback recorded,,0
+TX-01395,2026-04-12T17:25:51.122Z,ACCT-063,PillPath,Clothing,68.65,GB,TR,Known device,1,81.38,0,Completed,No chargeback recorded,,0
+TX-01396,2026-04-12T18:38:50.056Z,ACCT-025,Tech Den,Gas,244.14,TR,US,Known device,1,112.54,0,Completed,No chargeback recorded,,0
+TX-01397,2026-04-12T19:03:27.423Z,ACCT-168,StyleHaus,Online Retail,112.35,TR,TR,Known device,1,201.56,0,Completed,No chargeback recorded,,0
+TX-01398,2026-04-12T19:38:10.079Z,ACCT-162,Quick Stop,Electronics,191.56,JP,US,Known device,1,178.37,0,Completed,No chargeback recorded,,0
+TX-01399,2026-04-12T19:47:58.896Z,ACCT-175,StreamCloud,Pharmacy,203.12,JP,TR,Known device,1,119.44,0,Completed,No chargeback recorded,,0
+TX-01400,2026-04-12T20:07:32.274Z,ACCT-058,CloudKitchen,Grocery,181.81,GB,US,Known device,1,137.91,0,Completed,No chargeback recorded,,0
+TX-01401,2026-04-12T20:16:42.422Z,ACCT-138,GadgetWorks,Subscription,133.57,GB,GB,Known device,1,89.59,0,Completed,No chargeback recorded,,0
+TX-01402,2026-04-12T20:24:51.266Z,ACCT-034,Global Eats,Gas,159.43,DE,US,Known device,1,61.28,0,Completed,No chargeback recorded,,0
+TX-01403,2026-04-12T21:12:24.849Z,ACCT-037,JetWings Travel,Travel,219.21,US,GB,Known device,1,90.93,0,Completed,No chargeback recorded,,0
+TX-01404,2026-04-12T21:15:21.816Z,ACCT-064,BookHouse,Gas,127.56,DE,JP,Known device,1,107.9,0,Completed,No chargeback recorded,,0
+TX-01405,2026-04-12T21:29:14.528Z,ACCT-106,CloudKitchen,Grocery,241.12,GB,TR,Known device,1,134.35,0,Completed,No chargeback recorded,,0
+TX-01406,2026-04-12T21:52:48.952Z,ACCT-028,NextDay,Subscription,44.64,GB,GB,Known device,1,96.16,0,Completed,No chargeback recorded,,0
+TX-01407,2026-04-12T22:24:47.022Z,ACCT-193,PillPath,Clothing,59.5,GB,DE,Known device,1,135.52,0,Completed,No chargeback recorded,,0
+TX-01408,2026-04-12T22:35:44.503Z,ACCT-055,TrainHub,Pharmacy,166.45,US,DE,Known device,1,155.02,0,Completed,No chargeback recorded,,0
+TX-01409,2026-04-12T22:40:44.857Z,ACCT-074,JetWings Travel,Travel,74.44,US,JP,Known device,1,92.65,0,Completed,No chargeback recorded,,0
+TX-01410,2026-04-13T00:39:47.574Z,ACCT-066,CityMart,Rideshare,180.43,TR,TR,Known device,1,174.14,0,Completed,No chargeback recorded,,0
+TX-01411,2026-04-13T00:40:13.603Z,ACCT-070,BigBox Mart,Grocery,104.76,TR,TR,Known device,1,133.04,0,Completed,No chargeback recorded,,0
+TX-01412,2026-04-13T00:44:34.689Z,ACCT-103,BookHouse,Gas,187.37,DE,JP,Known device,1,167.06,0,Completed,No chargeback recorded,,0
+TX-01413,2026-04-13T01:00:50.375Z,ACCT-012,CityMart,Rideshare,14.11,TR,DE,Known device,1,191.21,0,Completed,No chargeback recorded,,0
+TX-01414,2026-04-13T01:28:56.243Z,ACCT-083,PillPath,Clothing,226.29,GB,GB,Known device,1,81.44,0,Completed,No chargeback recorded,,0
+TX-01415,2026-04-13T02:09:16.059Z,ACCT-185,StreamCloud,Pharmacy,80.6,JP,GB,Known device,1,76.63,0,Completed,No chargeback recorded,,0
+TX-01416,2026-04-13T03:27:33.556Z,ACCT-183,StyleHaus,Online Retail,114.17,TR,GB,Known device,1,108.53,0,Completed,No chargeback recorded,,0
+TX-01417,2026-04-13T03:39:51.103Z,ACCT-159,StyleHaus,Online Retail,5.72,TR,US,Known device,1,124.58,1,Completed,No chargeback recorded,,0
+TX-01418,2026-04-13T03:46:20.824Z,ACCT-044,CloudKitchen,Grocery,220.69,GB,GB,Known device,1,147.25,1,Completed,No chargeback recorded,,0
+TX-01419,2026-04-13T04:02:39.741Z,ACCT-154,StyleHaus,Online Retail,225.76,TR,JP,Known device,1,72.98,0,Completed,No chargeback recorded,,0
+TX-01420,2026-04-13T05:25:23.702Z,ACCT-191,Vespa Apparel,Clothing,215.83,GB,JP,Known device,1,58.14,0,Completed,No chargeback recorded,,0
+TX-01421,2026-04-13T05:28:57.493Z,ACCT-042,Vespa Apparel,Clothing,130.75,GB,DE,Shared device,1,123.44,1,Completed,No chargeback recorded,,0
+TX-01422,2026-04-13T05:53:51.204Z,ACCT-199,TrainHub,Pharmacy,166.42,US,US,Known device,1,154.14,1,Completed,No chargeback recorded,,0
+TX-01423,2026-04-13T06:05:00.858Z,ACCT-081,StyleHaus,Online Retail,230.11,TR,GB,Known device,1,155.66,0,Completed,No chargeback recorded,,0
+TX-01424,2026-04-13T06:52:36.968Z,ACCT-039,Tech Den,Gas,24.32,TR,TR,Known device,1,135.25,0,Completed,No chargeback recorded,,0
+TX-01425,2026-04-13T07:14:06.326Z,ACCT-036,CityMart,Rideshare,205.42,TR,DE,Known device,1,151.73,0,Completed,No chargeback recorded,,0
+TX-01426,2026-04-13T07:28:57.848Z,ACCT-041,CityMart,Rideshare,162.37,TR,US,Known device,1,141.92,1,Completed,No chargeback recorded,,0
+TX-01427,2026-04-13T07:39:22.618Z,ACCT-002,CityMart,Rideshare,213.5,TR,JP,Known device,1,200.98,0,Completed,No chargeback recorded,,0
+TX-01428,2026-04-13T07:40:54.089Z,ACCT-145,Flux Online,Clothing,243.17,US,GB,Known device,1,167.41,0,Completed,No chargeback recorded,,0
+TX-01429,2026-04-13T08:05:40.683Z,ACCT-016,TripStop,Clothing,57.99,DE,TR,Known device,1,132.94,0,Completed,No chargeback recorded,,0
+TX-01430,2026-04-13T09:49:34.193Z,ACCT-138,GadgetWorks,Subscription,99.78,GB,GB,Known device,1,100.06,0,Completed,No chargeback recorded,,0
+TX-01431,2026-04-13T09:56:00.536Z,ACCT-057,RideHail Inc,Travel,178.72,DE,DE,Known device,1,143.89,0,Completed,No chargeback recorded,,0
+TX-01432,2026-04-13T10:57:14.568Z,ACCT-044,TripStop,Clothing,17.59,DE,GB,Known device,1,154.6,1,Completed,No chargeback recorded,,0
+TX-01433,2026-04-13T11:07:08.774Z,ACCT-131,Quick Stop,Electronics,238.31,JP,DE,Known device,1,133.22,0,Completed,Other dispute recorded,service_not_received,1
+TX-01434,2026-04-13T11:35:32.876Z,ACCT-078,Quick Stop,Electronics,206.73,JP,JP,Known device,1,194.04,0,Completed,No chargeback recorded,,0
 TX-01435,2026-04-13T11:52:08.645Z,ACCT-088,PowerCharge,Gas,102.23,US,JP,Shared device,1,95.02,0,Completed,No chargeback recorded,,0
 TX-01436,2026-04-13T13:16:51.498Z,ACCT-027,Quick Stop,Electronics,31.35,JP,TR,Known device,1,158.15,0,Completed,No chargeback recorded,,0
 TX-01437,2026-04-13T13:35:56.170Z,ACCT-117,Subscript Co,Travel,128.31,US,US,Known device,1,125.23,1,Completed,No chargeback recorded,,0
@@ -1472,4 +2163,4 @@ TX-02161,2026-05-03T10:17:45.025Z,ACCT-005,TripStop,Clothing,124.23,DE,US,Known 
 TX-02162,2026-05-03T10:50:02.406Z,ACCT-034,Subscript Co,Travel,58.49,US,US,Known device,1,123.51,0,Completed,No chargeback recorded,,0
 TX-02163,2026-05-03T11:11:39.753Z,ACCT-010,Aurora Cafe,Travel,184.8,TR,JP,Known device,1,165.51,1,Completed,No chargeback recorded,,0
 TX-02164,2026-05-03T11:16:50.061Z,ACCT-071,Petra Gas,Pharmacy,193.3,TR,GB,Known device,1,124.75,0,Completed,No chargeback recorded,,0
-TX-02165,2026-05-03T11:21:24.844Z,ACCT-132,AppPay,Grocery,97.65,GB,TR,Known device,1,164.07,0,Completed,No chargeback recorded,,0
+TX-02165,2026-05-03T11:21:24.844Z,ACCT-132,AppPay,Grocery,97.65,GB,TR,Known device,1,164.07,0,Completed,No chargeback recorded,,0

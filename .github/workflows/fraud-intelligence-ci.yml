@@ -1,0 +1,28 @@
+name: Fraud intelligence demo QA
+
+on:
+  push:
+    paths:
+      - 'projects/fraud-intelligence/**'
+      - '.github/workflows/fraud-intelligence-ci.yml'
+  pull_request:
+    paths:
+      - 'projects/fraud-intelligence/**'
+      - '.github/workflows/fraud-intelligence-ci.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Run fraud demo QA suite
+        run: npm test
+        working-directory: projects/fraud-intelligence

@@ -1,16 +1,22 @@
 # Sentinel Fraud Intelligence — runnable prototype
 
-A local investigator workbench for transaction triage. It combines explainable risk signals, mock policy evidence retrieval and a cited investigation draft in one browser UI.
+A static investigator workbench for transaction triage. It combines explainable risk signals, mock policy evidence retrieval and a cited investigation draft in one browser UI. The demo is designed to publish on GitHub Pages; scoring and retrieval run in the browser.
 
-> **Demo only:** every transaction, customer ID, merchant and policy excerpt is fabricated and stored in the local JSON files under `data/`. The score is a hand-authored heuristic, not a trained or validated fraud model. The prototype does not authorize, block, reverse or dispute payments. Do not use it with real customer or payment data.
+> **Demo only:** every transaction, customer ID, merchant and policy excerpt is fabricated and stored under `data/`. The score is a hand-authored heuristic, not a trained or validated fraud model. The prototype does not authorize, block, reverse or dispute payments. Do not use it with real customer or payment data.
+
+## Open the hosted demo
+
+After the GitHub Pages workflow completes, the demo will be available at:
+
+[Sentinel Fraud Intelligence](https://adharsha07.github.io/ai-engineering-experiments/)
 
 ## Run locally
 
-Requires Python 3.10+; there are no Python package dependencies.
+Requires Python 3.10+ for its built-in static file server; there are no package dependencies.
 
 ```sh
 cd projects/fraud-intelligence
-python3 server.py
+python3 -m http.server 8000
 ```
 
 Open [http://127.0.0.1:8000](http://127.0.0.1:8000). Stop with `Ctrl+C`.
@@ -20,13 +26,7 @@ Open [http://127.0.0.1:8000](http://127.0.0.1:8000). Stop with `Ctrl+C`.
 - Filter and search the transaction review table, sorted by explainable risk score.
 - Open any transaction to see the signals that contributed to its score.
 - Review policy excerpts selected by overlapping signal tags; each excerpt carries a demo source ID and title.
-- Copy a concise investigation draft or export the current synthetic transaction list as CSV.
-
-## How scoring works
-
-The Python API adds weighted points for a transaction amount relative to the customer's fabricated usual amount, one-hour authorization velocity, a new device, cross-border country, card-not-present channel and recent dispute history. The UI shows the resulting 0–99 score and each contributing reason. Risk bands are low (<35), medium (35–59) and high (60+). These thresholds and weights are illustrative. A dispute history is explicitly context only, not proof of fraud.
-
-The investigator endpoint is `POST /api/investigate` with `{"transaction_id":"TX-10482"}`. It returns the transaction, heuristic score, signal explanations, relevant policy excerpts, and a suggested next step. `GET /api/transactions` returns the ranked input data with analysis; `GET /api/policies` returns the whole mock policy library.
+- Copy a concise investigation draft or export the synthetic transaction list as CSV.
 
 ## Demo data
 
@@ -34,9 +34,15 @@ The investigator endpoint is `POST /api/investigate` with `{"transaction_id":"TX
 - `data/policies.json` contains three fictional policy excerpts tagged for retrieval. They are examples, not bank policy.
 - No external dataset, account connection, or customer data is used. The file structure lets you replace fixtures with an approved, appropriately licensed dataset without mixing records into the application logic.
 
+## How scoring works
+
+The browser adds weighted points for transaction amount relative to the customer's fabricated usual amount, one-hour authorization velocity, a new device, cross-border country, card-not-present channel and recent dispute history. The UI shows the resulting 0–99 score and each contributing reason. Risk bands are low (<35), medium (35–59) and high (60+). These thresholds and weights are illustrative. A dispute history is explicitly context only, not proof of fraud.
+
+Policy evidence is selected from the local JSON file by overlap between signal tags and policy tags. The investigator draft includes the evidence identifiers and suggested next step. It is an aid for human review and takes no financial action.
+
 ## Architecture path toward AWS
 
-This is intentionally a small local slice. A production design could replace each boundary with managed services while preserving human review:
+This static app is a front-end prototype. A production design could move the scoring and data access behind managed services while preserving human review:
 
 - Ingestion: payment processor events through Amazon MSK or Kinesis Data Streams, with schema and idempotency checks.
 - Storage: encrypted S3 lake zones plus a governed transaction store such as Aurora or DynamoDB, depending on access patterns.

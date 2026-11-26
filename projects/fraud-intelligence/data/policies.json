@@ -12,14 +12,13 @@
   },
   {
     "id": "POL-12",
-    "title": "Cross-border card-not-present activity",
+    "title": "Cross-border activity on shared device",
     "source": "Demo Card Risk Playbook · §3.1",
     "tags": [
       "cross-border",
-      "device",
-      "card-not-present"
+      "device"
     ],
-    "text": "For cross-border card-not-present activity on a newly observed device, collect the authorization timeline and compare recent customer activity. Route unresolved high-risk cases to a human investigator."
+    "text": "For cross-border activity on a device associated with multiple accounts, collect the authorization timeline and compare recent account activity. Route unresolved high-risk cases to a human investigator."
   },
   {
     "id": "POL-18",

@@ -8,7 +8,7 @@ A static investigator workbench for transaction triage. It combines explainable 
 
 After the GitHub Pages workflow completes, the demo will be available at:
 
-[Sentinel Fraud Intelligence](https://adharsha07.github.io/ai-engineering-experiments/)
+[Sentinel Fraud Intelligence](https://adharsha07.github.io/ai-engineering-experiments/projects/fraud-intelligence/)
 
 ## Run locally
 

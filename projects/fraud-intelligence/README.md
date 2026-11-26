@@ -21,6 +21,10 @@ python3 -m http.server 8000
 
 Open [http://127.0.0.1:8000](http://127.0.0.1:8000). Stop with `Ctrl+C`.
 
+## QA
+
+Run `npm test` from this directory. The dependency-free Node test suite checks CSV schema and records, risk explanations and policy matching, that post-transaction dispute outcomes do not affect scores, and the shared data-loading/table-row rendering helpers. GitHub Actions runs the same command on pushes and pull requests that change this project or its QA workflow. These checks cover demo behavior and data shape; they do not validate fraud prediction quality or production use.
+
 ## What you can try
 
 - Filter and search the transaction review table, sorted by explainable risk score.

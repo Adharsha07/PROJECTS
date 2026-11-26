@@ -263,7 +263,10 @@ def order_public(row: sqlite3.Row) -> dict:
 
 
 def ticket_public(row: sqlite3.Row) -> dict:
-    return {key: row[key] for key in ("id", "order_id", "subject", "message", "status", "priority", "resolution_note", "created_at", "updated_at")}
+    result = {key: row[key] for key in ("id", "order_id", "subject", "message", "status", "priority", "resolution_note", "created_at", "updated_at")}
+    if "customer_email" in row.keys():
+        result["customer_email"] = row["customer_email"]
+    return result
 
 
 class App:
@@ -347,7 +350,11 @@ class App:
         user = self.current_user(token)
         with self.db() as db:
             if user["role"] in {"agent", "admin"}:
-                rows = db.execute("SELECT * FROM tickets ORDER BY CASE priority WHEN 'high' THEN 0 ELSE 1 END, created_at").fetchall()
+                rows = db.execute(
+                    "SELECT t.*,u.email AS customer_email FROM tickets t "
+                    "JOIN users u ON u.id=t.user_id "
+                    "ORDER BY CASE t.priority WHEN 'high' THEN 0 ELSE 1 END,t.created_at"
+                ).fetchall()
             else:
                 rows = db.execute("SELECT * FROM tickets WHERE user_id=? ORDER BY created_at DESC", (user["id"],)).fetchall()
         return [ticket_public(row) for row in rows]
@@ -360,12 +367,27 @@ class App:
         if not isinstance(note, str) or not 3 <= len(note.strip()) <= 2000:
             raise ValueError("resolution_note must be between 3 and 2000 characters.")
         with self.db() as db:
+            changed = now_iso()
             cursor = db.execute("UPDATE tickets SET status='resolved',resolution_note=?,updated_at=? WHERE id=? AND status!='resolved'",
-                                (note.strip(), now_iso(), ticket_id))
+                                (note.strip(), changed, ticket_id))
             if cursor.rowcount != 1:
                 raise LookupError("Ticket not found or already resolved.")
             row = db.execute("SELECT * FROM tickets WHERE id=?", (ticket_id,)).fetchone()
+            db.execute("INSERT INTO audit_log(user_id,action,resource,created_at) VALUES (?,?,?,?)",
+                       (user["id"], "ticket.resolved", str(ticket_id), changed))
         return ticket_public(row)
+
+    def audit_events(self, token: str | None, limit: int = 100) -> list[dict]:
+        user = self.current_user(token)
+        if user["role"] not in {"agent", "admin"}:
+            raise PermissionError("Only support agents can view audit events.")
+        limit = max(1, min(int(limit), 200))
+        with self.db() as db:
+            rows = db.execute(
+                "SELECT id,user_id,action,resource,created_at FROM audit_log ORDER BY id DESC LIMIT ?",
+                (limit,),
+            ).fetchall()
+        return [dict(row) for row in rows]
 
 
 class Handler(BaseHTTPRequestHandler):
@@ -387,6 +409,8 @@ class Handler(BaseHTTPRequestHandler):
         self.send_header("Content-Length", str(len(data)))
         self.send_header("Cache-Control", "no-store")
         self.send_header("X-Content-Type-Options", "nosniff")
+        self.send_header("Referrer-Policy", "no-referrer")
+        self.send_header("Permissions-Policy", "camera=(), microphone=(), geolocation=()")
         self.end_headers()
         self.wfile.write(data)
 
@@ -396,6 +420,10 @@ class Handler(BaseHTTPRequestHandler):
         self.send_header("Content-Type", "text/html; charset=utf-8")
         self.send_header("Content-Length", str(len(data)))
         self.send_header("Cache-Control", "no-store")
+        self.send_header("X-Content-Type-Options", "nosniff")
+        self.send_header("Referrer-Policy", "no-referrer")
+        self.send_header("Permissions-Policy", "camera=(), microphone=(), geolocation=()")
+        self.send_header("Content-Security-Policy", "default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; connect-src 'self'; img-src 'self'; base-uri 'none'; frame-ancestors 'none'")
         self.end_headers()
         self.wfile.write(data)
 
@@ -436,6 +464,8 @@ class Handler(BaseHTTPRequestHandler):
                 self.send_json(200, {"orders": self.app.orders(self.token(), query.get("id"))})
             elif path == "/api/tickets":
                 self.send_json(200, {"tickets": self.app.tickets(self.token())})
+            elif path == "/api/audit":
+                self.send_json(200, {"events": self.app.audit_events(self.token(), int(query.get("limit", "100")))})
             else:
                 self.send_json(404, {"error": "Not found."})
         except PermissionError as error:
@@ -503,4 +533,3 @@ if __name__ == "__main__":
     if args.no_seed:
         os.environ["SEED_DEMO"] = "0"
     serve(args.db, args.host, args.port)
-

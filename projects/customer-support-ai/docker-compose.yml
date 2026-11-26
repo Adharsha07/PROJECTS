@@ -10,8 +10,9 @@ services:
       SEED_DEMO: "1"
     volumes:
       - support-data:/data
+    security_opt:
+      - no-new-privileges:true
     restart: unless-stopped
 
 volumes:
   support-data:
-

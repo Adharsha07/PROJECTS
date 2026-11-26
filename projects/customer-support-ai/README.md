@@ -1,5 +1,7 @@
 # Customer Support AI
 
+**GitHub project:** [Adharsha07/ai-engineering-experiments · customer-support-ai](https://github.com/Adharsha07/ai-engineering-experiments/tree/main/projects/customer-support-ai)
+
 An end-to-end customer-support prototype for a fictional online store. It combines the original policy-retrieval work with the product features needed to make the flow reviewable by a real customer:
 
 - authenticated customer accounts with PBKDF2 password hashing and expiring bearer sessions;

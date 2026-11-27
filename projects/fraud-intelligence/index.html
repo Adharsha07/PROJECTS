@@ -1,44 +1,5 @@
 <!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Synthetic financial fraud triage and investigation demo">
-  <title>Sentinel · Fraud Intelligence</title><link rel="stylesheet" href="./style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-<div class="shell">
-  <aside class="sidebar">
-    <div class="brand"><div class="brand-icon">S</div><div><strong>sentinel</strong><span>RISK INTELLIGENCE</span></div></div>
-    <div class="workspace"><span class="workspace-dot"></span> Demo workspace <span class="chevron">⌄</span></div>
-    <div class="nav-label">WORKSPACE</div>
-    <a class="nav-item active"><span class="nav-icon">▦</span> Overview</a>
-    <a class="nav-item"><span class="nav-icon">◈</span> Transaction review <span class="nav-badge" id="nav-count">—</span></a>
-    <a class="nav-item"><span class="nav-icon">⌕</span> Investigations</a>
-    <a class="nav-item"><span class="nav-icon">▤</span> Evidence library</a>
-    <div class="sidebar-bottom"><div class="status-dot"></div><div><b>Open data demo</b><small>CC0 synthetic transactions</small></div><span class="avatar">FA</span></div>
-  </aside>
-  <main class="main">
-    <header class="topbar"><div class="breadcrumb">Risk operations <span>/</span> <b>Overview</b></div><div class="top-right"><span class="date-label">DATA PERIOD · MAR 04 – MAY 03, 2026</span><button class="icon-button" aria-label="Notifications">♧</button><div class="avatar">FA</div></div></header>
-    <section class="content">
-      <div class="page-heading"><div><div class="eyebrow">OPEN SYNTHETIC DATA · CC0 1.0 <span class="live-dot"></span> LIVE DEMO</div><h1>Fraud review workbench</h1><p>Explore 2,165 published synthetic card transactions with explainable triage signals.</p></div><button class="button button-primary" id="refresh"><span>↻</span> Refresh signals</button></div>
-      <div class="demo-banner"><span class="banner-icon">ⓘ</span><div><b>Open sample dataset · CC0 1.0</b><span>Source: card-transactions-sql-dataset. Synthetic data only; chargebacks are dispute outcomes, not a complete fraud ground truth.</span></div><span class="banner-close">×</span></div>
-      <div class="metrics">
-        <article class="metric-card"><div class="metric-top"><span>HEURISTIC REVIEW QUEUE</span><span class="metric-glyph red">◈</span></div><div class="metric-value" id="metric-flagged">—</div><div class="metric-foot"><span class="dot red-dot"></span> Score ≥ 35 · demo threshold</div></article>
-        <article class="metric-card"><div class="metric-top"><span>HIGH RISK</span><span class="metric-glyph orange">⌁</span></div><div class="metric-value" id="metric-high">—</div><div class="metric-foot">Score ≥ 60 · heuristic</div></article>
-        <article class="metric-card"><div class="metric-top"><span>TRANSACTIONS IN SAMPLE</span><span class="metric-glyph blue">▤</span></div><div class="metric-value" id="metric-queue">—</div><div class="metric-foot">2,165 source rows · all included</div></article>
-        <article class="metric-card"><div class="metric-top"><span>SOURCE CHARGEBACKS</span><span class="metric-glyph green">⌕</span></div><div class="metric-value" id="metric-disputes">—</div><div class="metric-foot"><span class="dot green-dot"></span> Dispute records · not fraud labels</div></article>
-      </div>
-      <div class="section-row"><div><h2>Transaction review</h2><p>Ranked by explainable risk score</p></div><div class="table-actions"><div class="search"><span>⌕</span><input id="search" placeholder="Search transactions…"></div><select id="risk-filter"><option value="all">All risk levels</option><option value="High">High risk</option><option value="Medium">Medium risk</option><option value="Low">Low risk</option></select><button class="button button-outline" id="export">↓ Export</button></div></div>
-      <div class="table-wrap"><table><thead><tr><th>TRANSACTION</th><th>CUSTOMER / MERCHANT</th><th>AMOUNT</th><th>LOCATION / DEVICE</th><th>RISK SCORE</th><th>SOURCE STATUS</th><th></th></tr></thead><tbody id="rows"></tbody></table><div id="empty" class="empty hidden">No transactions match these filters.</div><div class="table-footer"><span id="table-count">—</span><span>Scores are demo heuristics · <a href="#methodology">How scoring works ↗</a></span></div></div>
-      <div class="lower-grid"><section class="insight-card"><div class="card-heading"><div><h2>Risk signals</h2><p>Patterns across the source sample</p></div><span class="card-kebab">•••</span></div><div class="signal-row"><div class="signal-icon pale-red">↗</div><div class="signal-copy"><b>Amount deviation</b><small>Above account's prior median</small></div><div class="signal-count" id="signal-amount">—</div><span class="trend up">↑</span></div><div class="signal-row"><div class="signal-icon pale-amber">⌁</div><div class="signal-copy"><b>Elevated velocity</b><small>4+ authorizations in one hour</small></div><div class="signal-count" id="signal-velocity">—</div><span class="trend flat">•</span></div><div class="signal-row"><div class="signal-icon pale-blue">◉</div><div class="signal-copy"><b>Shared device</b><small>Fingerprint used by multiple accounts</small></div><div class="signal-count" id="signal-device">—</div><span class="trend up">↑</span></div></section>
-      <section class="insight-card methodology" id="methodology"><div class="card-heading"><div><h2>Investigation copilot</h2><p>Evidence-grounded case preparation</p></div><span class="copilot-pill"><span class="live-dot"></span> READY</span></div><div class="copilot-body"><div class="copilot-mark">✳</div><div><b>Select a transaction to investigate</b><p>The copilot combines transaction signals with relevant demo policy excerpts, then drafts a review summary with source references.</p></div></div><div class="copilot-foot"><span>⌕ &nbsp;Policy retrieval</span><span>✓ &nbsp;Source citations</span><span>◉ &nbsp;Human review</span></div></section></div>
-      <footer>© 2026 Sentinel Risk Intelligence <span>Prototype build 0.1.0 <i>·</i> Data refresh: just now</span></footer>
-    </section>
-  </main>
-</div>
-<div class="modal-backdrop hidden" id="modal"><section class="case-modal"><div class="modal-head"><div><span class="eyebrow">INVESTIGATION DRAFT</span><h2 id="modal-title">Transaction details</h2></div><button id="modal-close" class="close">×</button></div><div id="case-content"></div><div class="modal-actions"><span>Draft only · no payment action taken</span><button class="button button-outline" id="copy-report">Copy summary</button></div></section></div>
-<div class="toast hidden" id="toast">Copied investigation summary</div>
-<script type="module" src="./app.js"></script>
-</body></html>
+<html lang="en"><head><meta charset="utf-8"><title>Moved</title>
+<meta http-equiv="refresh" content="0; url=https://adharsha07.github.io/sentinel-fraud-intelligence/">
+<link rel="canonical" href="https://adharsha07.github.io/sentinel-fraud-intelligence/"></head>
+<body><p>This demo has moved to <a href="https://adharsha07.github.io/sentinel-fraud-intelligence/">https://adharsha07.github.io/sentinel-fraud-intelligence/</a>.</p></body></html>

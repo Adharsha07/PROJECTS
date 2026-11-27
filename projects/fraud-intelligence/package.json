@@ -1,8 +1,0 @@
-{
-  "name": "sentinel-fraud-intelligence-demo",
-  "private": true,
-  "type": "module",
-  "scripts": {
-    "test": "node --test"
-  }
-}

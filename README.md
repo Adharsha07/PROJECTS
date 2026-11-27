@@ -9,10 +9,12 @@ Small, runnable experiments with explanations and hands-on exercises. Lessons ar
 
 Start with experiment 001. Each folder contains its own setup instructions, code and learning exercise.
 
-## Weekend project
+## Projects built from these lessons
 
-[Evidence shopping assistant — milestone 1](projects/shopping-assistant/README.md): a browser interface demonstrating product filtering, usage relevance, conflicting reviews, and missing evidence. Includes setup instructions and nine automated checks.
+Each project now lives in its own repository.
 
-## Flagship AI engineering project
-
-[Customer-support AI assistant](projects/customer-support-ai/README.md) — local web interface and Python API with version-aware policy retrieval, citations, structured validation and 40 passing tests and optional local Qwen extraction. Local model extraction is available; broader evaluation and public deployment are upcoming.
+| Project | What it is |
+| --- | --- |
+| [Customer support AI](https://github.com/Adharsha07/customer-support-ai) | Local web interface and Python API with version-aware policy retrieval, citations, customer accounts, order lookup, tickets and held-out evaluation |
+| [Sentinel fraud intelligence](https://github.com/Adharsha07/sentinel-fraud-intelligence) ([live demo](https://adharsha07.github.io/sentinel-fraud-intelligence/)) | Investigator workbench with explainable risk signals, policy evidence retrieval and cited investigation drafts |
+| [Evidence shopping assistant](https://github.com/Adharsha07/evidence-shopping-assistant) ([live demo](https://adharsha07.github.io/evidence-shopping-assistant/)) | Browser assistant that answers only from evidence: product filtering, conflicting reviews and missing evidence. It grew out of experiment 002 |
